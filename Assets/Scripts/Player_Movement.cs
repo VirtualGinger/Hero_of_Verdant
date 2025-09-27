@@ -10,8 +10,18 @@ public class Player_Movement : MonoBehaviour
     public Animator animator;
     Vector2 movement;
     private Vector2 LastDirection = Vector2.down;
+    public Player_Combat player_Combat;
 
-    void Update()
+    private void Update()
+    {
+        if (Input.GetButtonDown("Slash"))
+        {
+            player_Combat.Attack(LastDirection);
+        }
+    }
+
+
+    void FixedUpdate()
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
@@ -23,10 +33,6 @@ public class Player_Movement : MonoBehaviour
         animator.SetFloat("Horizontal", LastDirection.x);
         animator.SetFloat("Vertical", LastDirection.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
-    }
-    // Update is called once per frame
-    void FixedUpdate()
-    {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 }
