@@ -3,12 +3,21 @@ using System.Collections;
 
 public class CameraController : MonoBehaviour
 {
-    public float transitionSpeed = 2f;
+    public float transitionSpeed = 5f;
     public Transform playerTarget;
 
     private Vector3 targetPosition;
     private bool isFollowing = false;
     private Coroutine transitionCoroutine;
+
+
+    void Start()
+    {
+        if (playerTarget != null)
+        {
+            StartFollowingPlayer();
+        }
+    }
 
     void LateUpdate()
     {
