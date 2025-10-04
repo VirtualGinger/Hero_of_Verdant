@@ -1,13 +1,14 @@
 using UnityEngine;
+using UnityEditor;
 
 public class RoomTrigger : MonoBehaviour
 {
-    public enum RoomType { Static, Follow }
-
-    public RoomType roomType;
+    // We no longer need the enum, it's always a static trigger.
     public Transform cameraPosition;
 
     private CameraController mainCamera;
+
+    public string zoneName;
 
     void Start()
     {
@@ -18,14 +19,15 @@ public class RoomTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            if (roomType == RoomType.Static)
-            {
-                mainCamera.MoveToNewRoom(cameraPosition.position);
-            }
-            else if (roomType == RoomType.Follow)
-            {
-                mainCamera.StartFollowingPlayer();
-            }
+            mainCamera.MoveToNewRoom(cameraPosition.position);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            mainCamera.StartFollowingPlayer();
         }
     }
 }
