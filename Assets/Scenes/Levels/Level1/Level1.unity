@@ -13386,7 +13386,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1664484562436595877, guid: 9ab9c05f590b7c146b5fac0d05fa012b, type: 3}
       propertyPath: m_TagString
-      value: EditorOnly
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 3356886088537583421, guid: 9ab9c05f590b7c146b5fac0d05fa012b, type: 3}
       propertyPath: labelText
@@ -13414,7 +13414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6000526378885589656, guid: 9ab9c05f590b7c146b5fac0d05fa012b, type: 3}
       propertyPath: m_TagString
-      value: EditorOnly
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 6184149864090981891, guid: 9ab9c05f590b7c146b5fac0d05fa012b, type: 3}
       propertyPath: m_LocalPosition.x

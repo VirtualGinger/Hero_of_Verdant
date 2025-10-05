@@ -1,22 +1,23 @@
-using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Threading.Tasks;
 
 public class LevelManager : MonoBehaviour
-{    public static LevelManager Instance { get; private set; }
+{
+    public static LevelManager Instance { get; private set; }
 
-    [Tooltip("Drag the scene asset to load at startup from the Project window.")]
-    public SceneReference startingScene;
-
-    [Header("UI & Player")]
+    [Header("UI & Player References")]
     public GameObject loadingScreen;
     public GameObject playerObject;
 
+    [Header("Starting Scene")]
+    [Tooltip("Drag the first scene to load (e.g., a Main Menu) from the Project window.")]
+    public SceneReference startingScene;
+
     private string _currentLevelName;
 
-    private void Awake()
+    void Awake()
     {
-        // Setup the singleton instance
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
@@ -29,8 +30,7 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
-        // Check if a scene has been assigned in the Inspector
-        if (startingScene != null)
+        if (startingScene != null && !string.IsNullOrEmpty(startingScene.ScenePath))
         {
             LoadLevel(startingScene.ScenePath);
         }
@@ -40,73 +40,54 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    // This is the main function to call when changing levels
     public async void LoadLevel(string scenePath)
     {
-        // 1. Always show loading screen and hide player initially.
-        if (loadingScreen != null)
-        {
-            loadingScreen.SetActive(true);
-        }
-        if (playerObject != null)
-        {
-            playerObject.SetActive(false);
-        }
+        // 1. Show loading screen and hide player.
+        if (loadingScreen != null) loadingScreen.SetActive(true);
+        if (playerObject != null) playerObject.SetActive(false);
 
-        // 2. Unload the previous scene if one exists.
+        // 2. Unload previous scene.
         if (!string.IsNullOrEmpty(_currentLevelName))
         {
             await SceneManager.UnloadSceneAsync(_currentLevelName);
         }
 
-        // 3. Load the new scene.
+        // 3. Load new scene.
         await SceneManager.LoadSceneAsync(scenePath, LoadSceneMode.Additive);
         _currentLevelName = scenePath;
         SceneManager.SetActiveScene(SceneManager.GetSceneByPath(scenePath));
 
-        // 4. Check if the new scene has a SpawnPoint.
+        // 4. Check if the scene is a playable level by looking for a SpawnPoint.
         GameObject spawnPoint = GameObject.FindGameObjectWithTag("SpawnPoint");
 
-        if (spawnPoint != null) // --- THIS IS A PLAYABLE LEVEL ---
+        if (spawnPoint != null) // This is a playable level.
         {
-            // Move the player to the spawn point.
+            Debug.Log("SpawnPoint found in '" + scenePath + "'. Spawning player.", spawnPoint);
+
+            // Move and activate the player.
             if (playerObject != null)
             {
                 playerObject.transform.position = spawnPoint.transform.position;
                 playerObject.transform.rotation = spawnPoint.transform.rotation;
-            }
-
-            // Activate the player.
-            if (playerObject != null)
-            {
                 playerObject.SetActive(true);
             }
+
+            // Tell the camera to start following the player.
+            CameraController mainCamera = FindObjectOfType<CameraController>();
+            if (mainCamera != null)
+            {
+                mainCamera.StartFollowingPlayer();
+            }
+        }
+        else // This is a menu or a scene without a spawn point.
+        {
+            Debug.Log("No SpawnPoint found in '" + scenePath + "'. Assuming it is a menu scene.");
         }
 
         // 5. Hide the loading screen.
         if (loadingScreen != null)
         {
             loadingScreen.SetActive(false);
-        }
-    }
-
-    // Helper async method for loading
-    public async Task LoadSceneAsync(string sceneName)
-    {
-        var asyncLoad = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
-        while (!asyncLoad.isDone)
-        {
-            await Task.Yield();
-        }
-    }
-
-    // Helper async method for unloading
-    public async Task UnloadSceneAsync(string sceneName)
-    {
-        var asyncUnload = SceneManager.UnloadSceneAsync(sceneName);
-        while (!asyncUnload.isDone)
-        {
-            await Task.Yield();
         }
     }
 }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3733495861595453155}
   m_Layer: 0
   m_Name: Camera Position
-  m_TagString: EditorOnly
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 3356886088537583421}
   m_Layer: 0
   m_Name: Camera Trigger
-  m_TagString: EditorOnly
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

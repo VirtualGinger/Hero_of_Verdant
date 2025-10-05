@@ -1,25 +1,20 @@
 using UnityEngine;
-using UnityEditor;
 
 public class RoomTrigger : MonoBehaviour
 {
-    // We no longer need the enum, it's always a static trigger.
     public Transform cameraPosition;
-
-    private CameraController mainCamera;
-
     public string zoneName;
 
-    void Start()
-    {
-        mainCamera = Camera.main.GetComponent<CameraController>();
-    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            mainCamera.MoveToNewRoom(cameraPosition.position);
+            CameraController cameraController = Camera.main.GetComponent<CameraController>();
+            if (cameraController != null)
+            {
+                cameraController.MoveToNewRoom(cameraPosition.position);
+            }
         }
     }
 
@@ -27,7 +22,11 @@ public class RoomTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            mainCamera.StartFollowingPlayer();
+            CameraController cameraController = Camera.main.GetComponent<CameraController>();
+            if (cameraController != null)
+            {
+                cameraController.StartFollowingPlayer();
+            }
         }
     }
 }
