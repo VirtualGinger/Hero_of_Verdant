@@ -8,6 +8,10 @@ public class LevelManager : MonoBehaviour
     [Tooltip("Drag the scene asset to load at startup from the Project window.")]
     public SceneReference startingScene;
 
+    [Header("UI & Player")]
+    public GameObject loadingScreen;
+    public GameObject playerObject;
+
     private string _currentLevelName;
 
     private void Awake()
@@ -37,26 +41,57 @@ public class LevelManager : MonoBehaviour
     }
 
     // This is the main function to call when changing levels
-    public async void LoadLevel(string levelName)
+    public async void LoadLevel(string scenePath)
     {
-        // If a level is already loaded, unload it first
-        if (!string.IsNullOrEmpty(_currentLevelName))
+        // 1. Always show loading screen and hide player initially.
+        if (loadingScreen != null)
         {
-            await UnloadSceneAsync(_currentLevelName);
+            loadingScreen.SetActive(true);
+        }
+        if (playerObject != null)
+        {
+            playerObject.SetActive(false);
         }
 
-        // Load the new scene additively
-        await LoadSceneAsync(levelName);
-        _currentLevelName = levelName;
+        // 2. Unload the previous scene if one exists.
+        if (!string.IsNullOrEmpty(_currentLevelName))
+        {
+            await SceneManager.UnloadSceneAsync(_currentLevelName);
+        }
 
+        // 3. Load the new scene.
+        await SceneManager.LoadSceneAsync(scenePath, LoadSceneMode.Additive);
+        _currentLevelName = scenePath;
+        SceneManager.SetActiveScene(SceneManager.GetSceneByPath(scenePath));
+
+        // 4. Check if the new scene has a SpawnPoint.
         GameObject spawnPoint = GameObject.FindGameObjectWithTag("SpawnPoint");
-        if (spawnPoint != null) {
-            GameObject.FindGameObjectWithTag("Player").transform.position = spawnPoint.transform.position;
+
+        if (spawnPoint != null) // --- THIS IS A PLAYABLE LEVEL ---
+        {
+            // Move the player to the spawn point.
+            if (playerObject != null)
+            {
+                playerObject.transform.position = spawnPoint.transform.position;
+                playerObject.transform.rotation = spawnPoint.transform.rotation;
+            }
+
+            // Activate the player.
+            if (playerObject != null)
+            {
+                playerObject.SetActive(true);
+            }
+        }
+
+        // 5. Hide the loading screen.
+        if (loadingScreen != null)
+        {
+            loadingScreen.SetActive(false);
         }
     }
 
     // Helper async method for loading
-    private async Task LoadSceneAsync(string sceneName)
+    public async Task LoadSceneAsync(string sceneName)
     {
         var asyncLoad = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
         while (!asyncLoad.isDone)
@@ -66,7 +101,7 @@ public class LevelManager : MonoBehaviour
     }
 
     // Helper async method for unloading
-    private async Task UnloadSceneAsync(string sceneName)
+    public async Task UnloadSceneAsync(string sceneName)
     {
         var asyncUnload = SceneManager.UnloadSceneAsync(sceneName);
         while (!asyncUnload.isDone)
