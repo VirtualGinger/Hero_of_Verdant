@@ -13,10 +13,7 @@ public class CameraController : MonoBehaviour
 
     void Start()
     {
-        if (playerTarget != null)
-        {
-            StartFollowingPlayer();
-        }
+
     }
 
     void LateUpdate()
