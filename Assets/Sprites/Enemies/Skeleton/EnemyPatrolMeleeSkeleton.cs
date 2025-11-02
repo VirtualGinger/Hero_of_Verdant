@@ -9,6 +9,8 @@ public class EnemyPatrolMeleeSkeleton : MonoBehaviour
     private Transform currentPoint;
     public float speed;
 
+    private EnemyHealth _enemyHealth;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,11 +18,14 @@ public class EnemyPatrolMeleeSkeleton : MonoBehaviour
         animation = GetComponent<Animator>();
         currentPoint = pointB.transform;
         animation.SetBool("isRunning", true);
+        _enemyHealth = GetComponent<EnemyHealth>();
     }
 
     // Update is called once per frame
     void Update()
     {
+
+
         Vector2 point = currentPoint.position - transform.position;
         if(currentPoint == pointB.transform)
         {
@@ -41,6 +46,13 @@ public class EnemyPatrolMeleeSkeleton : MonoBehaviour
         {
             flip();
             currentPoint = pointB.transform;
+        }
+
+        if (_enemyHealth.health <= 0)
+        {
+            rb.linearVelocity = new Vector2(0, 0);
+            animation.SetBool("isRunning", false);
+            return;
         }
     }
 

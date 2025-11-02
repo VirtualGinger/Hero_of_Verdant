@@ -10,6 +10,7 @@ public class Player_Combat : MonoBehaviour
     public GameObject attackPoint;
     public float radius;
     public LayerMask enemies;
+    public float attackDamage;
 
     private void Update()
     {
@@ -35,6 +36,7 @@ public class Player_Combat : MonoBehaviour
         foreach (Collider2D enemyGameobject in enemy)
         {
             Debug.Log("Ememy Hit");
+            enemyGameobject.GetComponent<EnemyHealth>().health -= attackDamage;
         }
     }
 

@@ -150,6 +150,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &430161536
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 430161537}
+  m_Layer: 0
+  m_Name: AttackPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &430161537
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430161536}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.15, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 898731806}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &822954323
 GameObject:
   m_ObjectHideFlags: 0
@@ -6771,6 +6802,11 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!4 &898731806 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4581730501828541009, guid: ca766cd99a34d7f45b48e67b718f4d69, type: 3}
+  m_PrefabInstance: {fileID: 1211557715}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1206898301
 GameObject:
   m_ObjectHideFlags: 0
@@ -6820,7 +6856,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4581730501828541009, guid: ca766cd99a34d7f45b48e67b718f4d69, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.3608656
+      value: -3.59
       objectReference: {fileID: 0}
     - target: {fileID: 4581730501828541009, guid: ca766cd99a34d7f45b48e67b718f4d69, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6854,9 +6890,28 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5382058263955112682, guid: ca766cd99a34d7f45b48e67b718f4d69, type: 3}
+      propertyPath: radius
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5382058263955112682, guid: ca766cd99a34d7f45b48e67b718f4d69, type: 3}
+      propertyPath: attackPoint
+      value: 
+      objectReference: {fileID: 430161536}
+    - target: {fileID: 5382058263955112682, guid: ca766cd99a34d7f45b48e67b718f4d69, type: 3}
+      propertyPath: attackDamage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5382058263955112682, guid: ca766cd99a34d7f45b48e67b718f4d69, type: 3}
+      propertyPath: enemies.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4581730501828541009, guid: ca766cd99a34d7f45b48e67b718f4d69, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 430161537}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca766cd99a34d7f45b48e67b718f4d69, type: 3}
 --- !u!1 &1225646195
@@ -41514,6 +41569,25 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1565305658 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 310099166161080263, guid: 82fd0ccb1d4a09142af15c1d924e5fbb, type: 3}
+  m_PrefabInstance: {fileID: 7467406027605228155}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1565305665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565305658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 981ea1d0ba08ee844a1ccc6774980a16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+  health: 30
+  currentHealth: 0
 --- !u!1001 &7467406027605228155
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41525,6 +41599,10 @@ PrefabInstance:
     - target: {fileID: 310099166161080263, guid: 82fd0ccb1d4a09142af15c1d924e5fbb, type: 3}
       propertyPath: m_Name
       value: Melee Skeleton
+      objectReference: {fileID: 0}
+    - target: {fileID: 310099166161080263, guid: 82fd0ccb1d4a09142af15c1d924e5fbb, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2240232141277151288, guid: 82fd0ccb1d4a09142af15c1d924e5fbb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -41585,7 +41663,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 310099166161080263, guid: 82fd0ccb1d4a09142af15c1d924e5fbb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1565305665}
   m_SourcePrefab: {fileID: 100100000, guid: 82fd0ccb1d4a09142af15c1d924e5fbb, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
