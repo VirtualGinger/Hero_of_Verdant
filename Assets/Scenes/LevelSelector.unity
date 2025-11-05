@@ -399,12 +399,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2608629275261097259, guid: 2e92f9ba266117448a93d226fe38d716, type: 3}
       propertyPath: targetScene.scenePath
-      value: Assets/Scenes/Levels/Level1/Level1.unity
+      value: Assets/Scenes/Hero_Of_Verdant.unity
       objectReference: {fileID: 0}
     - target: {fileID: 2608629275261097259, guid: 2e92f9ba266117448a93d226fe38d716, type: 3}
       propertyPath: targetScene.sceneAsset
       value: 
-      objectReference: {fileID: 102900000, guid: 3bdf9d9cc6c743d49abd939b2ae6fe57, type: 3}
+      objectReference: {fileID: 102900000, guid: 8e1cd0a72fe04034da9673d229ae7a10, type: 3}
     - target: {fileID: 5804257637298529008, guid: 2e92f9ba266117448a93d226fe38d716, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
