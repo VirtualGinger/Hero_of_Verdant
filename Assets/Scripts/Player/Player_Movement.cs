@@ -32,7 +32,6 @@ public class Player_Movement : MonoBehaviour
             LastDirection = movement;
         }
 
-    // Move attackPoint in front of the player
         player_Combat.attackPoint.transform.localPosition = LastDirection.normalized * 0.75f;
 
         animator.SetFloat("Horizontal", LastDirection.x);

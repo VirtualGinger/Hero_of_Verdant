@@ -6,7 +6,6 @@ public class Player_Persist : MonoBehaviour
 
     void Awake()
     {
-        // If there's no instance yet, make this one persist
         if (instance == null)
         {
             instance = this;
@@ -14,7 +13,6 @@ public class Player_Persist : MonoBehaviour
         }
         else
         {
-            // If another player already exists (from a previous scene), destroy this one
             Destroy(gameObject);
         }
     }

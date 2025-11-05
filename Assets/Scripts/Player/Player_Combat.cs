@@ -8,10 +8,10 @@ public class Player_Combat : MonoBehaviour
     private float timer;
 
 
-    public GameObject attackPoint;
+    public Transform attackPoint;
     public float radius;
     public LayerMask enemies;
-    public float attackDamage;
+    public float attackDamage = 2;
 
     private void Update()
     {
@@ -23,31 +23,27 @@ public class Player_Combat : MonoBehaviour
 
 public void Attack(Vector2 direction)
 {
-    // Update attack direction for animations
     anim.SetFloat("AttackX", direction.x);
     anim.SetFloat("AttackY", direction.y);
 
-    // Check if cooldown is done
     if (timer <= 0)
     {
         anim.SetBool("IsAttacking", true);
         timer = cooldown;
 
-        // Temporarily calculate attack point position based on direction
         Vector3 attackPos = transform.position;
 
         if (direction == Vector2.up)
-            attackPos += Vector3.up * 0.75f;
+            attackPos += Vector3.up * 1f;
         else if (direction == Vector2.down)
-            attackPos += Vector3.down * 0.75f;
+            attackPos += Vector3.down * 1f;
         else if (direction == Vector2.left)
-            attackPos += Vector3.left * 0.75f;
+            attackPos += Vector3.left * 1f;
         else if (direction == Vector2.right)
-            attackPos += Vector3.right * 0.75f;
+            attackPos += Vector3.right * 1f;
         else
-            attackPos += new Vector3(direction.x, direction.y, 0).normalized * 0.75f;
+            attackPos += new Vector3(direction.x, direction.y, 0).normalized * 1f;
 
-        // Detect enemies in attack radius
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPos, radius, enemies);
 
         foreach (Collider2D enemy in hitEnemies)
@@ -81,7 +77,6 @@ private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
 
-        // Show predicted attack point based on facing direction
         Vector3 attackPos = attackPoint.transform.position;
         Gizmos.DrawWireSphere(attackPos, radius);
     }
