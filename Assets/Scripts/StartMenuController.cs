@@ -5,14 +5,18 @@ public class StartMenuController : MonoBehaviour
 {
     public void OnStartClick()
     {
+        // Loads the main game scene
         SceneManager.LoadScene("Hero_Of_Verdant");
     }
 
     public void OnExitClick()
     {
-#if Unity_Editor
+#if UNITY_EDITOR
+        // Stops play mode if running inside the Unity Editor
         UnityEditor.EditorApplication.isPlaying = false;
-#endif
+#else
+        // Quits the application when built
         Application.Quit();
+#endif
     }
 }
