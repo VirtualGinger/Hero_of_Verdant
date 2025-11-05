@@ -21,36 +21,52 @@ public class Player_Combat : MonoBehaviour
         }
     }
 
-    public void Attack(Vector2 direction)
+public void Attack(Vector2 direction)
+{
+    // Update attack direction for animations
+    anim.SetFloat("AttackX", direction.x);
+    anim.SetFloat("AttackY", direction.y);
+
+    // Check if cooldown is done
+    if (timer <= 0)
     {
-        // Update attack direction for animations
-        anim.SetFloat("AttackX", direction.x);
-        anim.SetFloat("AttackY", direction.y);
+        anim.SetBool("IsAttacking", true);
+        timer = cooldown;
 
-        // Check if cooldown is done
-        if (timer <= 0)
+        // Temporarily calculate attack point position based on direction
+        Vector3 attackPos = transform.position;
+
+        if (direction == Vector2.up)
+            attackPos += Vector3.up * 0.75f;
+        else if (direction == Vector2.down)
+            attackPos += Vector3.down * 0.75f;
+        else if (direction == Vector2.left)
+            attackPos += Vector3.left * 0.75f;
+        else if (direction == Vector2.right)
+            attackPos += Vector3.right * 0.75f;
+        else
+            attackPos += new Vector3(direction.x, direction.y, 0).normalized * 0.75f;
+
+        // Detect enemies in attack radius
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPos, radius, enemies);
+
+        foreach (Collider2D enemy in hitEnemies)
         {
-            anim.SetBool("IsAttacking", true);
-            timer = cooldown;
+            Debug.Log("Enemy Hit: " + enemy.name);
 
-            // Detect enemies in attack radius
-            Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.transform.position, radius, enemies);
-
-            foreach (Collider2D enemy in hitEnemies)
+            EnemyHealth hp = enemy.GetComponent<EnemyHealth>();
+            if (hp != null)
             {
-                Debug.Log("Enemy Hit: " + enemy.name);
-
-                // Safely apply damage (only if enemy has EnemyHealth)
-                EnemyHealth hp = enemy.GetComponent<EnemyHealth>();
-                if (hp != null)
-                {
-                    hp.health -= attackDamage;
-                }
+                hp.health -= attackDamage;
             }
         }
     }
+}
     
-
+public void FinishAttack()
+{
+    anim.SetBool("IsAttacking", false);
+}
 
 //public void attack()
   //  {
@@ -59,17 +75,15 @@ public class Player_Combat : MonoBehaviour
 
 
 
-    public void FinishAttack()
+private void OnDrawGizmosSelected()
+{
+    if (attackPoint != null)
     {
-        anim.SetBool("IsAttacking", false);
-    }
+        Gizmos.color = Color.red;
 
-    private void OnDrawGizmosSelected()
-    {
-        if (attackPoint != null)
-        {
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(attackPoint.transform.position, radius);
-        }
+        // Show predicted attack point based on facing direction
+        Vector3 attackPos = attackPoint.transform.position;
+        Gizmos.DrawWireSphere(attackPos, radius);
     }
+}
 }

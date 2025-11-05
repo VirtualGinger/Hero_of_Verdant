@@ -11,6 +11,7 @@ public class Player_Movement : MonoBehaviour
     Vector2 movement;
     private Vector2 LastDirection = Vector2.down;
     public Player_Combat player_Combat;
+    
 
     private void Update()
     {
@@ -26,13 +27,17 @@ public class Player_Movement : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
-        if (movement != Vector2.zero){
+        if (movement != Vector2.zero)
+        {
             LastDirection = movement;
         }
+
+    // Move attackPoint in front of the player
+        player_Combat.attackPoint.transform.localPosition = LastDirection.normalized * 0.75f;
 
         animator.SetFloat("Horizontal", LastDirection.x);
         animator.SetFloat("Vertical", LastDirection.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
-    }
+}
 }
