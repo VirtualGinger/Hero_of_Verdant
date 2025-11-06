@@ -3,29 +3,31 @@ using UnityEngine;
 public class Damage : MonoBehaviour
 {
     public float damage;
-    private EnemyHealth _enemyHealth;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        _enemyHealth = GetComponent<EnemyHealth>();
-    }
+    public bool hasHit = false;
+    private bool firstTime = true;
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (_enemyHealth.health <= 0)
+
+        if (other.gameObject.CompareTag("Player") && !hasHit)
         {
-            damage = 0;
-            return;
+            PlayerHealth playerHealth = other.gameObject.GetComponent<PlayerHealth>();
+
+            if (playerHealth != null)
+            {
+                if (firstTime)
+                {
+                    firstTime = false;
+                    return;
+                }
+                playerHealth.health -= damage;
+
+                hasHit = true;
+
+                Debug.Log($"Hit Player! Player Health remaining: {playerHealth.health}");
+            }
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            other.gameObject.GetComponent<PlayerHealth>().health -= damage;
-        }
-    }
 }

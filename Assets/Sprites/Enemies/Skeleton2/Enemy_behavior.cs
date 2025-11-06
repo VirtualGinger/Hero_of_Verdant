@@ -198,4 +198,18 @@ public class Enemy_behavior : MonoBehaviour
     {
         cooling = true;
     }
+
+    public void ResetWeaponHitbox()
+    {
+        Damage weaponDamage = GetComponentInChildren<Damage>();
+
+        if (weaponDamage != null)
+        {
+            weaponDamage.hasHit = false;
+        }
+        else
+        {
+            Debug.LogError("Damage script not found on a child GameObject. Cannot reset hasHit flag.");
+        }
+    }
 }
