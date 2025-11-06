@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
+
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -31,6 +33,7 @@ public class PlayerHealth : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         Debug.Log("Player has died.");
-        Destroy(gameObject);
+        SceneManager.LoadScene("GameOver");
+        //Destroy(gameObject);
     }
 }
