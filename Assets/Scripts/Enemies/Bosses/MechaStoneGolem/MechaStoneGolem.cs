@@ -2,28 +2,20 @@ using UnityEngine;
 
 public class Boss_Behavior : MonoBehaviour
 {
-    // --- From your script ---
-    [Header("Detection")]
-    public Transform rayCast;
-    public LayerMask raycastMask;
-    public float rayCastLength;
-    public float verticalTolerance = 0.5f;
+    // --- AI STATES ---
+    private enum AIState { Idle, Repositioning, Attacking }
+    private AIState currentState = AIState.Idle;
 
+    // --- SETUP ---
     [Header("Movement")]
-    public float moveSpeed;
-    
+    public float moveSpeed = 5f;
+    public float verticalAlignmentTolerance = 0.5f; 
+
     [Header("Combat Stats")]
-    public float meleeAttackRange; // Renamed from attackDistance
-    public float laserAttackRange = 10f;
-    
-    public float laserCooldown = 8f;
-    public float meleeCooldown = 3f;
-    public float blockCooldown = 10f;
-    [Range(0, 1)]
-    public float blockChance = 0.3f; // 30% chance to block
+    public float laserAttackRange = 20f;
+    public float laserCooldown = 5f;
 
     // --- Private Variables ---
-    private RaycastHit2D hit;
     private GameObject target;
     private Animator anim;
     private float distance;
@@ -31,31 +23,23 @@ public class Boss_Behavior : MonoBehaviour
     private bool isFacingRight = true;
     private float originalScaleMagnitudeX;
     private EnemyHealth _enemyHealth;
-
-    // New Cooldown Timers
+    private Rigidbody2D rb;
     private float timeSinceLastLaser;
-    private float timeSinceLastMelee;
-    private float timeSinceLastBlock;
-
-    // State
-    private bool isAttacking = false;
-    private bool isBlocking = false;
-
 
     void Awake()
     {
+        // --- IT'S RIGHT HERE ---
+        Debug.Log("!!!!!!!!!!!!!!! BOSS SCRIPT IS AWAKE !!!!!!!!!!!!!!!");
+
         anim = GetComponent<Animator>();
         originalScaleMagnitudeX = Mathf.Abs(transform.localScale.x);
         _enemyHealth = GetComponent<EnemyHealth>();
+        rb = GetComponent<Rigidbody2D>();
+        
+        currentState = AIState.Idle;
+        timeSinceLastLaser = laserCooldown; 
 
-        // Start with cooldowns ready
-        timeSinceLastLaser = laserCooldown;
-        timeSinceLastMelee = meleeCooldown;
-        timeSinceLastBlock = blockCooldown;
-
-        // --- DEBUG ---
-        Debug.Log("BOSS AWAKE: Animator is " + (anim != null ? "FOUND" : "MISSING"));
-        Debug.Log("BOSS AWAKE: EnemyHealth is " + (_enemyHealth != null ? "FOUND" : "MISSING"));
+        if (rb == null) { Debug.LogError("BOSS IS MISSING RIGIDBODY2D!"); }
     }
 
     void Update()
@@ -64,157 +48,103 @@ public class Boss_Behavior : MonoBehaviour
         if (_enemyHealth != null && _enemyHealth.health <= 0)
         {
             anim.SetBool("canWalk", false);
+            if (rb != null) rb.linearVelocity = Vector2.zero;
             return;
         }
 
         // 2. Check for Target
         if (target == null)
         {
-            // This is the normal "idle" state
             inRange = false;
             anim.SetBool("canWalk", false);
-            return; // No target, do nothing
+            if (rb != null) rb.linearVelocity = Vector2.zero;
+            currentState = AIState.Idle;
+            return;
         }
 
-        // 3. Update Cooldowns
+        // 3. Update Cooldown
         timeSinceLastLaser += Time.deltaTime;
-        timeSinceLastMelee += Time.deltaTime;
-        timeSinceLastBlock += Time.deltaTime;
 
-        // 4. Check Line of Sight
-        if (inRange)
+        // 4. Run AI State Machine
+        if (inRange && target != null)
         {
-            HandleLineOfSight();
-        }
-
-        // 5. Run AI Logic (if we have a target and aren't busy)
-        if (inRange && !isAttacking && !isBlocking)
-        {
-            BossLogic();
-        }
-        else if (isAttacking)
-        {
-            // --- DEBUG ---
-            // If you see this message spamming, your Animation Event is broken
-            // Debug.Log("Boss is busy ATTACKING...");
-        }
-        else if (isBlocking)
-        {
-            // --- DEBUG ---
-            // If you see this message spamming, your Animation Event is broken
-            // Debug.Log("Boss is busy BLOCKING...");
+            UpdateAIState();
         }
     }
 
-    void HandleLineOfSight()
+    void UpdateAIState()
     {
-        if (target == null) return;
+        Debug.Log("Current AI State: " + currentState.ToString());
 
-        float targetX = target.transform.position.x;
-        Vector2 direction = (targetX < transform.position.x) ? Vector2.left : Vector2.right;
+        // Always face the player
+        Flip(target.transform.position.x);
+        distance = Vector2.Distance(transform.position, target.transform.position);
 
-        Flip(targetX);
-
-        hit = Physics2D.Raycast(rayCast.position, direction, rayCastLength, raycastMask);
-        RaycastDebugger(direction);
-
-        if (hit.collider == null)
+        switch (currentState)
         {
-            // --- DEBUG ---
-            Debug.Log("LINE OF SIGHT: FAILED. Losing target.");
-            inRange = false;
-            target = null;
-            anim.SetBool("canWalk", false);
-        }
-        else
-        {
-            // --- DEBUG ---
-            // This should spam every frame you are in range and in sight
-            // Debug.Log("LINE OF SIGHT: OK. Player detected: " + hit.collider.name);
+            // --- STATE 1: IDLE ---
+            case AIState.Idle:
+                anim.SetBool("canWalk", false);
+                rb.linearVelocity = Vector2.zero;
+
+                if (timeSinceLastLaser >= laserCooldown && distance <= laserAttackRange)
+                {
+                    currentState = AIState.Repositioning;
+                }
+                break;
+
+            // --- STATE 2: REPOSITIONING ---
+            case AIState.Repositioning:
+                float yDifference = target.transform.position.y - transform.position.y;
+
+                if (Mathf.Abs(yDifference) > verticalAlignmentTolerance)
+                {
+                    rb.linearVelocity = new Vector2(0, Mathf.Sign(yDifference) * moveSpeed);
+                    anim.SetBool("canWalk", true);
+                }
+                else
+                {
+                    rb.linearVelocity = Vector2.zero;
+                    anim.SetBool("canWalk", false);
+                    PerformLaserAttack();
+                }
+                break;
+
+            // --- STATE 3: ATTACKING ---
+            case AIState.Attacking:
+                rb.linearVelocity = Vector2.zero;
+                anim.SetBool("canWalk", false);
+                // Waiting for animation event...
+                break;
         }
     }
-
+    
+    void PerformLaserAttack()
+    {
+        currentState = AIState.Attacking;
+        timeSinceLastLaser = 0f;
+        anim.SetTrigger("doLaser");
+    }
+    
     void OnTriggerEnter2D(Collider2D trig)
     {
         if (trig.gameObject.CompareTag("Player"))
         {
-            // --- DEBUG ---
-            Debug.Log("!!!!!!!!!!!!!!! PLAYER ENTERED RANGE !!!!!!!!!!!!!!!");
+            // --- ADDED THIS LINE ---
+            Debug.Log("!!!!!!!!!!!!!! PLAYER ENTERED TRIGGER !!!!!!!!!!!!!!");
             target = trig.gameObject;
             inRange = true;
         }
     }
-
-    void BossLogic()
+    
+    void OnTriggerExit2D(Collider2D trig)
     {
-        if (target == null) return;
-
-        distance = Vector2.Distance(transform.position, target.transform.position);
-
-        // --- AI Decision Making ---
-
-        // 1. Laser Attack (Long range)
-        if (distance <= laserAttackRange && distance > meleeAttackRange && timeSinceLastLaser >= laserCooldown)
+         if (trig.gameObject.CompareTag("Player"))
         {
-            // --- DEBUG ---
-            Debug.Log("BOSS LOGIC: Performing LASER attack");
-            PerformLaserAttack();
+            Debug.Log("!!!!!!!!!!!!!! PLAYER EXITED TRIGGER !!!!!!!!!!!!!!");
+            target = null;
+            inRange = false;
         }
-        // 2. Melee Attack (Short range)
-        else if (distance <= meleeAttackRange && timeSinceLastMelee >= meleeCooldown)
-        {
-            // --- DEBUG ---
-            Debug.Log("BOSS LOGIC: Performing MELEE attack");
-            PerformMeleeAttack();
-        }
-        // 3. Move (If out of melee range and not lasering)
-        else if (distance > meleeAttackRange)
-        {
-            // --- DEBUG ---
-            // Debug.Log("BOSS LOGIC: Moving to player");
-            Move();
-        }
-        // 4. Idle (in melee range but on cooldown)
-        else
-        {
-            anim.SetBool("canWalk", false);
-        }
-    }
-
-    void Move()
-    {
-        // Tell the Animator to play the walk/float animation
-        anim.SetBool("canWalk", true);
-
-        // Get the player's exact position
-        Vector2 targetPosition = target.transform.position; 
-
-        // Move directly towards the player's position
-        transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
-    }
-
-    void PerformLaserAttack()
-    {
-        isAttacking = true;
-        timeSinceLastLaser = 0f;
-        anim.SetBool("canWalk", false);
-        anim.SetTrigger("doLaser");
-    }
-
-    void PerformMeleeAttack()
-    {
-        isAttacking = true;
-        timeSinceLastMelee = 0f;
-        anim.SetBool("canWalk", false);
-        anim.SetTrigger("doMelee");
-    }
-
-    void PerformBlock()
-    {
-        isBlocking = true;
-        timeSinceLastBlock = 0f;
-        anim.SetBool("canWalk", false);
-        anim.SetTrigger("doBlock");
     }
 
     void Flip(float targetX)
@@ -231,75 +161,9 @@ public class Boss_Behavior : MonoBehaviour
         }
     }
 
-    // --- PUBLIC FUNCTIONS ---
-
-    public void OnTakeDamage()
-    {
-        if (isBlocking)
-        {
-            Debug.Log("BOSS: Attack Blocked!");
-            return;
-        }
-
-        if (timeSinceLastBlock >= blockCooldown && Random.value <= blockChance)
-        {
-            // --- DEBUG ---
-            Debug.Log("BOSS LOGIC: Decided to BLOCK");
-            PerformBlock();
-        }
-        else
-        {
-            Debug.Log("BOSS: Took damage!");
-            // anim.SetTrigger("doHurt"); 
-        }
-    }
-
-
-    // --- ANIMATION EVENT FUNCTIONS ---
-
-    public void ANIM_EVENT_FireLaser()
-    {
-        // --- DEBUG ---
-        Debug.Log("!!! ANIM_EVENT_FireLaser CALLED !!!");
-        Debug.Log("FIRING LASER!");
-    }
-
-    public void ANIM_EVENT_StartBlock()
-    {
-        // --- DEBUG ---
-        Debug.Log("!!! ANIM_EVENT_StartBlock CALLED !!!");
-        isBlocking = true;
-    }
-
-    public void ANIM_EVENT_EndBlock()
-    {
-        // --- DEBUG ---
-        Debug.Log("!!! ANIM_EVENT_EndBlock CALLED !!!");
-        isBlocking = false;
-    }
-
     public void ANIM_EVENT_AttackFinished()
     {
-        // --- DEBUG ---
-        Debug.Log("!!! ANIM_EVENT_AttackFinished CALLED !!!");
-        isAttacking = false;
-    }
-
-    public void ResetWeaponHitbox()
-    {
-        Damage weaponDamage = GetComponentInChildren<Damage>();
-        if (weaponDamage != null)
-        {
-            weaponDamage.hasHit = false;
-        }
-    }
-
-
-    void RaycastDebugger(Vector2 direction)
-    {
-        if (target == null) return;
-        
-        Color rayColor = (distance <= meleeAttackRange) ? Color.green : Color.red;
-        Debug.DrawRay(rayCast.position, direction * rayCastLength, rayColor);
+        Debug.Log("--- Attack finished, returning to Idle. ---");
+        currentState = AIState.Idle;
     }
 }
