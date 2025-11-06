@@ -2,12 +2,14 @@ using UnityEngine;
 
 public class Enemy_behavior : MonoBehaviour
 {
+
     public Transform rayCast;
     public LayerMask raycastMask;
     public float rayCastLength;
     public float attackDistance;
     public float moveSpeed;
     public float timer;
+    public float verticalTolerance = 0.5f;
 
     private RaycastHit2D hit;
     private GameObject target;
@@ -20,7 +22,6 @@ public class Enemy_behavior : MonoBehaviour
     private bool isFacingRight = true;
     private float originalScaleMagnitudeX;
 
-
     void Awake()
     {
         intTimer = timer;
@@ -30,10 +31,8 @@ public class Enemy_behavior : MonoBehaviour
 
     void Update()
     {
-  
         if (inRange && target != null)
         {
-  
             float targetX = target.transform.position.x;
             Vector2 direction = (targetX < transform.position.x) ? Vector2.left : Vector2.right;
 
@@ -56,7 +55,6 @@ public class Enemy_behavior : MonoBehaviour
             inRange = false;
         }
 
- 
         if (inRange == false)
         {
             anim.SetBool("canWalk", false);
@@ -79,7 +77,6 @@ public class Enemy_behavior : MonoBehaviour
         }
     }
 
-
     void EnemyLogic()
     {
         if (target == null) return;
@@ -100,10 +97,26 @@ public class Enemy_behavior : MonoBehaviour
     void Move()
     {
         anim.SetBool("canWalk", true);
+        if (target == null) return;
 
         if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Attack_State_Name"))
         {
-            Vector2 targetPosition = new Vector2(target.transform.position.x, transform.position.y);
+            
+            float yDifference = Mathf.Abs(target.transform.position.y - transform.position.y);
+
+            Vector2 targetPosition;
+
+            if (yDifference > verticalTolerance)
+            {
+                
+                targetPosition = new Vector2(transform.position.x, target.transform.position.y);
+            }
+            else
+            {
+                
+                targetPosition = new Vector2(target.transform.position.x, transform.position.y);
+            }
+
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
         }
     }
@@ -113,7 +126,6 @@ public class Enemy_behavior : MonoBehaviour
         attackMode = true;
         anim.SetBool("canWalk", false);
         anim.SetBool("Attack", true);
-
     }
 
     void Cooldown()
@@ -141,10 +153,8 @@ public class Enemy_behavior : MonoBehaviour
         timer = intTimer;
     }
 
-
     void Flip(float targetX)
     {
- 
         if (targetX > transform.position.x && !isFacingRight)
         {
             isFacingRight = true;
@@ -156,7 +166,6 @@ public class Enemy_behavior : MonoBehaviour
             transform.localScale = new Vector3(-originalScaleMagnitudeX, transform.localScale.y, transform.localScale.z);
         }
     }
-
 
     void RaycastDebugger()
     {
