@@ -430,7 +430,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   rayCastLength: 100
   verticalTolerance: 0.5
-  moveSpeed: 0
+  moveSpeed: 5
   meleeAttackRange: 0
   laserAttackRange: 15
   laserCooldown: 8

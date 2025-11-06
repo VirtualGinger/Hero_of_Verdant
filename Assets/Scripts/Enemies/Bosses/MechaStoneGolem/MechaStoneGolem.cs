@@ -183,20 +183,13 @@ public class Boss_Behavior : MonoBehaviour
 
     void Move()
     {
+        // Tell the Animator to play the walk/float animation
         anim.SetBool("canWalk", true);
-        
-        float yDifference = Mathf.Abs(target.transform.position.y - transform.position.y);
-        Vector2 targetPosition;
 
-        if (yDifference > verticalTolerance)
-        {
-            targetPosition = new Vector2(transform.position.x, target.transform.position.y);
-        }
-        else
-        {
-            targetPosition = new Vector2(target.transform.position.x, transform.position.y);
-        }
+        // Get the player's exact position
+        Vector2 targetPosition = target.transform.position; 
 
+        // Move directly towards the player's position
         transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
     }
 
