@@ -6,7 +6,7 @@ public class StartMenuController : MonoBehaviour
     public void OnStartClick()
     {
         // Loads the main game scene
-        SceneManager.LoadScene("Hero_Of_Verdant");
+        SceneManager.LoadScene("Main");
     }
 
     public void OnExitClick()
