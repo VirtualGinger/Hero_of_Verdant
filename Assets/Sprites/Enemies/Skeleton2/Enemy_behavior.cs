@@ -21,16 +21,26 @@ public class Enemy_behavior : MonoBehaviour
     private float intTimer;
     private bool isFacingRight = true;
     private float originalScaleMagnitudeX;
+    private EnemyHealth _enemyHealth;
+
 
     void Awake()
     {
         intTimer = timer;
         anim = GetComponent<Animator>();
         originalScaleMagnitudeX = Mathf.Abs(transform.localScale.x);
+        _enemyHealth = GetComponent<EnemyHealth>();
     }
 
     void Update()
     {
+        if (_enemyHealth.health <= 0)
+        {
+            anim.SetBool("canWalk", false);
+            anim.SetBool("Attack", false);
+            return;
+        }
+
         if (inRange && target != null)
         {
             float targetX = target.transform.position.x;
@@ -66,6 +76,8 @@ public class Enemy_behavior : MonoBehaviour
         {
             Cooldown();
         }
+
+        
     }
 
     void OnTriggerEnter2D(Collider2D trig)
