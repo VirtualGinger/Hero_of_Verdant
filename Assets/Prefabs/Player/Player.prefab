@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 5382058263955112682}
   - component: {fileID: 5053139134069728093}
   - component: {fileID: 4895193846188598555}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -332,6 +332,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Player_Combat
   anim: {fileID: 2406075309942896973}
   cooldown: 1
+  attackPoint: {fileID: 0}
+  radius: 0
+  enemies:
+    serializedVersion: 2
+    m_Bits: 0
+  attackDamage: 5
 --- !u!114 &5053139134069728093
 MonoBehaviour:
   m_ObjectHideFlags: 0
