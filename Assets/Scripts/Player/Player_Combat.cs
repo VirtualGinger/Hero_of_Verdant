@@ -11,7 +11,7 @@ public class Player_Combat : MonoBehaviour
     public Transform attackPoint;
     public float radius;
     public LayerMask enemies;
-    public float attackDamage = 2;
+    public float attackDamage = 5;
 
     private void Update()
     {
