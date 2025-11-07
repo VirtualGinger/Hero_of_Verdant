@@ -14,6 +14,14 @@ public class Boss_Behavior : MonoBehaviour
     [Header("Combat Stats")]
     public float laserAttackRange = 20f;
     public float laserCooldown = 5f;
+    // --- NEW ---
+    [Tooltip("How much damage the laser deals.")]
+    public int laserDamage = 10; // Changed to int for your Health script
+    [Tooltip("The empty GameObject where the laser fires from.")]
+    public Transform laserOriginPoint; 
+    [Tooltip("Set this to the layer your Player is on.")]
+    public LayerMask playerLayer; 
+    // --- END NEW ---
 
     [Header("Blocking")]
     public float blockHoldTime = 1.5f; // Configurable time to hold the block
@@ -25,7 +33,7 @@ public class Boss_Behavior : MonoBehaviour
     private bool inRange;
     private bool isFacingRight = true;
     private float originalScaleMagnitudeX;
-    private EnemyHealth _enemyHealth;
+    private EnemyHealth _enemyHealth; // Make sure this is BossHealth if you're using that
     private Rigidbody2D rb;
     private float timeSinceLastLaser;
     private float blockTimer;
@@ -43,6 +51,13 @@ public class Boss_Behavior : MonoBehaviour
         timeSinceLastLaser = laserCooldown;
 
         if (rb == null) { Debug.LogError("BOSS IS MISSING RIGIDBODY2D!"); }
+        
+        // --- NEW ---
+        if (laserOriginPoint == null) 
+        {
+            Debug.LogError("BOSS IS MISSING 'laserOriginPoint' TRANSFORM!");
+        }
+        // --- END NEW ---
     }
 
     void Update()
@@ -95,44 +110,32 @@ public class Boss_Behavior : MonoBehaviour
 
             case AIState.Repositioning:
                 
-                // --- (This "player escaped" fix is still here) ---
                 if (target == null || distance > laserAttackRange) 
                 {
-                    currentState = AIState.Idle; // Player got away, go back to idle
-                    anim.SetBool("canWalk", false); // --- NEW: Stop anim
-                    rb.linearVelocity = Vector2.zero; // --- NEW: Stop moving
+                    currentState = AIState.Idle;
+                    anim.SetBool("canWalk", false);
+                    rb.linearVelocity = Vector2.zero;
                     break;
                 }
-                // --- END FIX ---
 
                 // Get difference on BOTH axes
                 float yDifference = target.transform.position.y - transform.position.y;
-                float xDifference = target.transform.position.x - transform.position.x; // --- NEW ---
+                float xDifference = target.transform.position.x - transform.position.x;
 
                 if (Mathf.Abs(yDifference) > verticalAlignmentTolerance)
                 {
-                    // --- MODIFIED BLOCK ---
                     // Y is not aligned, so we move.
-                    
-                    // Get the direction for both axes
                     float yDir = Mathf.Sign(yDifference);
                     float xDir = Mathf.Sign(xDifference);
                     
-                    // Create a combined direction vector (e.g., [1, 1] or [-1, 1])
                     Vector2 moveDirection = new Vector2(xDir, yDir);
                     
-                    // Normalize it and apply speed
-                    // .normalized ensures the boss doesn't move faster on diagonals
                     rb.linearVelocity = moveDirection.normalized * moveSpeed;
                     
-                    // This line is in your code, but as you said,
-                    // you have no "walk" animation. It's safe to
-                    // keep or remove.
                     anim.SetBool("canWalk", true); 
                 }
                 else
                 {
-                    // --- (This block is unchanged) ---
                     // We are aligned AND player is still in range. ATTACK.
                     rb.linearVelocity = Vector2.zero;
                     anim.SetBool("canWalk", false);
@@ -140,7 +143,6 @@ public class Boss_Behavior : MonoBehaviour
                 }
                 break;
 
-            // --- STATE 3: ATTACKING ---
             case AIState.Attacking:
                 rb.linearVelocity = Vector2.zero;
                 anim.SetBool("canWalk", false);
@@ -192,6 +194,44 @@ public class Boss_Behavior : MonoBehaviour
         anim.SetTrigger("doLaser");
     }
 
+    // --- NEW FUNCTION ---
+    /// <summary>
+    /// This function is called by an animation event.
+    /// It fires a raycast to damage the player.
+    /// </summary>
+    public void ANIM_EVENT_FireLaser()
+    {
+        if (target == null) return; // Player is gone
+
+        // Ensure we're aiming at the player's current position
+        Vector2 direction = (target.transform.position - laserOriginPoint.position).normalized;
+
+        // Draw a debug ray so you can see it in the Scene view
+        Debug.DrawRay(laserOriginPoint.position, direction * laserAttackRange, Color.red, 2f);
+
+        // Fire the raycast
+        RaycastHit2D hit = Physics2D.Raycast(
+            laserOriginPoint.position, 
+            direction, 
+            laserAttackRange, 
+            playerLayer // This makes sure it ONLY hits the player
+        );
+
+        if (hit.collider != null)
+        {
+            // We hit something on the player layer!
+            // Try to get the Health script from it.
+            Health playerHealth = hit.collider.GetComponent<Health>();
+            if (playerHealth != null)
+            {
+                // We found it. Deal damage!
+                // We pass the damage (as an int) and this boss's GameObject as the "sender"
+                playerHealth.TakeDamage(laserDamage, this.gameObject);
+            }
+        }
+    }
+    // --- END NEW FUNCTION ---
+
     void OnTriggerEnter2D(Collider2D trig)
     {
         if (trig.gameObject.CompareTag("Player"))
@@ -229,13 +269,11 @@ public class Boss_Behavior : MonoBehaviour
 
     public void ANIM_EVENT_AttackFinished()
     {
-
         if (currentState == AIState.Blocking)
         {
             Debug.Log("--- Attack finished, BUT we are blocking. ---");
             return;
         }
-
 
         Debug.Log("--- Attack finished, returning to Idle. ---");
         currentState = AIState.Idle;

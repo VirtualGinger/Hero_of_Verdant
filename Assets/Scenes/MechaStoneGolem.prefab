@@ -290,6 +290,37 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.30238974, y: 0.29426417}
   m_EdgeRadius: 0
+--- !u!1 &5399550879957819032
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 157993380460746067}
+  m_Layer: 6
+  m_Name: LaserFirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &157993380460746067
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5399550879957819032}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2242301106732170221}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7342112413600213126
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,6 +360,7 @@ Transform:
   - {fileID: 5435586391145370948}
   - {fileID: 8609940226896615390}
   - {fileID: 3952548050647900463}
+  - {fileID: 157993380460746067}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3781958437367352696
@@ -427,6 +459,11 @@ MonoBehaviour:
   verticalAlignmentTolerance: 0.5
   laserAttackRange: 15
   laserCooldown: 0.5
+  laserDamage: 10
+  laserOriginPoint: {fileID: 157993380460746067}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
   blockHoldTime: 3
 --- !u!70 &4750979481427619335
 CapsuleCollider2D:
@@ -473,7 +510,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7342112413600213126}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -507,6 +544,7 @@ MonoBehaviour:
   health: 10
   currentHealth: 10
   hitsToBlock: 3
+  deathDisappearDelay: 3
 --- !u!1 &8588402587785079280
 GameObject:
   m_ObjectHideFlags: 0
