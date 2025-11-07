@@ -73,51 +73,62 @@ public class Boss_Behavior : MonoBehaviour
     }
 
     void UpdateAIState()
-    {
-        Debug.Log("Current AI State: " + currentState.ToString());
-
-        // Always face the player
-        Flip(target.transform.position.x);
-        distance = Vector2.Distance(transform.position, target.transform.position);
-
-        switch (currentState)
         {
-            // --- STATE 1: IDLE ---
-            case AIState.Idle:
-                anim.SetBool("canWalk", false);
-                rb.linearVelocity = Vector2.zero;
+            // Always face the player and get distance
+            Flip(target.transform.position.x);
+            distance = Vector2.Distance(transform.position, target.transform.position);
 
-                if (timeSinceLastLaser >= laserCooldown && distance <= laserAttackRange)
-                {
-                    currentState = AIState.Repositioning;
-                }
-                break;
+            switch (currentState)
+            {
+                // --- STATE 1: IDLE ---
+                case AIState.Idle:
+                    anim.SetBool("canWalk", false);
+                    rb.linearVelocity = Vector2.zero;
 
-            // --- STATE 2: REPOSITIONING ---
-            case AIState.Repositioning:
-                float yDifference = target.transform.position.y - transform.position.y;
+                    // Check if cooldown is ready AND player is in range
+                    if (timeSinceLastLaser >= laserCooldown && distance <= laserAttackRange)
+                    {
+                        currentState = AIState.Repositioning;
+                    }
+                    break;
 
-                if (Mathf.Abs(yDifference) > verticalAlignmentTolerance)
-                {
-                    rb.linearVelocity = new Vector2(0, Mathf.Sign(yDifference) * moveSpeed);
-                    anim.SetBool("canWalk", true);
-                }
-                else
-                {
+                // --- STATE 2: REPOSITIONING ---
+                case AIState.Repositioning:
+                    
+                    // --- THIS IS THE FIX ---
+                    // Check if player escaped WHILE we are moving
+                    if (distance > laserAttackRange) 
+                    {
+                        currentState = AIState.Idle; // Player got away, go back to idle
+                        break;
+                    }
+                    // --- END FIX ---
+
+                    float yDifference = target.transform.position.y - transform.position.y;
+
+                    if (Mathf.Abs(yDifference) > verticalAlignmentTolerance)
+                    {
+                        // Not aligned yet, keep moving
+                        rb.linearVelocity = new Vector2(0, Mathf.Sign(yDifference) * moveSpeed);
+                        anim.SetBool("canWalk", true);
+                    }
+                    else
+                    {
+                        // We are aligned AND player is still in range. ATTACK.
+                        rb.linearVelocity = Vector2.zero;
+                        anim.SetBool("canWalk", false);
+                        PerformLaserAttack();
+                    }
+                    break;
+
+                // --- STATE 3: ATTACKING ---
+                case AIState.Attacking:
                     rb.linearVelocity = Vector2.zero;
                     anim.SetBool("canWalk", false);
-                    PerformLaserAttack();
-                }
-                break;
-
-            // --- STATE 3: ATTACKING ---
-            case AIState.Attacking:
-                rb.linearVelocity = Vector2.zero;
-                anim.SetBool("canWalk", false);
-                // Waiting for animation event...
-                break;
+                    // Waiting for animation event...
+                    break;
+            }
         }
-    }
     
     void PerformLaserAttack()
     {
