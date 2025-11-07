@@ -94,28 +94,46 @@ public class Boss_Behavior : MonoBehaviour
                 break;
 
             case AIState.Repositioning:
-
-                if (target == null)
+                
+                // --- (This "player escaped" fix is still here) ---
+                if (target == null || distance > laserAttackRange) 
                 {
-                    currentState = AIState.Idle;
+                    currentState = AIState.Idle; // Player got away, go back to idle
+                    anim.SetBool("canWalk", false); // --- NEW: Stop anim
+                    rb.linearVelocity = Vector2.zero; // --- NEW: Stop moving
                     break;
                 }
+                // --- END FIX ---
 
-                if (distance > laserAttackRange)
-                {
-                    currentState = AIState.Idle;
-                    break;
-                }
-
+                // Get difference on BOTH axes
                 float yDifference = target.transform.position.y - transform.position.y;
+                float xDifference = target.transform.position.x - transform.position.x; // --- NEW ---
 
                 if (Mathf.Abs(yDifference) > verticalAlignmentTolerance)
                 {
-                    rb.linearVelocity = new Vector2(0, Mathf.Sign(yDifference) * moveSpeed);
-                    anim.SetBool("canWalk", true);
+                    // --- MODIFIED BLOCK ---
+                    // Y is not aligned, so we move.
+                    
+                    // Get the direction for both axes
+                    float yDir = Mathf.Sign(yDifference);
+                    float xDir = Mathf.Sign(xDifference);
+                    
+                    // Create a combined direction vector (e.g., [1, 1] or [-1, 1])
+                    Vector2 moveDirection = new Vector2(xDir, yDir);
+                    
+                    // Normalize it and apply speed
+                    // .normalized ensures the boss doesn't move faster on diagonals
+                    rb.linearVelocity = moveDirection.normalized * moveSpeed;
+                    
+                    // This line is in your code, but as you said,
+                    // you have no "walk" animation. It's safe to
+                    // keep or remove.
+                    anim.SetBool("canWalk", true); 
                 }
                 else
                 {
+                    // --- (This block is unchanged) ---
+                    // We are aligned AND player is still in range. ATTACK.
                     rb.linearVelocity = Vector2.zero;
                     anim.SetBool("canWalk", false);
                     PerformLaserAttack();
