@@ -6,44 +6,35 @@ using UnityEngine.InputSystem;
 public class Player_Movement : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    public float dashSpeed = 10f;
-    bool isDashing = false;
-    float dashDuration = 1f;
-    float dashCooldown = 1f;
     public Rigidbody2D rb;
     public Animator animator;
     Vector2 movement;
     private Vector2 LastDirection = Vector2.down;
     public Player_Combat player_Combat;
+    public Player_Dash player_Dash;
     
 
-    private void Update()
-    {
-    if (Input.GetButtonDown("Slash"))
-    {
+    private void Update(){
+    if (Input.GetButtonDown("Slash")){
         player_Combat.Attack(LastDirection);
     }
+    if (Input.GetButtonDown("Dash")){
+        player_Dash.Dash(LastDirection);
+    }
+        if (Input.GetButtonDown("Dash"))
+        {
+            Debug.Log("DASH BUTTON PRESSED");
+        }
 
-    if (Input.GetButtonDown("Dash") && dashCooldown <= 0f && !isDashing)
-    {
-        StartCoroutine(Dash());
     }
 
-    if (dashCooldown > 0f)
-    {
-        dashCooldown -= Time.deltaTime;
-    }
-    }
 
+    void FixedUpdate(){
 
-    void FixedUpdate()
-    {
-        if (isDashing) return;
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
-        if (movement != Vector2.zero)
-        {
+        if (movement != Vector2.zero){
             LastDirection = movement;
         }
 
@@ -55,21 +46,6 @@ public class Player_Movement : MonoBehaviour
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 
-    IEnumerator Dash()
-{
-    isDashing = true;
-
-    Vector2 dashDirection = LastDirection.normalized;
-
-    while (dashDuration > 0f)
-    {
-        rb.MovePosition(rb.position + dashDirection * dashSpeed * Time.fixedDeltaTime);
-        dashDuration -= Time.fixedDeltaTime;
-        yield return new WaitForFixedUpdate();
-    }
-
-    isDashing = false;
-}
 
 
 }

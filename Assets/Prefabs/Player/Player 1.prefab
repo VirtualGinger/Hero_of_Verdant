@@ -256,6 +256,7 @@ GameObject:
   - component: {fileID: 6991513580498146841}
   - component: {fileID: 7154983725960886817}
   - component: {fileID: 7497402651908298107}
+  - component: {fileID: -8213209023827169339}
   m_Layer: 7
   m_Name: Player 1
   m_TagString: Player
@@ -417,7 +418,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player_Movement
   moveSpeed: 5
-  dashSpeed: 10
   rb: {fileID: 4070973623107643072}
   animator: {fileID: 3214773884296449344}
   player_Combat: {fileID: 3127449935229046115}
@@ -699,6 +699,23 @@ MonoBehaviour:
   health: 100
   maxHealth: 0
   HealthBar: {fileID: 5959726048801297571}
+--- !u!114 &-8213209023827169339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2732875580707248230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddf33f38c24c6a49b14cce8b587771e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player_Dash
+  anim: {fileID: 0}
+  rb: {fileID: 0}
+  dashSpeed: 12
+  dashDuration: 0.2
+  cooldown: 1
 --- !u!1 &5983841871634880345
 GameObject:
   m_ObjectHideFlags: 0
