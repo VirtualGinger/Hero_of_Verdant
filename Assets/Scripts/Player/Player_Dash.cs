@@ -18,11 +18,9 @@ public class Player_Dash : MonoBehaviour
 
     void Update()
     {
-        // Dash cooldown
         if (cooldownTimer > 0)
             cooldownTimer -= Time.deltaTime;
 
-        // Handle dash movement
         if (isDashing)
         {
             dashTimer -= Time.deltaTime;
@@ -44,7 +42,6 @@ public class Player_Dash : MonoBehaviour
 
         dashDir = direction.normalized;
 
-        // Set animator
         anim.SetFloat("Horizontal", dashDir.x);
         anim.SetFloat("Vertical", dashDir.y);
         anim.SetBool("IsDashing", true);

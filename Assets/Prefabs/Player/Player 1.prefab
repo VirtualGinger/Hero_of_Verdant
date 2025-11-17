@@ -247,16 +247,13 @@ GameObject:
   - component: {fileID: 6024801467228614974}
   - component: {fileID: 172429257614280849}
   - component: {fileID: 4070973623107643072}
-  - component: {fileID: 5848285007331769806}
   - component: {fileID: 5185988799711075727}
   - component: {fileID: 3214773884296449344}
-  - component: {fileID: 3127449935229046115}
   - component: {fileID: 3396602921916083125}
   - component: {fileID: 1720201527417727969}
   - component: {fileID: 6991513580498146841}
   - component: {fileID: 7154983725960886817}
   - component: {fileID: 7497402651908298107}
-  - component: {fileID: -8213209023827169339}
   - component: {fileID: 3614367086094711156}
   m_Layer: 7
   m_Name: Player 1
@@ -406,23 +403,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &5848285007331769806
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2732875580707248230}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b094407657a63b4689eac9500702a79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Player_Movement
-  moveSpeed: 5
-  rb: {fileID: 4070973623107643072}
-  animator: {fileID: 3214773884296449344}
-  player_Combat: {fileID: 3127449935229046115}
-  player_Dash: {fileID: 0}
 --- !u!114 &5185988799711075727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -563,27 +543,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &3127449935229046115
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2732875580707248230}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6cdb204a89b3ae44a6ad5e3b9a55732, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Player_Combat
-  anim: {fileID: 3214773884296449344}
-  attackPoint: {fileID: 8605879144149488036}
-  radius: 0
-  attackDamage: 2
-  cooldown: 1
-  enemyLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  playerController: {fileID: 0}
 --- !u!114 &3396602921916083125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -650,7 +609,7 @@ MonoBehaviour:
   OnDone:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5848285007331769806}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Player_Movement, Assembly-CSharp
         m_MethodName: set_enabled
         m_Mode: 6
@@ -702,23 +661,6 @@ MonoBehaviour:
   health: 100
   maxHealth: 0
   HealthBar: {fileID: 5959726048801297571}
---- !u!114 &-8213209023827169339
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2732875580707248230}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ddf33f38c24c6a49b14cce8b587771e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Player_Dash
-  rb: {fileID: 0}
-  anim: {fileID: 0}
-  dashSpeed: 12
-  dashDuration: 0.2
-  dashCooldown: 0.8
 --- !u!114 &3614367086094711156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -734,13 +676,13 @@ MonoBehaviour:
   rb: {fileID: 4070973623107643072}
   animator: {fileID: 3214773884296449344}
   moveSpeed: 5
-  dashSpeed: 14
-  dashDuration: 0.12
-  dashCooldown: 0.8
+  dashSpeed: 12
+  dashDuration: 0.2
+  dashCooldown: 1
   attackPoint: {fileID: 0}
   attackRadius: 0.75
   attackDamage: 5
-  attackCooldown: 0.5
+  attackCooldown: 0.2
   enemyLayers:
     serializedVersion: 2
     m_Bits: 64

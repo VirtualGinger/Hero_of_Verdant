@@ -1,8 +1,12 @@
 using UnityEngine;
+using UnityEngine.UI;
 
-[RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour
 {
+    [Header("UI")]
+    public Image attackIcon;
+    public Image dashIcon;
+
     [Header("Components")]
     public Rigidbody2D rb;
     public Animator animator;
@@ -29,7 +33,6 @@ public class PlayerController : MonoBehaviour
     public LayerMask enemyLayers;
     private float attackTimer = 0f;
 
-    // Expose read-only
     public bool IsDashing => isDashing;
 
     void Reset()
@@ -40,7 +43,6 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        // Input
         float hx = Input.GetAxisRaw("Horizontal");
         float vy = Input.GetAxisRaw("Vertical");
         movement = new Vector2(hx, vy);
@@ -48,7 +50,6 @@ public class PlayerController : MonoBehaviour
         if (movement.sqrMagnitude > 0.0001f)
             lastDirection = movement.normalized;
 
-        // Update animator
         if (!isDashing && attackTimer <= 0f)
         {
             animator.SetFloat("Horizontal", lastDirection.x);
@@ -56,19 +57,15 @@ public class PlayerController : MonoBehaviour
             animator.SetFloat("Speed", movement.sqrMagnitude);
         }
 
-        // Dash input
         if (Input.GetButtonDown("Dash"))
             StartDash(lastDirection);
 
-        // Attack input
         if (Input.GetButtonDown("Slash"))
             TryAttack();
 
-        // Timers
         if (cooldownTimer > 0f) cooldownTimer -= Time.deltaTime;
         if (attackTimer > 0f) attackTimer -= Time.deltaTime;
 
-        // Dash handling
         if (isDashing)
         {
             dashTimer -= Time.deltaTime;
@@ -77,6 +74,22 @@ public class PlayerController : MonoBehaviour
             if (dashTimer <= 0f)
                 StopDash();
         }
+
+        if (attackIcon != null)
+        {
+            if (attackTimer > 0f)
+                attackIcon.fillAmount = 1 - (attackTimer / attackCooldown);
+            else
+                attackIcon.fillAmount = 1f;
+        }
+
+        if (dashIcon != null)
+        {
+            if (cooldownTimer > 0f)
+                dashIcon.fillAmount = 1 - (cooldownTimer / dashCooldown);
+            else
+                dashIcon.fillAmount = 1f;
+        }
     }
 
     void FixedUpdate()
@@ -84,7 +97,6 @@ public class PlayerController : MonoBehaviour
         if (isDashing)
             return;
 
-        // Normal movement
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 

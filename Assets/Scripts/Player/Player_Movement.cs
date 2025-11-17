@@ -31,7 +31,6 @@ public class Player_Movement : MonoBehaviour
 
     void FixedUpdate()
 {
-    // DO NOT MOVE WHILE DASHING
     if (player_Dash.IsDashing)
         return;
 
@@ -39,7 +38,6 @@ public class Player_Movement : MonoBehaviour
     movement.x = Input.GetAxisRaw("Horizontal");
     movement.y = Input.GetAxisRaw("Vertical");
 
-    // Update LastDirection only when moving
     if (movement.sqrMagnitude > 0.01f)
         LastDirection = movement.normalized;
 
@@ -47,8 +45,6 @@ public class Player_Movement : MonoBehaviour
     animator.SetFloat("Horizontal", LastDirection.x);
     animator.SetFloat("Vertical", LastDirection.y);
     animator.SetFloat("Speed", movement.sqrMagnitude);
-
-    // Move player normally
     rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
 }
 

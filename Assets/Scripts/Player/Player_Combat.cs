@@ -23,22 +23,18 @@ public class Player_Combat : MonoBehaviour
 
     public void Attack(Vector2 direction)
     {
-        // Enforce cooldown
         if (attackTimer > 0f)
             return;
 
         attackTimer = cooldown;
 
-        // Update animation parameters
         anim.SetBool("IsAttacking", true);
         anim.SetFloat("AttackX", direction.x);
         anim.SetFloat("AttackY", direction.y);
 
-        // Calculate attack origin relative to facing direction
         Vector3 offset = GetAttackOffset(direction);
         Vector3 attackPos = transform.position + offset;
 
-        // Damage enemies in the radius
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPos, radius, enemyLayers);
 
         foreach (Collider2D enemy in hitEnemies)
@@ -49,28 +45,19 @@ public class Player_Combat : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Determines where the attack should be positioned based on direction.
-    /// </summary>
     private Vector3 GetAttackOffset(Vector2 dir)
     {
-        // Prioritize vertical direction
         if (dir.y > 0.5f)
-            return Vector3.up * 1f;       // Up
+            return Vector3.up * 1f;
         else if (dir.y < -0.5f)
-            return Vector3.down * 1f;     // Down
+            return Vector3.down * 1f;
         else if (dir.x > 0.5f)
-            return Vector3.right * 1f;    // Right
+            return Vector3.right * 1f;
         else if (dir.x < -0.5f)
-            return Vector3.left * 1f;     // Left
+            return Vector3.left * 1f;
 
-        // If diagonal or small, use normalized direction
         return new Vector3(dir.x, dir.y, 0).normalized * 1f;
     }
-
-    /// <summary>
-    /// Called by Animation Event at end of attack animation.
-    /// </summary>
     public void FinishAttack()
     {
         anim.SetBool("IsAttacking", false);
