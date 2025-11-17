@@ -2,43 +2,56 @@ using UnityEngine;
 
 public class Player_Dash : MonoBehaviour
 {
-    public Animator anim;
     public Rigidbody2D rb;
+    public Animator anim;
 
     public float dashSpeed = 12f;
-    public float dashDuration = 0.2f;
-    public float cooldown = 1f;
+    public float dashDuration = 0.15f;
+    public float dashCooldown = 0.8f;
 
-    private float timer;
     private bool isDashing = false;
-    private Vector2 dashDirection;
+    private float dashTimer = 0f;
+    private float cooldownTimer = 0f;
+    private Vector2 dashDir;
 
-    private void Update()
+    public bool IsDashing => isDashing;
+
+    void Update()
     {
-        if (timer > 0)
-            timer -= Time.deltaTime;
+        // Dash cooldown
+        if (cooldownTimer > 0)
+            cooldownTimer -= Time.deltaTime;
 
+        // Handle dash movement
         if (isDashing)
         {
-            rb.linearVelocity = dashDirection * dashSpeed;
+            dashTimer -= Time.deltaTime;
+
+            rb.linearVelocity = dashDir * dashSpeed;
+
+            if (dashTimer <= 0)
+                StopDash();
         }
     }
 
-    public void Dash(Vector2 direction)
+    public void StartDash(Vector2 direction)
     {
-        if (timer > 0 || isDashing)
+        if (isDashing || cooldownTimer > 0)
             return;
 
-        timer = cooldown;
-        dashDirection = direction.normalized;
+        if (direction == Vector2.zero)
+            direction = Vector2.down;
 
-        anim.SetFloat("Vertical", direction.y);
-        anim.SetFloat("Horizontal", direction.x);
+        dashDir = direction.normalized;
+
+        // Set animator
+        anim.SetFloat("Horizontal", dashDir.x);
+        anim.SetFloat("Vertical", dashDir.y);
         anim.SetBool("IsDashing", true);
 
         isDashing = true;
-
-        Invoke(nameof(StopDash), dashDuration);
+        dashTimer = dashDuration;
+        cooldownTimer = dashCooldown;
     }
 
     private void StopDash()

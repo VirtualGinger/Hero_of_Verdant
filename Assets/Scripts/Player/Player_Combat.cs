@@ -2,83 +2,86 @@ using UnityEngine;
 
 public class Player_Combat : MonoBehaviour
 {
+    [Header("Components")]
     public Animator anim;
-    public float cooldown = 1;
-    
-    private float timer;
-
-
     public Transform attackPoint;
-    public float radius;
-    public LayerMask enemies;
-    public float attackDamage = 5;
 
-    private void Update()
+    [Header("Attack Settings")]
+    public float radius = 0.75f;
+    public float attackDamage = 5f;
+    public float cooldown = 0.5f;
+    public LayerMask enemyLayers;
+
+    private float attackTimer = 0f;
+    public PlayerController playerController;
+
+    void Update()
     {
-        if (timer > 0)
-        {
-            timer -= Time.deltaTime;
-        }
+        if (attackTimer > 0f)
+            attackTimer -= Time.deltaTime;
     }
 
-public void Attack(Vector2 direction)
-{
-    anim.SetFloat("AttackX", direction.x);
-    anim.SetFloat("AttackY", direction.y);
-
-    if (timer <= 0)
+    public void Attack(Vector2 direction)
     {
+        // Enforce cooldown
+        if (attackTimer > 0f)
+            return;
+
+        attackTimer = cooldown;
+
+        // Update animation parameters
         anim.SetBool("IsAttacking", true);
-        timer = cooldown;
+        anim.SetFloat("AttackX", direction.x);
+        anim.SetFloat("AttackY", direction.y);
 
-        Vector3 attackPos = transform.position;
+        // Calculate attack origin relative to facing direction
+        Vector3 offset = GetAttackOffset(direction);
+        Vector3 attackPos = transform.position + offset;
 
-        if (direction == Vector2.up)
-            attackPos += Vector3.up * 1f;
-        else if (direction == Vector2.down)
-            attackPos += Vector3.down * 1f;
-        else if (direction == Vector2.left)
-            attackPos += Vector3.left * 1f;
-        else if (direction == Vector2.right)
-            attackPos += Vector3.right * 1f;
-        else
-            attackPos += new Vector3(direction.x, direction.y, 0).normalized * 1f;
-
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPos, radius, enemies);
+        // Damage enemies in the radius
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPos, radius, enemyLayers);
 
         foreach (Collider2D enemy in hitEnemies)
         {
-            Debug.Log("Enemy Hit: " + enemy.name);
-
             EnemyHealth hp = enemy.GetComponent<EnemyHealth>();
             if (hp != null)
-            {
                 hp.health -= attackDamage;
-            }
         }
     }
-}
-    
-public void FinishAttack()
-{
-    anim.SetBool("IsAttacking", false);
-}
 
-//public void attack()
-  //  {
-
-//    }
-
-
-
-private void OnDrawGizmosSelected()
-{
-    if (attackPoint != null)
+    /// <summary>
+    /// Determines where the attack should be positioned based on direction.
+    /// </summary>
+    private Vector3 GetAttackOffset(Vector2 dir)
     {
-        Gizmos.color = Color.red;
+        // Prioritize vertical direction
+        if (dir.y > 0.5f)
+            return Vector3.up * 1f;       // Up
+        else if (dir.y < -0.5f)
+            return Vector3.down * 1f;     // Down
+        else if (dir.x > 0.5f)
+            return Vector3.right * 1f;    // Right
+        else if (dir.x < -0.5f)
+            return Vector3.left * 1f;     // Left
 
-        Vector3 attackPos = attackPoint.transform.position;
-        Gizmos.DrawWireSphere(attackPos, radius);
+        // If diagonal or small, use normalized direction
+        return new Vector3(dir.x, dir.y, 0).normalized * 1f;
     }
-}
+
+    /// <summary>
+    /// Called by Animation Event at end of attack animation.
+    /// </summary>
+    public void FinishAttack()
+    {
+        anim.SetBool("IsAttacking", false);
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        if (attackPoint == null)
+            return;
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackPoint.position, radius);
+    }
 }

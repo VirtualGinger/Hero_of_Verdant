@@ -257,6 +257,7 @@ GameObject:
   - component: {fileID: 7154983725960886817}
   - component: {fileID: 7497402651908298107}
   - component: {fileID: -8213209023827169339}
+  - component: {fileID: 3614367086094711156}
   m_Layer: 7
   m_Name: Player 1
   m_TagString: Player
@@ -412,7 +413,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2732875580707248230}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b094407657a63b4689eac9500702a79, type: 3}
   m_Name: 
@@ -421,6 +422,7 @@ MonoBehaviour:
   rb: {fileID: 4070973623107643072}
   animator: {fileID: 3214773884296449344}
   player_Combat: {fileID: 3127449935229046115}
+  player_Dash: {fileID: 0}
 --- !u!114 &5185988799711075727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -568,19 +570,20 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2732875580707248230}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6cdb204a89b3ae44a6ad5e3b9a55732, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player_Combat
   anim: {fileID: 3214773884296449344}
-  cooldown: 1
   attackPoint: {fileID: 8605879144149488036}
   radius: 0
-  enemies:
-    serializedVersion: 2
-    m_Bits: 64
   attackDamage: 2
+  cooldown: 1
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  playerController: {fileID: 0}
 --- !u!114 &3396602921916083125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -706,16 +709,41 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2732875580707248230}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ddf33f38c24c6a49b14cce8b587771e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player_Dash
-  anim: {fileID: 0}
   rb: {fileID: 0}
+  anim: {fileID: 0}
   dashSpeed: 12
   dashDuration: 0.2
-  cooldown: 1
+  dashCooldown: 0.8
+--- !u!114 &3614367086094711156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2732875580707248230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fd3b832f45de404dacd79aaa6447985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  rb: {fileID: 4070973623107643072}
+  animator: {fileID: 3214773884296449344}
+  moveSpeed: 5
+  dashSpeed: 14
+  dashDuration: 0.12
+  dashCooldown: 0.8
+  attackPoint: {fileID: 0}
+  attackRadius: 0.75
+  attackDamage: 5
+  attackCooldown: 0.5
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &5983841871634880345
 GameObject:
   m_ObjectHideFlags: 0

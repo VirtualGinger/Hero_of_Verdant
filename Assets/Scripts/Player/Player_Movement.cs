@@ -19,7 +19,7 @@ public class Player_Movement : MonoBehaviour
         player_Combat.Attack(LastDirection);
     }
     if (Input.GetButtonDown("Dash")){
-        player_Dash.Dash(LastDirection);
+        player_Dash.StartDash(LastDirection);
     }
         if (Input.GetButtonDown("Dash"))
         {
@@ -29,23 +29,28 @@ public class Player_Movement : MonoBehaviour
     }
 
 
-    void FixedUpdate(){
+    void FixedUpdate()
+{
+    // DO NOT MOVE WHILE DASHING
+    if (player_Dash.IsDashing)
+        return;
 
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+    Vector2 movement;
+    movement.x = Input.GetAxisRaw("Horizontal");
+    movement.y = Input.GetAxisRaw("Vertical");
 
-        if (movement != Vector2.zero){
-            LastDirection = movement;
-        }
+    // Update LastDirection only when moving
+    if (movement.sqrMagnitude > 0.01f)
+        LastDirection = movement.normalized;
 
-        player_Combat.attackPoint.transform.localPosition = LastDirection.normalized * 0.75f;
+    // Animate
+    animator.SetFloat("Horizontal", LastDirection.x);
+    animator.SetFloat("Vertical", LastDirection.y);
+    animator.SetFloat("Speed", movement.sqrMagnitude);
 
-        animator.SetFloat("Horizontal", LastDirection.x);
-        animator.SetFloat("Vertical", LastDirection.y);
-        animator.SetFloat("Speed", movement.sqrMagnitude);
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
-    }
-
+    // Move player normally
+    rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+}
 
 
 }
