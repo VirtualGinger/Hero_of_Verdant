@@ -199,7 +199,21 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = spawn.transform.position;
         }
+
+        PlayerHealth playerHealth = GetComponent<PlayerHealth>();
+        if (playerHealth != null)
+        {
+            playerHealth.maxHealth = 100f;
+            playerHealth.health = 100f;
+
+            // Update UI immediately
+            if (playerHealth.HealthBar != null)
+            {
+                playerHealth.HealthBar.fillAmount = 1f;
+            }
+
+            Debug.Log("Player health reset to 100 on scene load.");
+        }
+
     }
-
-
 }
