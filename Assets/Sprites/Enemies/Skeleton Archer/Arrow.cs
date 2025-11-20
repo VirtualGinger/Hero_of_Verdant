@@ -5,6 +5,8 @@ public class Arrow : MonoBehaviour
 
     public int damage = 5;
     public Vector2 moveSpeed = new Vector2(3f, 0);
+    private GameObject target;
+
 
     Rigidbody2D rb;
 
@@ -16,22 +18,16 @@ public class Arrow : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        rb.linearVelocity = new Vector2(moveSpeed * transform.localScale.x, moveSpeed.y);
+        rb.linearVelocity = new Vector2(moveSpeed.x * transform.localScale.x, moveSpeed.y);
     }
 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Damageable damageable = collision.GetComponent<Damageable>();
-
-        if (damageable != null)
+        if (collision.gameObject.CompareTag("Player"))
         {
-            bool gotHit = damageable.Hit(damage);
-
-            if(gotHit)
-            {
-                Debug.Log("arrow hit");
-            }
+            target = collision.gameObject;
+            Debug.Log("Arrow hit Player");
         }
     }
 
