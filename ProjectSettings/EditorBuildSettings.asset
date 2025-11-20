@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Hero_Of_Verdant_2.unity
     guid: 356574fb57a7c3c409a660a3442dc122
   - enabled: 1
+    path: Assets/Scenes/Dungeon_Two.unity
+    guid: 670ffc2c6e2e7824596acdc398ad4187
+  - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: e7399833bf7241048b69f86032a7bca9
   m_configObjects:
