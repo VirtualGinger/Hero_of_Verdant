@@ -28,6 +28,7 @@ public class Arrow : MonoBehaviour
         {
             target = collision.gameObject;
             Debug.Log("Arrow hit Player");
+            Destroy(gameObject);
         }
     }
 
