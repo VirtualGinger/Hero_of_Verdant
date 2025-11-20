@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class BossHealth : EnemyHealth
 {
@@ -70,8 +72,17 @@ public class BossHealth : EnemyHealth
 
             // --- ADD THIS LINE ---
             // Tell Unity to destroy this boss GameObject after 'deathDisappearDelay' seconds
-            Destroy(gameObject, deathDisappearDelay);
+            //Destroy(gameObject, deathDisappearDelay);
+            StartCoroutine(DeathSequence());
         }
         // --- END MODIFIED ---
+    }
+
+    private IEnumerator DeathSequence()
+    {
+        yield return new WaitForSeconds(deathDisappearDelay);
+
+        SceneManager.LoadScene("Hero_of_Verdant_2");
+        Destroy(gameObject);
     }
 }
