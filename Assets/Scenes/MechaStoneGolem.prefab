@@ -332,10 +332,10 @@ GameObject:
   - component: {fileID: 2242301106732170221}
   - component: {fileID: 3781958437367352696}
   - component: {fileID: 6009521383448834377}
-  - component: {fileID: 6812971150792402187}
   - component: {fileID: 4750979481427619335}
   - component: {fileID: 2836332160611423355}
   - component: {fileID: 5482640457483979223}
+  - component: {fileID: 9121432392155558160}
   m_Layer: 6
   m_Name: MechaStoneGolem
   m_TagString: Enemy
@@ -443,28 +443,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &6812971150792402187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7342112413600213126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 606ea95bdd1ba9e40a655efdfa679922, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BossAI
-  moveSpeed: 5
-  verticalAlignmentTolerance: 0.5
-  laserAttackRange: 15
-  laserCooldown: 0.5
-  laserDamage: 10
-  laserOriginPoint: {fileID: 157993380460746067}
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  blockHoldTime: 3
 --- !u!70 &4750979481427619335
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -545,6 +523,28 @@ MonoBehaviour:
   currentHealth: 10
   hitsToBlock: 3
   deathDisappearDelay: 3
+--- !u!114 &9121432392155558160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7342112413600213126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0b59956274ad3c479e2a5d0d64fea02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Boss_Behavior
+  moveSpeed: 5
+  verticalAlignmentTolerance: 0.5
+  laserAttackRange: 20
+  laserCooldown: 5
+  laserDamage: 10
+  laserOriginPoint: {fileID: 0}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  blockHoldTime: 1.5
 --- !u!1 &8588402587785079280
 GameObject:
   m_ObjectHideFlags: 0
