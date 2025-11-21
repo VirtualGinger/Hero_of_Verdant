@@ -8,11 +8,12 @@ public class Hazard : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Health playerHealth = other.GetComponent<Health>();
+            // Use PlayerHealth instead of Health
+            PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
-                // Call TakeDamage and pass THIS bush as the sender.
-                playerHealth.TakeDamage(damageAmount, this.gameObject);
+                // Call TakeDamage so invulnerability logic is respected
+                playerHealth.TakeDamage(damageAmount);
             }
         }
     }
