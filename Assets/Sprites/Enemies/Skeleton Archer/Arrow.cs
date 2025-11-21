@@ -28,7 +28,7 @@ public class Arrow : MonoBehaviour
             PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
-                playerHealth.health -= damage;
+                playerHealth.TakeDamage(damage);
             }
 
             Destroy(gameObject); // remove arrow after hit

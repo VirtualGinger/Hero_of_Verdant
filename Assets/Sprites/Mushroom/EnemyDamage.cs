@@ -60,7 +60,7 @@ public class EnemyDamage : Damage
 
             if (playerHealth != null)
             {
-                playerHealth.health -= damage;
+                playerHealth.TakeDamage(damage);
                 hasHit = true; // Prevent double hits in the same window
                 Debug.Log("PLAYER HIT! (Synced)");
             }

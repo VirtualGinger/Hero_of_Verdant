@@ -21,7 +21,7 @@ public class Damage : MonoBehaviour
                     firstTime = false;
                     return;
                 }
-                playerHealth.health -= damage;
+                playerHealth.TakeDamage(damage);
 
                 hasHit = true;
 

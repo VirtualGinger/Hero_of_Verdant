@@ -14,7 +14,7 @@ public class FireDamage : MonoBehaviour
 
             if (playerHealth != null)
             {
-                playerHealth.health -= damage;
+                playerHealth.TakeDamage(damage);
 
                 Debug.Log($"Hit Player! Player Health remaining: {playerHealth.health}");
             }

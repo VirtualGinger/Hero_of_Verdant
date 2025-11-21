@@ -28,7 +28,7 @@ public class Bear_trap : MonoBehaviour
             PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
-                playerHealth.health -= trapDamage;
+                playerHealth.TakeDamage(trapDamage);
             }
 
             // Trigger animation
