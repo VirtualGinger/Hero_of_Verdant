@@ -190,6 +190,7 @@ MonoBehaviour:
   moveSpeed: 2
   timer: 0
   verticalTolerance: 0.5
+  useDiagonalMovement: 0
 --- !u!114 &7837740583892843971
 MonoBehaviour:
   m_ObjectHideFlags: 0

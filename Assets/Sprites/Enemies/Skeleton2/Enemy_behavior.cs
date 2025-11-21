@@ -44,10 +44,10 @@ public class Enemy_behavior : MonoBehaviour
             // 2. Trigger the Death Animation
             // We check if we are already in the "Death" state to avoid spamming the trigger.
             // If other enemies lack the "Die" parameter, Unity will just log a warning, not crash.
-            if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Death"))
-            {
-                anim.SetTrigger("Die");
-            }
+            //if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Death"))
+            //{
+            //    anim.SetTrigger("Die");
+            //}
 
             // 3. Disable movement and attacks
             anim.SetBool("canWalk", false);
