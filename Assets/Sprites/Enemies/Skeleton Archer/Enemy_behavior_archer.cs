@@ -172,7 +172,7 @@ public class Enemy_behavior_archer : MonoBehaviour
         timer = intTimer;
     }
 
-    // ✅ Flip both sprite and launchPoint
+    // Flip both sprite and launchPoint
     void Flip(float targetX)
     {
         bool shouldFaceRight = targetX > transform.position.x;

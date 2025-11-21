@@ -23,7 +23,15 @@ public class Arrow : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("Arrow hit Player");
-            Destroy(gameObject);
+
+            // Apply damage to PlayerHealth
+            PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
+            if (playerHealth != null)
+            {
+                playerHealth.health -= damage;
+            }
+
+            Destroy(gameObject); // remove arrow after hit
         }
         else if (collision.gameObject.CompareTag("Ground"))
         {
