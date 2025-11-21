@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Hero_Of_Verdant.unity
     guid: 8e1cd0a72fe04034da9673d229ae7a10
   - enabled: 1
-    path: Assets/Scenes/Dungeon_One.unity
+    path: Assets/Scenes/Levels/Dungeon_One.unity
     guid: cea104ad212969c489a9f6223b8fcf63
   - enabled: 1
     path: Assets/Scenes/Hero_Of_Verdant_2.unity
