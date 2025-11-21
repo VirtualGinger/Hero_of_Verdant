@@ -3,7 +3,7 @@ using UnityEngine;
 public class Arrow : MonoBehaviour
 {
     public int damage = 5;
-    public Vector2 moveSpeed = new Vector2(3f, 0);
+    public float moveSpeed = 3f;
 
     private Rigidbody2D rb;
 
@@ -12,9 +12,10 @@ public class Arrow : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    void Start()
+    // Called by ArrowLauncher to set direction
+    public void SetDirection(Vector2 direction)
     {
-        rb.linearVelocity = new Vector2(moveSpeed.x * transform.localScale.x, moveSpeed.y);
+        rb.linearVelocity = direction.normalized * moveSpeed;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -22,12 +23,11 @@ public class Arrow : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("Arrow hit Player");
-            // TODO: Apply damage to player health script here
             Destroy(gameObject);
         }
         else if (collision.gameObject.CompareTag("Ground"))
         {
-            Destroy(gameObject); // arrows disappear when hitting terrain
+            Destroy(gameObject);
         }
     }
 }

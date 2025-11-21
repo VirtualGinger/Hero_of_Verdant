@@ -22,7 +22,10 @@ public class Enemy_behavior_archer : MonoBehaviour
     private EnemyHealth _enemyHealth;
 
     private ArrowLauncher arrowLauncher;
-    private SpriteRenderer sprite; // reference to the skeleton’s sprite
+    private SpriteRenderer sprite;
+
+    // Reference to the child launch point
+    public Transform launchPoint;
 
     void Awake()
     {
@@ -30,7 +33,7 @@ public class Enemy_behavior_archer : MonoBehaviour
         anim = GetComponent<Animator>();
         _enemyHealth = GetComponent<EnemyHealth>();
         arrowLauncher = GetComponent<ArrowLauncher>();
-        sprite = GetComponent<SpriteRenderer>(); // get the attached SpriteRenderer
+        sprite = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -47,7 +50,7 @@ public class Enemy_behavior_archer : MonoBehaviour
             float targetX = target.transform.position.x;
             Vector2 direction = (targetX < transform.position.x) ? Vector2.left : Vector2.right;
 
-            Flip(targetX); // always check facing
+            Flip(targetX);
 
             hit = Physics2D.Raycast(rayCast.position, direction, rayCastLength, raycastMask);
             RaycastDebugger();
@@ -122,6 +125,12 @@ public class Enemy_behavior_archer : MonoBehaviour
         }
     }
 
+    public Vector2 GetFacingDirection()
+    {
+        
+        return isFacingRight ? Vector2.right : Vector2.left;
+    }
+
     void Attack()
     {
         if (target == null) return;
@@ -134,7 +143,8 @@ public class Enemy_behavior_archer : MonoBehaviour
 
         if (arrowLauncher != null)
         {
-            arrowLauncher.FireProjectile();
+            
+            arrowLauncher.FireProjectile(GetFacingDirection());
         }
 
         TriggerCooling();
@@ -162,7 +172,7 @@ public class Enemy_behavior_archer : MonoBehaviour
         timer = intTimer;
     }
 
-    // Flip using SpriteRenderer.flipX
+    // ✅ Flip both sprite and launchPoint
     void Flip(float targetX)
     {
         bool shouldFaceRight = targetX > transform.position.x;
@@ -170,12 +180,24 @@ public class Enemy_behavior_archer : MonoBehaviour
         if (shouldFaceRight && !isFacingRight)
         {
             isFacingRight = true;
-            sprite.flipX = false; // face right
+            sprite.flipX = true; // facing right (inverted if needed)
+
+            if (launchPoint != null)
+            {
+                Vector3 lpScale = launchPoint.localScale;
+                launchPoint.localScale = new Vector3(Mathf.Abs(lpScale.x), lpScale.y, lpScale.z);
+            }
         }
         else if (!shouldFaceRight && isFacingRight)
         {
             isFacingRight = false;
-            sprite.flipX = true; // face left
+            sprite.flipX = false; // facing left
+
+            if (launchPoint != null)
+            {
+                Vector3 lpScale = launchPoint.localScale;
+                launchPoint.localScale = new Vector3(-Mathf.Abs(lpScale.x), lpScale.y, lpScale.z);
+            }
         }
     }
 
