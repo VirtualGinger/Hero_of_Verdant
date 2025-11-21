@@ -207,17 +207,27 @@ private void TryAttack()
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        // 1. Move player to spawn point (always happens)
         GameObject spawn = GameObject.Find("SpawnPoint");
         if (spawn != null)
         {
             transform.position = spawn.transform.position;
         }
 
+        // 2. CHECK SCENE NAME BEFORE RESETTING HEALTH
+        // If the scene is "Dungeon_Two", we skip the health reset logic to preserve current health.
+        if (scene.name == "Dungeon_Two")
+        {
+            Debug.Log($"Loaded into {scene.name}. Player health will NOT be reset.");
+            return; 
+        }
+
+        // --- ORIGINAL HEALTH RESET LOGIC (Only runs if scene is NOT Dungeon_Two) ---
         PlayerHealth playerHealth = GetComponent<PlayerHealth>();
         if (playerHealth != null)
         {
-            playerHealth.maxHealth = 100f;
-            playerHealth.health = 100f;
+            playerHealth.maxHealth = 50f;
+            playerHealth.health = 50f;
 
             // Update UI immediately
             if (playerHealth.HealthBar != null)
@@ -225,8 +235,7 @@ private void TryAttack()
                 playerHealth.HealthBar.fillAmount = 1f;
             }
 
-            Debug.Log("Player health reset to 100 on scene load.");
+            Debug.Log($"Loaded into {scene.name}. Player health reset to 50.");
         }
-
     }
 }

@@ -660,7 +660,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80b7bcae912f1014ca4dc3dd9e29f7f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
-  health: 100
+  health: 50
   maxHealth: 0
   HealthBar: {fileID: 5959726048801297571}
 --- !u!114 &3614367086094711156
@@ -705,6 +705,7 @@ MonoBehaviour:
   power: 50
   maxPower: 0
   PowerBar: {fileID: 6404174397480064402}
+  isInvulnerable: 0
 --- !u!1 &5880900648829718012
 GameObject:
   m_ObjectHideFlags: 0
