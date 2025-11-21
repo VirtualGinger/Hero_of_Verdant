@@ -10,6 +10,7 @@ public class Enemy_behavior : MonoBehaviour
     public float moveSpeed;
     public float timer;
     public float verticalTolerance = 0.5f;
+    public bool useDiagonalMovement = false;
 
     private RaycastHit2D hit;
     private GameObject target;
@@ -34,12 +35,28 @@ public class Enemy_behavior : MonoBehaviour
 
     void Update()
     {
+        // --- DEATH LOGIC START ---
         if (_enemyHealth.health <= 0)
         {
+            // 1. Clamp HP to 0 so it doesn't show negative numbers
+            _enemyHealth.health = 0;
+
+            // 2. Trigger the Death Animation
+            // We check if we are already in the "Death" state to avoid spamming the trigger.
+            // If other enemies lack the "Die" parameter, Unity will just log a warning, not crash.
+            if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Death"))
+            {
+                anim.SetTrigger("Die");
+            }
+
+            // 3. Disable movement and attacks
             anim.SetBool("canWalk", false);
             anim.SetBool("Attack", false);
+            
+            // Return immediately so he stops calculating movement/raycasts
             return;
         }
+        // --- DEATH LOGIC END ---
 
         if (inRange && target != null)
         {
@@ -76,8 +93,6 @@ public class Enemy_behavior : MonoBehaviour
         {
             Cooldown();
         }
-
-        
     }
 
     void OnTriggerEnter2D(Collider2D trig)
@@ -113,22 +128,26 @@ public class Enemy_behavior : MonoBehaviour
 
         if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Attack_State_Name"))
         {
-            
+            // --- NEW CODE START ---
+            // If this specific enemy (Mushroom) has the box checked, move diagonally
+            if (useDiagonalMovement)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, target.transform.position, moveSpeed * Time.deltaTime);
+                return; // Exit here so we skip the old logic below
+            }
+            // --- NEW CODE END ---
+
+            // ... The old "Step" logic stays here for your other enemies ...
             float yDifference = Mathf.Abs(target.transform.position.y - transform.position.y);
-
             Vector2 targetPosition;
-
             if (yDifference > verticalTolerance)
             {
-                
                 targetPosition = new Vector2(transform.position.x, target.transform.position.y);
             }
             else
             {
-                
                 targetPosition = new Vector2(target.transform.position.x, transform.position.y);
             }
-
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
         }
     }

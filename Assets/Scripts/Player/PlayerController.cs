@@ -110,7 +110,7 @@ public class PlayerController : MonoBehaviour
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 
-    private void TryAttack()
+private void TryAttack()
     {
         if (attackTimer > 0f || isDashing)
             return;
@@ -123,18 +123,31 @@ public class PlayerController : MonoBehaviour
 
         Vector3 attackPos = attackPoint != null ? attackPoint.position : transform.position + GetAttackOffset(lastDirection);
 
-        Debug.DrawLine(transform.position, attackPos, Color.red, 0.5f);
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPos, attackRadius, enemyLayers);
-        Debug.Log($"Attacking at {attackPos}, found {hitEnemies.Length} enemies");
 
-        foreach (Collider2D enemy in hitEnemies)
+        foreach (Collider2D enemyCollider in hitEnemies)
         {
-            Debug.Log("Hit enemy: " + enemy.name);
-            EnemyHealth hp = enemy.GetComponent<EnemyHealth>();
+            //Look for health on the object we hit...
+            EnemyHealth hp = enemyCollider.GetComponent<EnemyHealth>();
+
+            // ...If not found, look on the PARENT (This fixes the Mushroom HeadHitbox issue)
+            if (hp == null)
+            {
+                hp = enemyCollider.GetComponentInParent<EnemyHealth>();
+            }
+
             if (hp != null)
             {
+                // Deal damage
                 hp.health -= attackDamage;
-                Debug.Log($"Enemy {enemy.name} HP left: {hp.health}");
+                Debug.Log($"Enemy {hp.name} HP left: {hp.health}");
+
+                // (Since you are modifying the variable directly, you have to trigger the anim manually too)
+                Animator enemyAnim = hp.GetComponent<Animator>();
+                if (enemyAnim != null)
+                {
+                    enemyAnim.SetTrigger("Hurt");
+                }
             }
         }
     }

@@ -673,6 +673,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fd3b832f45de404dacd79aaa6447985, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  attackIcon: {fileID: 0}
+  dashIcon: {fileID: 0}
   rb: {fileID: 4070973623107643072}
   animator: {fileID: 3214773884296449344}
   moveSpeed: 5
@@ -685,7 +687,7 @@ MonoBehaviour:
   attackCooldown: 0.2
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 68
 --- !u!1 &5983841871634880345
 GameObject:
   m_ObjectHideFlags: 0
