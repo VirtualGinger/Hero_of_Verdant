@@ -1,0 +1,1157 @@
+fileFormatVersion: 2
+guid: 7431114e60c168c49a71f81937397482
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6442206188174396550
+    second: dragon_FLY_green_0
+  - first:
+      213: -802336640799177214
+    second: dragon_FLY_green_1
+  - first:
+      213: 2182242137438594603
+    second: dragon_FLY_green_2
+  - first:
+      213: 5890782231373745096
+    second: dragon_FLY_green_3
+  - first:
+      213: 8600630072135760012
+    second: dragon_FLY_green_4
+  - first:
+      213: -6683312174651021304
+    second: dragon_FLY_green_5
+  - first:
+      213: 6032796466807592153
+    second: dragon_FLY_green_6
+  - first:
+      213: 492371799458762818
+    second: dragon_FLY_green_7
+  - first:
+      213: -7861680538642483169
+    second: dragon_FLY_green_8
+  - first:
+      213: -1770762948991770803
+    second: dragon_FLY_green_9
+  - first:
+      213: -7273201282902962226
+    second: dragon_FLY_green_10
+  - first:
+      213: -6438521490516677023
+    second: dragon_FLY_green_11
+  - first:
+      213: 3911234417382743792
+    second: dragon_FLY_green_12
+  - first:
+      213: 4189087628826054256
+    second: dragon_FLY_green_13
+  - first:
+      213: 3658809526113374236
+    second: dragon_FLY_green_14
+  - first:
+      213: 6055963305784544194
+    second: dragon_FLY_green_15
+  - first:
+      213: 1304912079212645830
+    second: dragon_FLY_green_16
+  - first:
+      213: -1026940664978557790
+    second: dragon_FLY_green_17
+  - first:
+      213: 4371330716256329509
+    second: dragon_FLY_green_18
+  - first:
+      213: 60533816526679271
+    second: dragon_FLY_green_19
+  - first:
+      213: 8371446413930704856
+    second: dragon_FLY_green_20
+  - first:
+      213: -322427982405151172
+    second: dragon_FLY_green_21
+  - first:
+      213: 4468077935540893500
+    second: dragon_FLY_green_22
+  - first:
+      213: 7636536670206873916
+    second: dragon_FLY_green_23
+  - first:
+      213: -991057676604770673
+    second: dragon_FLY_green_24
+  - first:
+      213: -4054334886571016072
+    second: dragon_FLY_green_25
+  - first:
+      213: 5093241981848155221
+    second: dragon_FLY_green_26
+  - first:
+      213: 1521792514665527977
+    second: dragon_FLY_green_27
+  - first:
+      213: 4434319571507689718
+    second: dragon_FLY_green_28
+  - first:
+      213: 5438006498214506399
+    second: dragon_FLY_green_29
+  - first:
+      213: -1689166493402164152
+    second: dragon_FLY_green_30
+  - first:
+      213: -2460699677451858869
+    second: dragon_FLY_green_31
+  - first:
+      213: 3367823768075872179
+    second: dragon_FLY_green_32
+  - first:
+      213: 3190977781882229931
+    second: dragon_FLY_green_33
+  - first:
+      213: -7774952599773650070
+    second: dragon_FLY_green_34
+  - first:
+      213: -3651820212105589896
+    second: dragon_FLY_green_35
+  - first:
+      213: 407480343228002545
+    second: dragon_FLY_green_36
+  - first:
+      213: 3727495820528223774
+    second: dragon_FLY_green_37
+  - first:
+      213: -1771599161180868202
+    second: dragon_FLY_green_38
+  - first:
+      213: -6511513846810098666
+    second: dragon_FLY_green_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dragon_FLY_green_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 28
+        width: 57
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a73ba08aa9fa896a0800000000000000
+      internalID: -6442206188174396550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 35
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20682ee73178dd4f0800000000000000
+      internalID: -802336640799177214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_2
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 36
+        width: 57
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b26aae779a1e84e10800000000000000
+      internalID: 2182242137438594603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_3
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 37
+        width: 57
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cb073e8a3340c150800000000000000
+      internalID: 5890782231373745096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_4
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 37
+        width: 55
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c88b1368b739b5770800000000000000
+      internalID: 8600630072135760012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_5
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 35
+        width: 56
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 808e1e2acfa1043a0800000000000000
+      internalID: -6683312174651021304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_6
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 25
+        width: 68
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d45c466c6cc8b350800000000000000
+      internalID: 6032796466807592153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_7
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 25
+        width: 68
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 240d82cfa8145d600800000000000000
+      internalID: 492371799458762818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_8
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 25
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f18fc9cf333b5e290800000000000000
+      internalID: -7861680538642483169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_9
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 25
+        width: 46
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4f1ce3da7cfc67e0800000000000000
+      internalID: -1770762948991770803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_10
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 24
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecf47a0e7f5601b90800000000000000
+      internalID: -7273201282902962226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_11
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 24
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ee80f21d6c5a6a0800000000000000
+      internalID: -6438521490516677023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_12
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 28
+        width: 57
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fe5161eafe774630800000000000000
+      internalID: 3911234417382743792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_13
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 35
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07e0921f001a22a30800000000000000
+      internalID: 4189087628826054256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_14
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 36
+        width: 57
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c109dc8f0e3b6c230800000000000000
+      internalID: 3658809526113374236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_15
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 37
+        width: 57
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cb861e6a8a1b0450800000000000000
+      internalID: 6055963305784544194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_16
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 37
+        width: 55
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cd06905f9afb1210800000000000000
+      internalID: 1304912079212645830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_17
+      rect:
+        serializedVersion: 2
+        x: 1655
+        y: 35
+        width: 56
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a4bc8af7e29fb1f0800000000000000
+      internalID: -1026940664978557790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_18
+      rect:
+        serializedVersion: 2
+        x: 1742
+        y: 35
+        width: 68
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52f563a40261aac30800000000000000
+      internalID: 4371330716256329509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_19
+      rect:
+        serializedVersion: 2
+        x: 1837
+        y: 36
+        width: 70
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eca8f67f2f07d000800000000000000
+      internalID: 60533816526679271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_20
+      rect:
+        serializedVersion: 2
+        x: 1938
+        y: 31
+        width: 60
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dfae8ed82a5d2470800000000000000
+      internalID: 8371446413930704856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_21
+      rect:
+        serializedVersion: 2
+        x: 2041
+        y: 34
+        width: 46
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3658135571868bf0800000000000000
+      internalID: -322427982405151172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_22
+      rect:
+        serializedVersion: 2
+        x: 2132
+        y: 38
+        width: 56
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c37fca0a53dc10e30800000000000000
+      internalID: 4468077935540893500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_23
+      rect:
+        serializedVersion: 2
+        x: 2229
+        y: 36
+        width: 54
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c31dce534ad6af960800000000000000
+      internalID: 7636536670206873916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_24
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 28
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f867c024b4e0f32f0800000000000000
+      internalID: -991057676604770673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_25
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 28
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8700675c6eb1cb7c0800000000000000
+      internalID: -4054334886571016072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_26
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 28
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5547a2be894dea640800000000000000
+      internalID: 5093241981848155221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_27
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 28
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aabc72ba3e7e1510800000000000000
+      internalID: 1521792514665527977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_28
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 28
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f83740082ed98d30800000000000000
+      internalID: 4434319571507689718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_29
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 28
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9f675c291ea77b40800000000000000
+      internalID: 5438006498214506399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_30
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 28
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 844954a1600ee88e0800000000000000
+      internalID: -1689166493402164152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_31
+      rect:
+        serializedVersion: 2
+        x: 1478
+        y: 28
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4c40924ea6d9ddd0800000000000000
+      internalID: -2460699677451858869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_32
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 28
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b7a742afd9ecbe20800000000000000
+      internalID: 3367823768075872179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_33
+      rect:
+        serializedVersion: 2
+        x: 1670
+        y: 28
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba41147d261a84c20800000000000000
+      internalID: 3190977781882229931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_34
+      rect:
+        serializedVersion: 2
+        x: 1766
+        y: 28
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a63edf0ddc1d91490800000000000000
+      internalID: -7774952599773650070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_35
+      rect:
+        serializedVersion: 2
+        x: 1862
+        y: 28
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87bcad18dd0225dc0800000000000000
+      internalID: -3651820212105589896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_36
+      rect:
+        serializedVersion: 2
+        x: 1958
+        y: 28
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f03f079639a7a500800000000000000
+      internalID: 407480343228002545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_37
+      rect:
+        serializedVersion: 2
+        x: 2054
+        y: 28
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e16865c13b9bab330800000000000000
+      internalID: 3727495820528223774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_38
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 28
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6913f6103f30a67e0800000000000000
+      internalID: -1771599161180868202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FLY_green_39
+      rect:
+        serializedVersion: 2
+        x: 2246
+        y: 28
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 614c8d2e7a472a5a0800000000000000
+      internalID: -6511513846810098666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      dragon_FLY_green_0: -6442206188174396550
+      dragon_FLY_green_1: -802336640799177214
+      dragon_FLY_green_10: -7273201282902962226
+      dragon_FLY_green_11: -6438521490516677023
+      dragon_FLY_green_12: 3911234417382743792
+      dragon_FLY_green_13: 4189087628826054256
+      dragon_FLY_green_14: 3658809526113374236
+      dragon_FLY_green_15: 6055963305784544194
+      dragon_FLY_green_16: 1304912079212645830
+      dragon_FLY_green_17: -1026940664978557790
+      dragon_FLY_green_18: 4371330716256329509
+      dragon_FLY_green_19: 60533816526679271
+      dragon_FLY_green_2: 2182242137438594603
+      dragon_FLY_green_20: 8371446413930704856
+      dragon_FLY_green_21: -322427982405151172
+      dragon_FLY_green_22: 4468077935540893500
+      dragon_FLY_green_23: 7636536670206873916
+      dragon_FLY_green_24: -991057676604770673
+      dragon_FLY_green_25: -4054334886571016072
+      dragon_FLY_green_26: 5093241981848155221
+      dragon_FLY_green_27: 1521792514665527977
+      dragon_FLY_green_28: 4434319571507689718
+      dragon_FLY_green_29: 5438006498214506399
+      dragon_FLY_green_3: 5890782231373745096
+      dragon_FLY_green_30: -1689166493402164152
+      dragon_FLY_green_31: -2460699677451858869
+      dragon_FLY_green_32: 3367823768075872179
+      dragon_FLY_green_33: 3190977781882229931
+      dragon_FLY_green_34: -7774952599773650070
+      dragon_FLY_green_35: -3651820212105589896
+      dragon_FLY_green_36: 407480343228002545
+      dragon_FLY_green_37: 3727495820528223774
+      dragon_FLY_green_38: -1771599161180868202
+      dragon_FLY_green_39: -6511513846810098666
+      dragon_FLY_green_4: 8600630072135760012
+      dragon_FLY_green_5: -6683312174651021304
+      dragon_FLY_green_6: 6032796466807592153
+      dragon_FLY_green_7: 492371799458762818
+      dragon_FLY_green_8: -7861680538642483169
+      dragon_FLY_green_9: -1770762948991770803
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

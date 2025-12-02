@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 13d95499ee0c5d442afe9b43df7baff4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8757978825961768531
+    second: mage_atk2_0
+  - first:
+      213: 4826877639611568821
+    second: mage_atk2_1
+  - first:
+      213: -8185787621301551323
+    second: mage_atk2_2
+  - first:
+      213: 5267175439000293892
+    second: mage_atk2_3
+  - first:
+      213: 5133776197417685612
+    second: mage_atk2_4
+  - first:
+      213: 5102420438230133723
+    second: mage_atk2_5
+  - first:
+      213: -3724627576374331566
+    second: mage_atk2_6
+  - first:
+      213: -8384767800572208378
+    second: mage_atk2_7
+  - first:
+      213: -5996907730795016642
+    second: mage_atk2_8
+  - first:
+      213: 8865785042091437360
+    second: mage_atk2_9
+  - first:
+      213: 6938535593606346590
+    second: mage_atk2_10
+  - first:
+      213: 1784835399208414493
+    second: mage_atk2_11
+  - first:
+      213: -5526957058767003977
+    second: mage_atk2_12
+  - first:
+      213: 8849665521861232886
+    second: mage_atk2_13
+  - first:
+      213: -5628843474035556753
+    second: mage_atk2_14
+  - first:
+      213: 8175280975773418874
+    second: mage_atk2_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mage_atk2_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 143
+        width: 50
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da9f728d8a8657680800000000000000
+      internalID: -8757978825961768531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_atk2_1
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 143
+        width: 50
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b2d25ba3a38cf240800000000000000
+      internalID: 4826877639611568821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_atk2_2
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 143
+        width: 50
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52ff781578d366e80800000000000000
+      internalID: -8185787621301551323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_atk2_3
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 143
+        width: 50
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4025643b724c81940800000000000000
+      internalID: 5267175439000293892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_atk2_4
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 15
+        width: 199
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c62df6b6046de3740800000000000000
+      internalID: 5133776197417685612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_atk2_5
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 79
+        width: 31
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdb6663da507fc640800000000000000
+      internalID: 5102420438230133723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_atk2_6
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 79
+        width: 31
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 257759504f67f4cc0800000000000000
+      internalID: -3724627576374331566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_atk2_7
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 79
+        width: 31
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60b92ca1c1253ab80800000000000000
+      internalID: -8384767800572208378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_atk2_8
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 79
+        width: 31
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3e4b2b1134b6cca0800000000000000
+      internalID: -5996907730795016642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_atk2_9
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 15
+        width: 77
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03de4d8d588990b70800000000000000
+      internalID: 8865785042091437360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_atk2_10
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 43
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e577f464c51aa4060800000000000000
+      internalID: 6938535593606346590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_atk2_11
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 15
+        width: 76
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1d2c50d65205c810800000000000000
+      internalID: 1784835399208414493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_atk2_12
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 15
+        width: 76
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7beda5f86dd4c43b0800000000000000
+      internalID: -5526957058767003977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_atk2_13
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 15
+        width: 76
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f88f8397e350da70800000000000000
+      internalID: 8849665521861232886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_atk2_14
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 22
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6eb5d9eea452e1b0800000000000000
+      internalID: -5628843474035556753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_atk2_15
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 24
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a75cbf3abbe647170800000000000000
+      internalID: 8175280975773418874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      mage_atk2_0: -8757978825961768531
+      mage_atk2_1: 4826877639611568821
+      mage_atk2_10: 6938535593606346590
+      mage_atk2_11: 1784835399208414493
+      mage_atk2_12: -5526957058767003977
+      mage_atk2_13: 8849665521861232886
+      mage_atk2_14: -5628843474035556753
+      mage_atk2_15: 8175280975773418874
+      mage_atk2_2: -8185787621301551323
+      mage_atk2_3: 5267175439000293892
+      mage_atk2_4: 5133776197417685612
+      mage_atk2_5: 5102420438230133723
+      mage_atk2_6: -3724627576374331566
+      mage_atk2_7: -8384767800572208378
+      mage_atk2_8: -5996907730795016642
+      mage_atk2_9: 8865785042091437360
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

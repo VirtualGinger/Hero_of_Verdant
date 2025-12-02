@@ -1,0 +1,2249 @@
+fileFormatVersion: 2
+guid: 74a1688d0944ea04fb4c21ad52b3c44a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8656952091852007553
+    second: dragon_FIREBREATH_green_0
+  - first:
+      213: 1563500350212170659
+    second: dragon_FIREBREATH_green_1
+  - first:
+      213: 4334735775922901336
+    second: dragon_FIREBREATH_green_2
+  - first:
+      213: 7888138446571289253
+    second: dragon_FIREBREATH_green_3
+  - first:
+      213: 8371375479990302568
+    second: dragon_FIREBREATH_green_4
+  - first:
+      213: 6286981049121418647
+    second: dragon_FIREBREATH_green_5
+  - first:
+      213: 6792048376691696991
+    second: dragon_FIREBREATH_green_6
+  - first:
+      213: -5191079682833286672
+    second: dragon_FIREBREATH_green_7
+  - first:
+      213: -3140376426930631310
+    second: dragon_FIREBREATH_green_8
+  - first:
+      213: -7585084172439860239
+    second: dragon_FIREBREATH_green_9
+  - first:
+      213: 3522404856216984414
+    second: dragon_FIREBREATH_green_10
+  - first:
+      213: -8291278189575383611
+    second: dragon_FIREBREATH_green_11
+  - first:
+      213: 6865359981414048331
+    second: dragon_FIREBREATH_green_12
+  - first:
+      213: -5591406111063072385
+    second: dragon_FIREBREATH_green_13
+  - first:
+      213: 6078184485040987453
+    second: dragon_FIREBREATH_green_14
+  - first:
+      213: -757534259510082982
+    second: dragon_FIREBREATH_green_15
+  - first:
+      213: -2995557533510582474
+    second: dragon_FIREBREATH_green_16
+  - first:
+      213: -4424787115367292236
+    second: dragon_FIREBREATH_green_17
+  - first:
+      213: -8247024183853938145
+    second: dragon_FIREBREATH_green_18
+  - first:
+      213: 528567400894063836
+    second: dragon_FIREBREATH_green_19
+  - first:
+      213: -5023984040245349747
+    second: dragon_FIREBREATH_green_20
+  - first:
+      213: 552460413958241762
+    second: dragon_FIREBREATH_green_21
+  - first:
+      213: 2379593398167635663
+    second: dragon_FIREBREATH_green_22
+  - first:
+      213: -8299592107993685452
+    second: dragon_FIREBREATH_green_23
+  - first:
+      213: -3751326570304957645
+    second: dragon_FIREBREATH_green_24
+  - first:
+      213: 718214644471337289
+    second: dragon_FIREBREATH_green_25
+  - first:
+      213: 7705878266572942375
+    second: dragon_FIREBREATH_green_26
+  - first:
+      213: -6149286462391158616
+    second: dragon_FIREBREATH_green_27
+  - first:
+      213: -3058189067365724415
+    second: dragon_FIREBREATH_green_28
+  - first:
+      213: 8388978741556923893
+    second: dragon_FIREBREATH_green_29
+  - first:
+      213: 2565635406737470048
+    second: dragon_FIREBREATH_green_30
+  - first:
+      213: -7658722995125105076
+    second: dragon_FIREBREATH_green_31
+  - first:
+      213: -7369935810055943235
+    second: dragon_FIREBREATH_green_32
+  - first:
+      213: 4951688425992529981
+    second: dragon_FIREBREATH_green_33
+  - first:
+      213: 7703379644289528620
+    second: dragon_FIREBREATH_green_34
+  - first:
+      213: 6205752835514448106
+    second: dragon_FIREBREATH_green_35
+  - first:
+      213: 499785910462302790
+    second: dragon_FIREBREATH_green_36
+  - first:
+      213: -276364266852791702
+    second: dragon_FIREBREATH_green_37
+  - first:
+      213: -8894155848755015102
+    second: dragon_FIREBREATH_green_38
+  - first:
+      213: -1543935001700085902
+    second: dragon_FIREBREATH_green_39
+  - first:
+      213: 6736567765067665225
+    second: dragon_FIREBREATH_green_40
+  - first:
+      213: 1817504452195148584
+    second: dragon_FIREBREATH_green_41
+  - first:
+      213: 778630630104381021
+    second: dragon_FIREBREATH_green_42
+  - first:
+      213: 6537543251138389783
+    second: dragon_FIREBREATH_green_43
+  - first:
+      213: 4124709778180811636
+    second: dragon_FIREBREATH_green_44
+  - first:
+      213: -1814706031526740311
+    second: dragon_FIREBREATH_green_45
+  - first:
+      213: 922647130699652007
+    second: dragon_FIREBREATH_green_46
+  - first:
+      213: -4153042354004883887
+    second: dragon_FIREBREATH_green_47
+  - first:
+      213: 6952682966184954578
+    second: dragon_FIREBREATH_green_48
+  - first:
+      213: -1562919443339914339
+    second: dragon_FIREBREATH_green_49
+  - first:
+      213: -8963793170741918514
+    second: dragon_FIREBREATH_green_50
+  - first:
+      213: -9037448640295155434
+    second: dragon_FIREBREATH_green_51
+  - first:
+      213: 2184526961626290385
+    second: dragon_FIREBREATH_green_52
+  - first:
+      213: -3002355322908443790
+    second: dragon_FIREBREATH_green_53
+  - first:
+      213: -5548308158394543887
+    second: dragon_FIREBREATH_green_54
+  - first:
+      213: 4405788136236345414
+    second: dragon_FIREBREATH_green_55
+  - first:
+      213: -9200961942513861355
+    second: dragon_FIREBREATH_green_56
+  - first:
+      213: -7786593620807299122
+    second: dragon_FIREBREATH_green_57
+  - first:
+      213: 5366826246789253621
+    second: dragon_FIREBREATH_green_58
+  - first:
+      213: 83019318061518500
+    second: dragon_FIREBREATH_green_59
+  - first:
+      213: -9192123374880526711
+    second: dragon_FIREBREATH_green_60
+  - first:
+      213: 2433301750845462674
+    second: dragon_FIREBREATH_green_61
+  - first:
+      213: 4971592660350116505
+    second: dragon_FIREBREATH_green_62
+  - first:
+      213: 7364923259829996867
+    second: dragon_FIREBREATH_green_63
+  - first:
+      213: 976555196734983435
+    second: dragon_FIREBREATH_green_64
+  - first:
+      213: -8418816915291819340
+    second: dragon_FIREBREATH_green_65
+  - first:
+      213: -616565279046066391
+    second: dragon_FIREBREATH_green_66
+  - first:
+      213: 7465160721648833690
+    second: dragon_FIREBREATH_green_67
+  - first:
+      213: -3728163481016781642
+    second: dragon_FIREBREATH_green_68
+  - first:
+      213: 2213925335492337369
+    second: dragon_FIREBREATH_green_69
+  - first:
+      213: -5708919861237849066
+    second: dragon_FIREBREATH_green_70
+  - first:
+      213: 2018468341376458338
+    second: dragon_FIREBREATH_green_71
+  - first:
+      213: -3470249680508671165
+    second: dragon_FIREBREATH_green_72
+  - first:
+      213: -2278364961729231458
+    second: dragon_FIREBREATH_green_73
+  - first:
+      213: -8644673080296820058
+    second: dragon_FIREBREATH_green_74
+  - first:
+      213: -2445699939118322106
+    second: dragon_FIREBREATH_green_75
+  - first:
+      213: 2651654524385285986
+    second: dragon_FIREBREATH_green_76
+  - first:
+      213: -7578340105491428191
+    second: dragon_FIREBREATH_green_77
+  - first:
+      213: -7824778602523797601
+    second: dragon_FIREBREATH_green_78
+  - first:
+      213: -4924959854573731482
+    second: dragon_FIREBREATH_green_79
+  - first:
+      213: 2735514356734678454
+    second: dragon_FIREBREATH_green_80
+  - first:
+      213: -422146363968600085
+    second: dragon_FIREBREATH_green_81
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 31
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 188e960af0ca32870800000000000000
+      internalID: 8656952091852007553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_1
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 31
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a36894e84ba2b510800000000000000
+      internalID: 1563500350212170659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_2
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 31
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 851df07c833182c30800000000000000
+      internalID: 4334735775922901336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_3
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 31
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aabbfebf1c487d60800000000000000
+      internalID: 7888138446571289253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_4
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 31
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 867bc3645a91d2470800000000000000
+      internalID: 8371375479990302568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_5
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 31
+        width: 42
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79dae7e44f7df3750800000000000000
+      internalID: 6286981049121418647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_6
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 31
+        width: 42
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f552af54304324e50800000000000000
+      internalID: 6792048376691696991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_7
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 31
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f979ff288495f7b0800000000000000
+      internalID: -5191079682833286672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_8
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 31
+        width: 62
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27d0ac337442b64d0800000000000000
+      internalID: -3140376426930631310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_9
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 29
+        width: 65
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fbc846f12e5cb690800000000000000
+      internalID: -7585084172439860239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_10
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 27
+        width: 67
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5b9ce1ed8812e030800000000000000
+      internalID: 3522404856216984414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_11
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 25
+        width: 68
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c55a686a667fec80800000000000000
+      internalID: -8291278189575383611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_12
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 25
+        width: 68
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b42ed536788a64f50800000000000000
+      internalID: 6865359981414048331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_13
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 24
+        width: 68
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f71232b34c55762b0800000000000000
+      internalID: -5591406111063072385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_14
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 24
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3d9826e59c0a5450800000000000000
+      internalID: 6078184485040987453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_15
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 27
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5286b4ca92bc75f0800000000000000
+      internalID: -757534259510082982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_16
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 27
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63f3bde5b44ad66d0800000000000000
+      internalID: -2995557533510582474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_17
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 46
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b2aec5ef8ff792c0800000000000000
+      internalID: -4424787115367292236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_18
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 35
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1a845b033fac8d80800000000000000
+      internalID: -8247024183853938145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_19
+      rect:
+        serializedVersion: 2
+        x: 1561
+        y: 23
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd4642a2049d55700800000000000000
+      internalID: 528567400894063836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_20
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 23
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d82b1f33229374ab0800000000000000
+      internalID: -5023984040245349747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_21
+      rect:
+        serializedVersion: 2
+        x: 1753
+        y: 23
+        width: 46
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ed3276c1dbbaa700800000000000000
+      internalID: 552460413958241762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_22
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 23
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc685a78693060120800000000000000
+      internalID: 2379593398167635663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_23
+      rect:
+        serializedVersion: 2
+        x: 1943
+        y: 23
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 432a66e63fce1dc80800000000000000
+      internalID: -8299592107993685452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_24
+      rect:
+        serializedVersion: 2
+        x: 2039
+        y: 23
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3331d741c5c90fbc0800000000000000
+      internalID: -3751326570304957645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_25
+      rect:
+        serializedVersion: 2
+        x: 2135
+        y: 23
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9419234f96c97f900800000000000000
+      internalID: 718214644471337289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_26
+      rect:
+        serializedVersion: 2
+        x: 2231
+        y: 23
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72cab79b477c0fa60800000000000000
+      internalID: 7705878266572942375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_27
+      rect:
+        serializedVersion: 2
+        x: 2326
+        y: 23
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a87e03fa8859aaa0800000000000000
+      internalID: -6149286462391158616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_28
+      rect:
+        serializedVersion: 2
+        x: 2425
+        y: 23
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10fcea70f312f85d0800000000000000
+      internalID: -3058189067365724415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_29
+      rect:
+        serializedVersion: 2
+        x: 2521
+        y: 23
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fdcdcef7b3ab6470800000000000000
+      internalID: 8388978741556923893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_30
+      rect:
+        serializedVersion: 2
+        x: 2617
+        y: 23
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06270c12fc7fa9320800000000000000
+      internalID: 2565635406737470048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_31
+      rect:
+        serializedVersion: 2
+        x: 2713
+        y: 23
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4ec37a7300c6b590800000000000000
+      internalID: -7658722995125105076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_32
+      rect:
+        serializedVersion: 2
+        x: 2809
+        y: 23
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbb4f28ad6ab8b990800000000000000
+      internalID: -7369935810055943235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_33
+      rect:
+        serializedVersion: 2
+        x: 2905
+        y: 23
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d38a2b5636ee7b440800000000000000
+      internalID: 4951688425992529981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_34
+      rect:
+        serializedVersion: 2
+        x: 3001
+        y: 23
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c233ad3e8f6e7ea60800000000000000
+      internalID: 7703379644289528620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_35
+      rect:
+        serializedVersion: 2
+        x: 3102
+        y: 31
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae836bc03534f1650800000000000000
+      internalID: 6205752835514448106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_36
+      rect:
+        serializedVersion: 2
+        x: 3198
+        y: 31
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64ac9d833a89fe600800000000000000
+      internalID: 499785910462302790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_37
+      rect:
+        serializedVersion: 2
+        x: 3295
+        y: 31
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6ac0add9282a2cf0800000000000000
+      internalID: -276364266852791702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_38
+      rect:
+        serializedVersion: 2
+        x: 3391
+        y: 31
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2429ef9f06c919480800000000000000
+      internalID: -8894155848755015102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_39
+      rect:
+        serializedVersion: 2
+        x: 3487
+        y: 31
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27fcf5bcb47d29ae0800000000000000
+      internalID: -1543935001700085902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_40
+      rect:
+        serializedVersion: 2
+        x: 3583
+        y: 31
+        width: 42
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94f8432c0b81d7d50800000000000000
+      internalID: 6736567765067665225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_41
+      rect:
+        serializedVersion: 2
+        x: 3679
+        y: 31
+        width: 42
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82368c27ba2193910800000000000000
+      internalID: 1817504452195148584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_42
+      rect:
+        serializedVersion: 2
+        x: 3774
+        y: 31
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d563c96ce604eca00800000000000000
+      internalID: 778630630104381021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_43
+      rect:
+        serializedVersion: 2
+        x: 3851
+        y: 31
+        width: 62
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7172bd313f40aba50800000000000000
+      internalID: 6537543251138389783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_44
+      rect:
+        serializedVersion: 2
+        x: 3944
+        y: 29
+        width: 65
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47b2c0a80b9ed3930800000000000000
+      internalID: 4124709778180811636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_45
+      rect:
+        serializedVersion: 2
+        x: 4038
+        y: 27
+        width: 67
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aef613aa7ed0d6e0800000000000000
+      internalID: -1814706031526740311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_46
+      rect:
+        serializedVersion: 2
+        x: 4133
+        y: 25
+        width: 68
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7abd26e4da6edcc00800000000000000
+      internalID: 922647130699652007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_47
+      rect:
+        serializedVersion: 2
+        x: 4229
+        y: 25
+        width: 68
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15603689bfd6d56c0800000000000000
+      internalID: -4153042354004883887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_48
+      rect:
+        serializedVersion: 2
+        x: 4325
+        y: 24
+        width: 68
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2da0d532254ec7060800000000000000
+      internalID: 6952682966184954578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_49
+      rect:
+        serializedVersion: 2
+        x: 4420
+        y: 27
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d935c270c056f4ae0800000000000000
+      internalID: -1562919443339914339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_50
+      rect:
+        serializedVersion: 2
+        x: 4429
+        y: 24
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec40bd97a953a9380800000000000000
+      internalID: -8963793170741918514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_51
+      rect:
+        serializedVersion: 2
+        x: 4515
+        y: 35
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 619ce571858849280800000000000000
+      internalID: -9037448640295155434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_52
+      rect:
+        serializedVersion: 2
+        x: 4531
+        y: 46
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d89ffd82bff05e10800000000000000
+      internalID: 2184526961626290385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_53
+      rect:
+        serializedVersion: 2
+        x: 4542
+        y: 27
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27bf980bdbd7556d0800000000000000
+      internalID: -3002355322908443790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_54
+      rect:
+        serializedVersion: 2
+        x: 4633
+        y: 30
+        width: 46
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f0dd7a40237003b0800000000000000
+      internalID: -5548308158394543887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_55
+      rect:
+        serializedVersion: 2
+        x: 4729
+        y: 30
+        width: 46
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6486fff87f0842d30800000000000000
+      internalID: 4405788136236345414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_56
+      rect:
+        serializedVersion: 2
+        x: 4825
+        y: 30
+        width: 46
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51db290bcdd9f4080800000000000000
+      internalID: -9200961942513861355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_57
+      rect:
+        serializedVersion: 2
+        x: 4920
+        y: 30
+        width: 48
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecf45756b5670f390800000000000000
+      internalID: -7786593620807299122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_58
+      rect:
+        serializedVersion: 2
+        x: 5015
+        y: 30
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f9cd1b690cca7a40800000000000000
+      internalID: 5366826246789253621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_59
+      rect:
+        serializedVersion: 2
+        x: 5111
+        y: 30
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ae4d8241a1f62100800000000000000
+      internalID: 83019318061518500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_60
+      rect:
+        serializedVersion: 2
+        x: 5207
+        y: 30
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98e6ea41e740f6080800000000000000
+      internalID: -9192123374880526711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_61
+      rect:
+        serializedVersion: 2
+        x: 5303
+        y: 30
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 298da7adc03d4c120800000000000000
+      internalID: 2433301750845462674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_62
+      rect:
+        serializedVersion: 2
+        x: 5398
+        y: 17
+        width: 52
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 992ab181f25aef440800000000000000
+      internalID: 4971592660350116505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_63
+      rect:
+        serializedVersion: 2
+        x: 5496
+        y: 15
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34dcd2c0fa6753660800000000000000
+      internalID: 7364923259829996867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_64
+      rect:
+        serializedVersion: 2
+        x: 5593
+        y: 13
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0d43f407cb6d8d00800000000000000
+      internalID: 976555196734983435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_65
+      rect:
+        serializedVersion: 2
+        x: 5689
+        y: 11
+        width: 46
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b23bfece9a5a2b80800000000000000
+      internalID: -8418816915291819340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_66
+      rect:
+        serializedVersion: 2
+        x: 5785
+        y: 11
+        width: 46
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92f9e9935258177f0800000000000000
+      internalID: -616565279046066391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_67
+      rect:
+        serializedVersion: 2
+        x: 5881
+        y: 10
+        width: 46
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a94d31dcf14999760800000000000000
+      internalID: 7465160721648833690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_68
+      rect:
+        serializedVersion: 2
+        x: 5977
+        y: 10
+        width: 46
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b439611117e24cc0800000000000000
+      internalID: -3728163481016781642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_69
+      rect:
+        serializedVersion: 2
+        x: 6073
+        y: 21
+        width: 46
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9de124ddc5179be10800000000000000
+      internalID: 2213925335492337369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_70
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 23
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 614eeb322a7d5c0b0800000000000000
+      internalID: -5708919861237849066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_71
+      rect:
+        serializedVersion: 2
+        x: 1509
+        y: 23
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26e9d1e134a030c10800000000000000
+      internalID: 2018468341376458338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_72
+      rect:
+        serializedVersion: 2
+        x: 1522
+        y: 26
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34b2e5f3d4237dfc0800000000000000
+      internalID: -3470249680508671165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_73
+      rect:
+        serializedVersion: 2
+        x: 4517
+        y: 26
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e95ce6b732f9160e0800000000000000
+      internalID: -2278364961729231458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_74
+      rect:
+        serializedVersion: 2
+        x: 4525
+        y: 23
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a2b68982a3f70880800000000000000
+      internalID: -8644673080296820058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_75
+      rect:
+        serializedVersion: 2
+        x: 4538
+        y: 23
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64e68adfcd02f0ed0800000000000000
+      internalID: -2445699939118322106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_76
+      rect:
+        serializedVersion: 2
+        x: 6079
+        y: 26
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 267da09adb19cc420800000000000000
+      internalID: 2651654524385285986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_77
+      rect:
+        serializedVersion: 2
+        x: 6106
+        y: 13
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ac461963d354d690800000000000000
+      internalID: -7578340105491428191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_78
+      rect:
+        serializedVersion: 2
+        x: 6108
+        y: 24
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f97dd76815dc86390800000000000000
+      internalID: -7824778602523797601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_79
+      rect:
+        serializedVersion: 2
+        x: 6077
+        y: 12
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 661c2171b1707abb0800000000000000
+      internalID: -4924959854573731482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_80
+      rect:
+        serializedVersion: 2
+        x: 6085
+        y: 9
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b5d62760df76f520800000000000000
+      internalID: 2735514356734678454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green_81
+      rect:
+        serializedVersion: 2
+        x: 6098
+        y: 9
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be7cd6c5e1c342af0800000000000000
+      internalID: -422146363968600085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      dragon_FIREBREATH_green_0: 8656952091852007553
+      dragon_FIREBREATH_green_1: 1563500350212170659
+      dragon_FIREBREATH_green_10: 3522404856216984414
+      dragon_FIREBREATH_green_11: -8291278189575383611
+      dragon_FIREBREATH_green_12: 6865359981414048331
+      dragon_FIREBREATH_green_13: -5591406111063072385
+      dragon_FIREBREATH_green_14: 6078184485040987453
+      dragon_FIREBREATH_green_15: -757534259510082982
+      dragon_FIREBREATH_green_16: -2995557533510582474
+      dragon_FIREBREATH_green_17: -4424787115367292236
+      dragon_FIREBREATH_green_18: -8247024183853938145
+      dragon_FIREBREATH_green_19: 528567400894063836
+      dragon_FIREBREATH_green_2: 4334735775922901336
+      dragon_FIREBREATH_green_20: -5023984040245349747
+      dragon_FIREBREATH_green_21: 552460413958241762
+      dragon_FIREBREATH_green_22: 2379593398167635663
+      dragon_FIREBREATH_green_23: -8299592107993685452
+      dragon_FIREBREATH_green_24: -3751326570304957645
+      dragon_FIREBREATH_green_25: 718214644471337289
+      dragon_FIREBREATH_green_26: 7705878266572942375
+      dragon_FIREBREATH_green_27: -6149286462391158616
+      dragon_FIREBREATH_green_28: -3058189067365724415
+      dragon_FIREBREATH_green_29: 8388978741556923893
+      dragon_FIREBREATH_green_3: 7888138446571289253
+      dragon_FIREBREATH_green_30: 2565635406737470048
+      dragon_FIREBREATH_green_31: -7658722995125105076
+      dragon_FIREBREATH_green_32: -7369935810055943235
+      dragon_FIREBREATH_green_33: 4951688425992529981
+      dragon_FIREBREATH_green_34: 7703379644289528620
+      dragon_FIREBREATH_green_35: 6205752835514448106
+      dragon_FIREBREATH_green_36: 499785910462302790
+      dragon_FIREBREATH_green_37: -276364266852791702
+      dragon_FIREBREATH_green_38: -8894155848755015102
+      dragon_FIREBREATH_green_39: -1543935001700085902
+      dragon_FIREBREATH_green_4: 8371375479990302568
+      dragon_FIREBREATH_green_40: 6736567765067665225
+      dragon_FIREBREATH_green_41: 1817504452195148584
+      dragon_FIREBREATH_green_42: 778630630104381021
+      dragon_FIREBREATH_green_43: 6537543251138389783
+      dragon_FIREBREATH_green_44: 4124709778180811636
+      dragon_FIREBREATH_green_45: -1814706031526740311
+      dragon_FIREBREATH_green_46: 922647130699652007
+      dragon_FIREBREATH_green_47: -4153042354004883887
+      dragon_FIREBREATH_green_48: 6952682966184954578
+      dragon_FIREBREATH_green_49: -1562919443339914339
+      dragon_FIREBREATH_green_5: 6286981049121418647
+      dragon_FIREBREATH_green_50: -8963793170741918514
+      dragon_FIREBREATH_green_51: -9037448640295155434
+      dragon_FIREBREATH_green_52: 2184526961626290385
+      dragon_FIREBREATH_green_53: -3002355322908443790
+      dragon_FIREBREATH_green_54: -5548308158394543887
+      dragon_FIREBREATH_green_55: 4405788136236345414
+      dragon_FIREBREATH_green_56: -9200961942513861355
+      dragon_FIREBREATH_green_57: -7786593620807299122
+      dragon_FIREBREATH_green_58: 5366826246789253621
+      dragon_FIREBREATH_green_59: 83019318061518500
+      dragon_FIREBREATH_green_6: 6792048376691696991
+      dragon_FIREBREATH_green_60: -9192123374880526711
+      dragon_FIREBREATH_green_61: 2433301750845462674
+      dragon_FIREBREATH_green_62: 4971592660350116505
+      dragon_FIREBREATH_green_63: 7364923259829996867
+      dragon_FIREBREATH_green_64: 976555196734983435
+      dragon_FIREBREATH_green_65: -8418816915291819340
+      dragon_FIREBREATH_green_66: -616565279046066391
+      dragon_FIREBREATH_green_67: 7465160721648833690
+      dragon_FIREBREATH_green_68: -3728163481016781642
+      dragon_FIREBREATH_green_69: 2213925335492337369
+      dragon_FIREBREATH_green_7: -5191079682833286672
+      dragon_FIREBREATH_green_70: -5708919861237849066
+      dragon_FIREBREATH_green_71: 2018468341376458338
+      dragon_FIREBREATH_green_72: -3470249680508671165
+      dragon_FIREBREATH_green_73: -2278364961729231458
+      dragon_FIREBREATH_green_74: -8644673080296820058
+      dragon_FIREBREATH_green_75: -2445699939118322106
+      dragon_FIREBREATH_green_76: 2651654524385285986
+      dragon_FIREBREATH_green_77: -7578340105491428191
+      dragon_FIREBREATH_green_78: -7824778602523797601
+      dragon_FIREBREATH_green_79: -4924959854573731482
+      dragon_FIREBREATH_green_8: -3140376426930631310
+      dragon_FIREBREATH_green_80: 2735514356734678454
+      dragon_FIREBREATH_green_81: -422146363968600085
+      dragon_FIREBREATH_green_9: -7585084172439860239
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

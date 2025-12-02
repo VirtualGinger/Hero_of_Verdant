@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: f4c91c3a189970249a764c3f5c1857da
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9100693453480584922
+    second: dragon_HOVER_NO_SHADOW_green_0
+  - first:
+      213: -4337268797916412180
+    second: dragon_HOVER_NO_SHADOW_green_1
+  - first:
+      213: 8329210201582186054
+    second: dragon_HOVER_NO_SHADOW_green_2
+  - first:
+      213: 902288686506700016
+    second: dragon_HOVER_NO_SHADOW_green_3
+  - first:
+      213: -7519102077746799038
+    second: dragon_HOVER_NO_SHADOW_green_4
+  - first:
+      213: -8883772618809196307
+    second: dragon_HOVER_NO_SHADOW_green_5
+  - first:
+      213: 2604193315276960645
+    second: dragon_HOVER_NO_SHADOW_green_6
+  - first:
+      213: 6741260759981815673
+    second: dragon_HOVER_NO_SHADOW_green_7
+  - first:
+      213: -8060415910026834782
+    second: dragon_HOVER_NO_SHADOW_green_8
+  - first:
+      213: -8396508880437811193
+    second: dragon_HOVER_NO_SHADOW_green_9
+  - first:
+      213: -1509596964182514604
+    second: dragon_HOVER_NO_SHADOW_green_10
+  - first:
+      213: -3587647046425258769
+    second: dragon_HOVER_NO_SHADOW_green_11
+  - first:
+      213: -1949901988788255922
+    second: dragon_HOVER_NO_SHADOW_green_12
+  - first:
+      213: 7019575492772640648
+    second: dragon_HOVER_NO_SHADOW_green_13
+  - first:
+      213: -4222420956793765277
+    second: dragon_HOVER_NO_SHADOW_green_14
+  - first:
+      213: -7919463200360525572
+    second: dragon_HOVER_NO_SHADOW_green_15
+  - first:
+      213: 1894904348199104527
+    second: dragon_HOVER_NO_SHADOW_green_16
+  - first:
+      213: 5783907088002230433
+    second: dragon_HOVER_NO_SHADOW_green_17
+  - first:
+      213: -312825711885956401
+    second: dragon_HOVER_NO_SHADOW_green_18
+  - first:
+      213: 149860426282516624
+    second: dragon_HOVER_NO_SHADOW_green_19
+  - first:
+      213: 1402878022929369090
+    second: dragon_HOVER_NO_SHADOW_green_20
+  - first:
+      213: -1424883163736788635
+    second: dragon_HOVER_NO_SHADOW_green_21
+  - first:
+      213: -4941359904124951477
+    second: dragon_HOVER_NO_SHADOW_green_22
+  - first:
+      213: -3709792068873853183
+    second: dragon_HOVER_NO_SHADOW_green_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dragon_HOVER_NO_SHADOW_green_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 39
+        width: 44
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62911978587d3b180800000000000000
+      internalID: -9100693453480584922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_HOVER_NO_SHADOW_green_1
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 39
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce68ec4120deec3c0800000000000000
+      internalID: -4337268797916412180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_HOVER_NO_SHADOW_green_2
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 40
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64eaddc5c8c479370800000000000000
+      internalID: 8329210201582186054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_HOVER_NO_SHADOW_green_3
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 42
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fce514a7c2958c00800000000000000
+      internalID: 902288686506700016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_HOVER_NO_SHADOW_green_4
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 43
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24e100a8f78c6a790800000000000000
+      internalID: -7519102077746799038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_HOVER_NO_SHADOW_green_5
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 41
+        width: 41
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de049861fdf76b480800000000000000
+      internalID: -8883772618809196307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_HOVER_NO_SHADOW_green_6
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 33
+        width: 68
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 583b78bc504f32420800000000000000
+      internalID: 2604193315276960645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_HOVER_NO_SHADOW_green_7
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 33
+        width: 68
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 977fef8c1f4cd8d50800000000000000
+      internalID: 6741260759981815673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_HOVER_NO_SHADOW_green_8
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 34
+        width: 60
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ac81fc8f66a32090800000000000000
+      internalID: -8060415910026834782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_HOVER_NO_SHADOW_green_9
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 36
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 708671ce8ab997b80800000000000000
+      internalID: -8396508880437811193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_HOVER_NO_SHADOW_green_10
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 36
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 454a4eb2f85dc0be0800000000000000
+      internalID: -1509596964182514604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_HOVER_NO_SHADOW_green_11
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 35
+        width: 52
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe4d75af40e163ec0800000000000000
+      internalID: -3587647046425258769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_HOVER_NO_SHADOW_green_12
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 39
+        width: 44
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e43c273e87e80f4e0800000000000000
+      internalID: -1949901988788255922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_HOVER_NO_SHADOW_green_13
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 39
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88730c828ba8a6160800000000000000
+      internalID: 7019575492772640648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_HOVER_NO_SHADOW_green_14
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 40
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 362842ad282f665c0800000000000000
+      internalID: -4222420956793765277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_HOVER_NO_SHADOW_green_15
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 42
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf09bbaad2a681290800000000000000
+      internalID: -7919463200360525572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_HOVER_NO_SHADOW_green_16
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 43
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0030cd077d0c4a10800000000000000
+      internalID: 1894904348199104527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_HOVER_NO_SHADOW_green_17
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 41
+        width: 41
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a8ac322ad0944050800000000000000
+      internalID: 5783907088002230433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_HOVER_NO_SHADOW_green_18
+      rect:
+        serializedVersion: 2
+        x: 1742
+        y: 42
+        width: 68
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcacd662cae98abf0800000000000000
+      internalID: -312825711885956401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_HOVER_NO_SHADOW_green_19
+      rect:
+        serializedVersion: 2
+        x: 1837
+        y: 43
+        width: 70
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09045728349641200800000000000000
+      internalID: 149860426282516624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_HOVER_NO_SHADOW_green_20
+      rect:
+        serializedVersion: 2
+        x: 1938
+        y: 44
+        width: 60
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20848eb0126087310800000000000000
+      internalID: 1402878022929369090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_HOVER_NO_SHADOW_green_21
+      rect:
+        serializedVersion: 2
+        x: 2041
+        y: 45
+        width: 46
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 561b80bdf4cc93ce0800000000000000
+      internalID: -1424883163736788635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_HOVER_NO_SHADOW_green_22
+      rect:
+        serializedVersion: 2
+        x: 2132
+        y: 46
+        width: 56
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b44264ff853cc6bb0800000000000000
+      internalID: -4941359904124951477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_HOVER_NO_SHADOW_green_23
+      rect:
+        serializedVersion: 2
+        x: 2229
+        y: 44
+        width: 54
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1076638c4cb248cc0800000000000000
+      internalID: -3709792068873853183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      dragon_HOVER_NO_SHADOW_green_0: -9100693453480584922
+      dragon_HOVER_NO_SHADOW_green_1: -4337268797916412180
+      dragon_HOVER_NO_SHADOW_green_10: -1509596964182514604
+      dragon_HOVER_NO_SHADOW_green_11: -3587647046425258769
+      dragon_HOVER_NO_SHADOW_green_12: -1949901988788255922
+      dragon_HOVER_NO_SHADOW_green_13: 7019575492772640648
+      dragon_HOVER_NO_SHADOW_green_14: -4222420956793765277
+      dragon_HOVER_NO_SHADOW_green_15: -7919463200360525572
+      dragon_HOVER_NO_SHADOW_green_16: 1894904348199104527
+      dragon_HOVER_NO_SHADOW_green_17: 5783907088002230433
+      dragon_HOVER_NO_SHADOW_green_18: -312825711885956401
+      dragon_HOVER_NO_SHADOW_green_19: 149860426282516624
+      dragon_HOVER_NO_SHADOW_green_2: 8329210201582186054
+      dragon_HOVER_NO_SHADOW_green_20: 1402878022929369090
+      dragon_HOVER_NO_SHADOW_green_21: -1424883163736788635
+      dragon_HOVER_NO_SHADOW_green_22: -4941359904124951477
+      dragon_HOVER_NO_SHADOW_green_23: -3709792068873853183
+      dragon_HOVER_NO_SHADOW_green_3: 902288686506700016
+      dragon_HOVER_NO_SHADOW_green_4: -7519102077746799038
+      dragon_HOVER_NO_SHADOW_green_5: -8883772618809196307
+      dragon_HOVER_NO_SHADOW_green_6: 2604193315276960645
+      dragon_HOVER_NO_SHADOW_green_7: 6741260759981815673
+      dragon_HOVER_NO_SHADOW_green_8: -8060415910026834782
+      dragon_HOVER_NO_SHADOW_green_9: -8396508880437811193
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

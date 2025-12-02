@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: 7b169792980562349b3509059c606be5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7015769125766723775
+    second: dragon_MELEE_green_0
+  - first:
+      213: 6731161865608640362
+    second: dragon_MELEE_green_1
+  - first:
+      213: 4383950599417041251
+    second: dragon_MELEE_green_2
+  - first:
+      213: -4409175645103368361
+    second: dragon_MELEE_green_3
+  - first:
+      213: 5576652409291923417
+    second: dragon_MELEE_green_4
+  - first:
+      213: -702952476202989682
+    second: dragon_MELEE_green_5
+  - first:
+      213: 4724343046075002862
+    second: dragon_MELEE_green_6
+  - first:
+      213: -3532047346766959419
+    second: dragon_MELEE_green_7
+  - first:
+      213: -8153775100020508390
+    second: dragon_MELEE_green_8
+  - first:
+      213: -4657987754631568426
+    second: dragon_MELEE_green_9
+  - first:
+      213: -8007453469034261413
+    second: dragon_MELEE_green_10
+  - first:
+      213: 4285017221232884852
+    second: dragon_MELEE_green_11
+  - first:
+      213: 5563362484926941757
+    second: dragon_MELEE_green_12
+  - first:
+      213: 3889563301201045505
+    second: dragon_MELEE_green_13
+  - first:
+      213: 5415478725684703146
+    second: dragon_MELEE_green_14
+  - first:
+      213: -6781800756527759900
+    second: dragon_MELEE_green_15
+  - first:
+      213: -9081026664377380788
+    second: dragon_MELEE_green_16
+  - first:
+      213: -4795903121522884761
+    second: dragon_MELEE_green_17
+  - first:
+      213: -3601239154271188527
+    second: dragon_MELEE_green_18
+  - first:
+      213: 845660320827599694
+    second: dragon_MELEE_green_19
+  - first:
+      213: -1604212301069439171
+    second: dragon_MELEE_green_20
+  - first:
+      213: -734530432733380176
+    second: dragon_MELEE_green_21
+  - first:
+      213: 160237323511209237
+    second: dragon_MELEE_green_22
+  - first:
+      213: 4592159429462649576
+    second: dragon_MELEE_green_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dragon_MELEE_green_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 31
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb87a7749d40d5160800000000000000
+      internalID: 7015769125766723775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_MELEE_green_1
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 31
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a673245bd04e96d50800000000000000
+      internalID: 6731161865608640362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_MELEE_green_2
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 31
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3611d1fc7dbe6dc30800000000000000
+      internalID: 4383950599417041251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_MELEE_green_3
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 31
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7575f419c167fc2c0800000000000000
+      internalID: -4409175645103368361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_MELEE_green_4
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 31
+        width: 47
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dfdba3e1df346d40800000000000000
+      internalID: 5576652409291923417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_MELEE_green_5
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 31
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8780f1827c9e36f0800000000000000
+      internalID: -702952476202989682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_MELEE_green_6
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 23
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eef236248fc309140800000000000000
+      internalID: 4724343046075002862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_MELEE_green_7
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 23
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cc2816d6a5abfec0800000000000000
+      internalID: -3532047346766959419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_MELEE_green_8
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 23
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a193ad04fb8f7de80800000000000000
+      internalID: -8153775100020508390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_MELEE_green_9
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 23
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d3e015f0d08b5fb0800000000000000
+      internalID: -4657987754631568426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_MELEE_green_10
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 23
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b545eb6ce7fcfd090800000000000000
+      internalID: -8007453469034261413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_MELEE_green_11
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 23
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47c7400b570777b30800000000000000
+      internalID: 4285017221232884852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_MELEE_green_12
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 31
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3a0ece34b8053d40800000000000000
+      internalID: 5563362484926941757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_MELEE_green_13
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 31
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 108eb73f6318af530800000000000000
+      internalID: 3889563301201045505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_MELEE_green_14
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 31
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaf2f156535a72b40800000000000000
+      internalID: 5415478725684703146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_MELEE_green_15
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 31
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4edffa9b42432e1a0800000000000000
+      internalID: -6781800756527759900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_MELEE_green_16
+      rect:
+        serializedVersion: 2
+        x: 1562
+        y: 31
+        width: 47
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c409fe1bc56b9f180800000000000000
+      internalID: -9081026664377380788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_MELEE_green_17
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 31
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76ff0705587817db0800000000000000
+      internalID: -4795903121522884761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_MELEE_green_18
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 30
+        width: 48
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d90072c114d50ec0800000000000000
+      internalID: -3601239154271188527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_MELEE_green_19
+      rect:
+        serializedVersion: 2
+        x: 1847
+        y: 30
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4b629fc4936cbb00800000000000000
+      internalID: 845660320827599694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_MELEE_green_20
+      rect:
+        serializedVersion: 2
+        x: 1943
+        y: 30
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3fa1726961bcb9e0800000000000000
+      internalID: -1604212301069439171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_MELEE_green_21
+      rect:
+        serializedVersion: 2
+        x: 2038
+        y: 30
+        width: 52
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b18630967c6ec5f0800000000000000
+      internalID: -734530432733380176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_MELEE_green_22
+      rect:
+        serializedVersion: 2
+        x: 2136
+        y: 29
+        width: 48
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51d15ab2ff6493200800000000000000
+      internalID: 160237323511209237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_MELEE_green_23
+      rect:
+        serializedVersion: 2
+        x: 2232
+        y: 28
+        width: 48
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eae419bba0aabf30800000000000000
+      internalID: 4592159429462649576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      dragon_MELEE_green_0: 7015769125766723775
+      dragon_MELEE_green_1: 6731161865608640362
+      dragon_MELEE_green_10: -8007453469034261413
+      dragon_MELEE_green_11: 4285017221232884852
+      dragon_MELEE_green_12: 5563362484926941757
+      dragon_MELEE_green_13: 3889563301201045505
+      dragon_MELEE_green_14: 5415478725684703146
+      dragon_MELEE_green_15: -6781800756527759900
+      dragon_MELEE_green_16: -9081026664377380788
+      dragon_MELEE_green_17: -4795903121522884761
+      dragon_MELEE_green_18: -3601239154271188527
+      dragon_MELEE_green_19: 845660320827599694
+      dragon_MELEE_green_2: 4383950599417041251
+      dragon_MELEE_green_20: -1604212301069439171
+      dragon_MELEE_green_21: -734530432733380176
+      dragon_MELEE_green_22: 160237323511209237
+      dragon_MELEE_green_23: 4592159429462649576
+      dragon_MELEE_green_3: -4409175645103368361
+      dragon_MELEE_green_4: 5576652409291923417
+      dragon_MELEE_green_5: -702952476202989682
+      dragon_MELEE_green_6: 4724343046075002862
+      dragon_MELEE_green_7: -3532047346766959419
+      dragon_MELEE_green_8: -8153775100020508390
+      dragon_MELEE_green_9: -4657987754631568426
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

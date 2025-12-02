@@ -1,0 +1,1131 @@
+fileFormatVersion: 2
+guid: 2308c28c436e19740aa23772edc2efff
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3497992284754702894
+    second: dragon_LAUNCH_green_0
+  - first:
+      213: -718133085689091737
+    second: dragon_LAUNCH_green_1
+  - first:
+      213: 5598100393161123212
+    second: dragon_LAUNCH_green_2
+  - first:
+      213: -6715921830602497108
+    second: dragon_LAUNCH_green_3
+  - first:
+      213: 1150027684301148195
+    second: dragon_LAUNCH_green_4
+  - first:
+      213: -5499416045323878063
+    second: dragon_LAUNCH_green_5
+  - first:
+      213: -3894142105385979521
+    second: dragon_LAUNCH_green_6
+  - first:
+      213: -5393378819752301013
+    second: dragon_LAUNCH_green_7
+  - first:
+      213: -174996624705787751
+    second: dragon_LAUNCH_green_8
+  - first:
+      213: 5844911939219160756
+    second: dragon_LAUNCH_green_9
+  - first:
+      213: -5237587554810577616
+    second: dragon_LAUNCH_green_10
+  - first:
+      213: -2361329283911967322
+    second: dragon_LAUNCH_green_11
+  - first:
+      213: -2556178809379180176
+    second: dragon_LAUNCH_green_12
+  - first:
+      213: 3974348797598119292
+    second: dragon_LAUNCH_green_13
+  - first:
+      213: 6778437145008396168
+    second: dragon_LAUNCH_green_14
+  - first:
+      213: 9074782334054269774
+    second: dragon_LAUNCH_green_15
+  - first:
+      213: 3327450027300438775
+    second: dragon_LAUNCH_green_16
+  - first:
+      213: 5809052202875850341
+    second: dragon_LAUNCH_green_17
+  - first:
+      213: -4804319191128413949
+    second: dragon_LAUNCH_green_18
+  - first:
+      213: 4229506149079159594
+    second: dragon_LAUNCH_green_19
+  - first:
+      213: -5296060356461396245
+    second: dragon_LAUNCH_green_20
+  - first:
+      213: 6895078412079301446
+    second: dragon_LAUNCH_green_21
+  - first:
+      213: 8289918043768164083
+    second: dragon_LAUNCH_green_22
+  - first:
+      213: -4057156275775644536
+    second: dragon_LAUNCH_green_23
+  - first:
+      213: 5636776449268417851
+    second: dragon_LAUNCH_green_24
+  - first:
+      213: 3389994315499800822
+    second: dragon_LAUNCH_green_25
+  - first:
+      213: 1574229753834232854
+    second: dragon_LAUNCH_green_26
+  - first:
+      213: 3162808182243542128
+    second: dragon_LAUNCH_green_27
+  - first:
+      213: 8138987807876566397
+    second: dragon_LAUNCH_green_28
+  - first:
+      213: -2235065307758151475
+    second: dragon_LAUNCH_green_29
+  - first:
+      213: -5154791636290658814
+    second: dragon_LAUNCH_green_30
+  - first:
+      213: -6445548957602516813
+    second: dragon_LAUNCH_green_31
+  - first:
+      213: -92227002032410027
+    second: dragon_LAUNCH_green_32
+  - first:
+      213: -4190817205004054135
+    second: dragon_LAUNCH_green_33
+  - first:
+      213: 1793678988191548045
+    second: dragon_LAUNCH_green_34
+  - first:
+      213: 597292222325028848
+    second: dragon_LAUNCH_green_35
+  - first:
+      213: 4069545592897693296
+    second: dragon_LAUNCH_green_36
+  - first:
+      213: -4996466517090839116
+    second: dragon_LAUNCH_green_37
+  - first:
+      213: 6220919496880702799
+    second: dragon_LAUNCH_green_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 31
+        width: 46
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e227cd7237d5b8030800000000000000
+      internalID: 3497992284754702894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_1
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 31
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 769eb0e63cda806f0800000000000000
+      internalID: -718133085689091737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_2
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 31
+        width: 46
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c85e757c5a270bd40800000000000000
+      internalID: 5598100393161123212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_3
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 31
+        width: 45
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca3a5a37da04cc2a0800000000000000
+      internalID: -6715921830602497108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_4
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 32
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32092a4f518b5ff00800000000000000
+      internalID: 1150027684301148195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_5
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 34
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15103627e362ea3b0800000000000000
+      internalID: -5499416045323878063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_6
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 41
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f71b39f136a35f9c0800000000000000
+      internalID: -3894142105385979521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_7
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 41
+        width: 41
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2e6c8de98ed625b0800000000000000
+      internalID: -5393378819752301013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_8
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 23
+        width: 52
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 998e48b3f79429df0800000000000000
+      internalID: -174996624705787751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_9
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 23
+        width: 68
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bef898e07c4d1150800000000000000
+      internalID: 5844911939219160756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_10
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 23
+        width: 68
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03d328b6ed95057b0800000000000000
+      internalID: -5237587554810577616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_11
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 23
+        width: 68
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ad13b2f68fda3fd0800000000000000
+      internalID: -2361329283911967322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_12
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 26
+        width: 60
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 071b2948ae0a68cd0800000000000000
+      internalID: -2556178809379180176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_13
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 32
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c753656ac29b72730800000000000000
+      internalID: 3974348797598119292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_14
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 34
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 887d9807ba8d11e50800000000000000
+      internalID: 6778437145008396168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_15
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 34
+        width: 52
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e438b4bd37a10fd70800000000000000
+      internalID: 9074782334054269774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_16
+      rect:
+        serializedVersion: 2
+        x: 1563
+        y: 31
+        width: 46
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f24b159b2a7d2e20800000000000000
+      internalID: 3327450027300438775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_17
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 31
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56e8d1a6336ed9050800000000000000
+      internalID: 5809052202875850341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_18
+      rect:
+        serializedVersion: 2
+        x: 1755
+        y: 31
+        width: 46
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 309e2396621a35db0800000000000000
+      internalID: -4804319191128413949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_19
+      rect:
+        serializedVersion: 2
+        x: 1852
+        y: 31
+        width: 45
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2391370f6932ba30800000000000000
+      internalID: 4229506149079159594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_20
+      rect:
+        serializedVersion: 2
+        x: 1951
+        y: 32
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beef6106a2d9086b0800000000000000
+      internalID: -5296060356461396245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_21
+      rect:
+        serializedVersion: 2
+        x: 2047
+        y: 34
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 643837ab84d30bf50800000000000000
+      internalID: 6895078412079301446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_22
+      rect:
+        serializedVersion: 2
+        x: 2143
+        y: 41
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fe07e7f984bb0370800000000000000
+      internalID: 8289918043768164083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_23
+      rect:
+        serializedVersion: 2
+        x: 2239
+        y: 41
+        width: 41
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88c5528ecd512b7c0800000000000000
+      internalID: -4057156275775644536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_24
+      rect:
+        serializedVersion: 2
+        x: 2325
+        y: 30
+        width: 54
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b358ee0d05ad93e40800000000000000
+      internalID: 5636776449268417851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_25
+      rect:
+        serializedVersion: 2
+        x: 2414
+        y: 30
+        width: 68
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f885f57eddab0f20800000000000000
+      internalID: 3389994315499800822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_26
+      rect:
+        serializedVersion: 2
+        x: 2510
+        y: 30
+        width: 68
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61cd328de99c8d510800000000000000
+      internalID: 1574229753834232854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_27
+      rect:
+        serializedVersion: 2
+        x: 2605
+        y: 31
+        width: 70
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0744353d84d84eb20800000000000000
+      internalID: 3162808182243542128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_28
+      rect:
+        serializedVersion: 2
+        x: 2706
+        y: 34
+        width: 60
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7dc7bff94e73f070800000000000000
+      internalID: 8138987807876566397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_29
+      rect:
+        serializedVersion: 2
+        x: 2809
+        y: 42
+        width: 46
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc8b649c1f37bf0e0800000000000000
+      internalID: -2235065307758151475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_30
+      rect:
+        serializedVersion: 2
+        x: 2900
+        y: 44
+        width: 56
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20e9dbb61508678b0800000000000000
+      internalID: -5154791636290658814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_31
+      rect:
+        serializedVersion: 2
+        x: 2997
+        y: 44
+        width: 54
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b076bf7f5fcc86a0800000000000000
+      internalID: -6445548957602516813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_32
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 34
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 552b821c70858bef0800000000000000
+      internalID: -92227002032410027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_33
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 34
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9815329b4f937d5c0800000000000000
+      internalID: -4190817205004054135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_34
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 34
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d824d34598d64e810800000000000000
+      internalID: 1793678988191548045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_35
+      rect:
+        serializedVersion: 2
+        x: 2246
+        y: 34
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f779c29c120a4800800000000000000
+      internalID: 597292222325028848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_36
+      rect:
+        serializedVersion: 2
+        x: 2822
+        y: 34
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0766ce5c72ee97830800000000000000
+      internalID: 4069545592897693296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_37
+      rect:
+        serializedVersion: 2
+        x: 2918
+        y: 34
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b5daa4dc2cf8aab0800000000000000
+      internalID: -4996466517090839116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_LAUNCH_green_38
+      rect:
+        serializedVersion: 2
+        x: 3014
+        y: 34
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4540e39255255650800000000000000
+      internalID: 6220919496880702799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      dragon_LAUNCH_green_0: 3497992284754702894
+      dragon_LAUNCH_green_1: -718133085689091737
+      dragon_LAUNCH_green_10: -5237587554810577616
+      dragon_LAUNCH_green_11: -2361329283911967322
+      dragon_LAUNCH_green_12: -2556178809379180176
+      dragon_LAUNCH_green_13: 3974348797598119292
+      dragon_LAUNCH_green_14: 6778437145008396168
+      dragon_LAUNCH_green_15: 9074782334054269774
+      dragon_LAUNCH_green_16: 3327450027300438775
+      dragon_LAUNCH_green_17: 5809052202875850341
+      dragon_LAUNCH_green_18: -4804319191128413949
+      dragon_LAUNCH_green_19: 4229506149079159594
+      dragon_LAUNCH_green_2: 5598100393161123212
+      dragon_LAUNCH_green_20: -5296060356461396245
+      dragon_LAUNCH_green_21: 6895078412079301446
+      dragon_LAUNCH_green_22: 8289918043768164083
+      dragon_LAUNCH_green_23: -4057156275775644536
+      dragon_LAUNCH_green_24: 5636776449268417851
+      dragon_LAUNCH_green_25: 3389994315499800822
+      dragon_LAUNCH_green_26: 1574229753834232854
+      dragon_LAUNCH_green_27: 3162808182243542128
+      dragon_LAUNCH_green_28: 8138987807876566397
+      dragon_LAUNCH_green_29: -2235065307758151475
+      dragon_LAUNCH_green_3: -6715921830602497108
+      dragon_LAUNCH_green_30: -5154791636290658814
+      dragon_LAUNCH_green_31: -6445548957602516813
+      dragon_LAUNCH_green_32: -92227002032410027
+      dragon_LAUNCH_green_33: -4190817205004054135
+      dragon_LAUNCH_green_34: 1793678988191548045
+      dragon_LAUNCH_green_35: 597292222325028848
+      dragon_LAUNCH_green_36: 4069545592897693296
+      dragon_LAUNCH_green_37: -4996466517090839116
+      dragon_LAUNCH_green_38: 6220919496880702799
+      dragon_LAUNCH_green_4: 1150027684301148195
+      dragon_LAUNCH_green_5: -5499416045323878063
+      dragon_LAUNCH_green_6: -3894142105385979521
+      dragon_LAUNCH_green_7: -5393378819752301013
+      dragon_LAUNCH_green_8: -174996624705787751
+      dragon_LAUNCH_green_9: 5844911939219160756
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

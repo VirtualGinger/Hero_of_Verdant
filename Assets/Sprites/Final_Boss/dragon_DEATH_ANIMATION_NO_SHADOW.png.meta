@@ -1,0 +1,351 @@
+fileFormatVersion: 2
+guid: 6414a2bae610978419fdee84dae40a4f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5457148122769444457
+    second: dragon_DEATH_ANIMATION_NO_SHADOW_0
+  - first:
+      213: -6802816944341582667
+    second: dragon_DEATH_ANIMATION_NO_SHADOW_1
+  - first:
+      213: -3935657327249465974
+    second: dragon_DEATH_ANIMATION_NO_SHADOW_2
+  - first:
+      213: -8174883498378389910
+    second: dragon_DEATH_ANIMATION_NO_SHADOW_3
+  - first:
+      213: 1614908882316018318
+    second: dragon_DEATH_ANIMATION_NO_SHADOW_4
+  - first:
+      213: 168024849244432864
+    second: dragon_DEATH_ANIMATION_NO_SHADOW_5
+  - first:
+      213: 3959501622539615570
+    second: dragon_DEATH_ANIMATION_NO_SHADOW_6
+  - first:
+      213: 7224302282402841494
+    second: dragon_DEATH_ANIMATION_NO_SHADOW_7
+  - first:
+      213: 1061837403615374793
+    second: dragon_DEATH_ANIMATION_NO_SHADOW_8
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dragon_DEATH_ANIMATION_NO_SHADOW_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 31
+        width: 50
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96ecc50fd4fabbb40800000000000000
+      internalID: 5457148122769444457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_DEATH_ANIMATION_NO_SHADOW_1
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 31
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bcf280380a8791a0800000000000000
+      internalID: -6802816944341582667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_DEATH_ANIMATION_NO_SHADOW_2
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 31
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8dd1ab438cb169c0800000000000000
+      internalID: -3935657327249465974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_DEATH_ANIMATION_NO_SHADOW_3
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 31
+        width: 47
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6614f645cafc8e80800000000000000
+      internalID: -8174883498378389910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_DEATH_ANIMATION_NO_SHADOW_4
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 30
+        width: 53
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e82c113821f496610800000000000000
+      internalID: 1614908882316018318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_DEATH_ANIMATION_NO_SHADOW_5
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 30
+        width: 53
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e927acc5b1f45200800000000000000
+      internalID: 168024849244432864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_DEATH_ANIMATION_NO_SHADOW_6
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 30
+        width: 55
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25d7e035fb9f2f630800000000000000
+      internalID: 3959501622539615570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_DEATH_ANIMATION_NO_SHADOW_7
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 28
+        width: 56
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6934aac56a0e14460800000000000000
+      internalID: 7224302282402841494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_DEATH_ANIMATION_NO_SHADOW_8
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 28
+        width: 56
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cda7b32e776cbe00800000000000000
+      internalID: 1061837403615374793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      dragon_DEATH_ANIMATION_NO_SHADOW_0: 5457148122769444457
+      dragon_DEATH_ANIMATION_NO_SHADOW_1: -6802816944341582667
+      dragon_DEATH_ANIMATION_NO_SHADOW_2: -3935657327249465974
+      dragon_DEATH_ANIMATION_NO_SHADOW_3: -8174883498378389910
+      dragon_DEATH_ANIMATION_NO_SHADOW_4: 1614908882316018318
+      dragon_DEATH_ANIMATION_NO_SHADOW_5: 168024849244432864
+      dragon_DEATH_ANIMATION_NO_SHADOW_6: 3959501622539615570
+      dragon_DEATH_ANIMATION_NO_SHADOW_7: 7224302282402841494
+      dragon_DEATH_ANIMATION_NO_SHADOW_8: 1061837403615374793
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

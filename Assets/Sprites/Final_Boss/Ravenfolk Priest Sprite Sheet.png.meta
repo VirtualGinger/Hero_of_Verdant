@@ -1,0 +1,1235 @@
+fileFormatVersion: 2
+guid: bf999c5c0a0dae249afe2e896260b038
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5222193375122700906
+    second: Ravenfolk Priest Sprite Sheet_0
+  - first:
+      213: 28845331436501440
+    second: Ravenfolk Priest Sprite Sheet_1
+  - first:
+      213: -3923741618160391303
+    second: Ravenfolk Priest Sprite Sheet_2
+  - first:
+      213: -8700705904755860669
+    second: Ravenfolk Priest Sprite Sheet_3
+  - first:
+      213: -7836199687900740518
+    second: Ravenfolk Priest Sprite Sheet_4
+  - first:
+      213: 7951929792115458034
+    second: Ravenfolk Priest Sprite Sheet_5
+  - first:
+      213: 4900105816828938963
+    second: Ravenfolk Priest Sprite Sheet_6
+  - first:
+      213: 6945535774511884255
+    second: Ravenfolk Priest Sprite Sheet_7
+  - first:
+      213: 3719025127821174059
+    second: Ravenfolk Priest Sprite Sheet_8
+  - first:
+      213: 5811455200980587287
+    second: Ravenfolk Priest Sprite Sheet_9
+  - first:
+      213: 187509627269259691
+    second: Ravenfolk Priest Sprite Sheet_10
+  - first:
+      213: -5120276763020463551
+    second: Ravenfolk Priest Sprite Sheet_11
+  - first:
+      213: -2903737540125859223
+    second: Ravenfolk Priest Sprite Sheet_12
+  - first:
+      213: 453532914548270075
+    second: Ravenfolk Priest Sprite Sheet_13
+  - first:
+      213: 4072048500887387265
+    second: Ravenfolk Priest Sprite Sheet_14
+  - first:
+      213: -5853363687192592546
+    second: Ravenfolk Priest Sprite Sheet_15
+  - first:
+      213: 6129145605039464909
+    second: Ravenfolk Priest Sprite Sheet_16
+  - first:
+      213: 3836240423489475742
+    second: Ravenfolk Priest Sprite Sheet_17
+  - first:
+      213: 5922042766970654794
+    second: Ravenfolk Priest Sprite Sheet_18
+  - first:
+      213: 7065171626414785817
+    second: Ravenfolk Priest Sprite Sheet_19
+  - first:
+      213: 4338367646658123322
+    second: Ravenfolk Priest Sprite Sheet_20
+  - first:
+      213: 7799963448418673248
+    second: Ravenfolk Priest Sprite Sheet_21
+  - first:
+      213: -3110063981324722769
+    second: Ravenfolk Priest Sprite Sheet_22
+  - first:
+      213: 1949163215930068476
+    second: Ravenfolk Priest Sprite Sheet_23
+  - first:
+      213: -8009688315248939088
+    second: Ravenfolk Priest Sprite Sheet_24
+  - first:
+      213: -1711606977958337097
+    second: Ravenfolk Priest Sprite Sheet_25
+  - first:
+      213: 6106207158411625579
+    second: Ravenfolk Priest Sprite Sheet_26
+  - first:
+      213: 7685395289885163679
+    second: Ravenfolk Priest Sprite Sheet_27
+  - first:
+      213: 8146472344241606814
+    second: Ravenfolk Priest Sprite Sheet_28
+  - first:
+      213: -3353354481200000342
+    second: Ravenfolk Priest Sprite Sheet_29
+  - first:
+      213: -5480102777281579677
+    second: Ravenfolk Priest Sprite Sheet_30
+  - first:
+      213: -7323705047970091723
+    second: Ravenfolk Priest Sprite Sheet_31
+  - first:
+      213: 5183039566096386113
+    second: Ravenfolk Priest Sprite Sheet_32
+  - first:
+      213: 4192634116499302933
+    second: Ravenfolk Priest Sprite Sheet_33
+  - first:
+      213: -6073588293059129665
+    second: Ravenfolk Priest Sprite Sheet_34
+  - first:
+      213: 4659737712046702756
+    second: Ravenfolk Priest Sprite Sheet_35
+  - first:
+      213: -3480366274017450090
+    second: Ravenfolk Priest Sprite Sheet_36
+  - first:
+      213: 5500007872816239287
+    second: Ravenfolk Priest Sprite Sheet_37
+  - first:
+      213: 2715471346828896044
+    second: Ravenfolk Priest Sprite Sheet_38
+  - first:
+      213: -4382818924572715531
+    second: Ravenfolk Priest Sprite Sheet_39
+  - first:
+      213: 3553638284515202950
+    second: Ravenfolk Priest Sprite Sheet_40
+  - first:
+      213: -7834162314826277547
+    second: Ravenfolk Priest Sprite Sheet_41
+  - first:
+      213: 5838271304908293104
+    second: Ravenfolk Priest Sprite Sheet_42
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 191
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 695c96f2bca0787b0800000000000000
+      internalID: -5222193375122700906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 191
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c973b51daa766000800000000000000
+      internalID: 28845331436501440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 191
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97b222389c11c89c0800000000000000
+      internalID: -3923741618160391303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 191
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34b12e3f312e04780800000000000000
+      internalID: -8700705904755860669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 191
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5446add6e9304390800000000000000
+      internalID: -7836199687900740518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 191
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ff33e9c30eea5e60800000000000000
+      internalID: 7951929792115458034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 191
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3da0aed474ca00440800000000000000
+      internalID: 4900105816828938963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 191
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd76c86ecff736060800000000000000
+      internalID: 6945535774511884255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 159
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b25688646a1ac9330800000000000000
+      internalID: 3719025127821174059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 159
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7135b8207bf66a050800000000000000
+      internalID: 5811455200980587287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 159
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba1a955330b2a9200800000000000000
+      internalID: 187509627269259691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 159
+        width: 31
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1427a74996f11f8b0800000000000000
+      internalID: -5120276763020463551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 159
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 962e4d7871ad3b7d0800000000000000
+      internalID: -2903737540125859223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 159
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf3e89968c54b4600800000000000000
+      internalID: 453532914548270075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 159
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18cfd837982d28830800000000000000
+      internalID: 4072048500887387265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 159
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5ff6bb2dbca4cea0800000000000000
+      internalID: -5853363687192592546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 127
+        width: 36
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc1260544791f0550800000000000000
+      internalID: 6129145605039464909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 127
+        width: 34
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e94951307501d3530800000000000000
+      internalID: 3836240423489475742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 127
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4015fd25825f2250800000000000000
+      internalID: 5922042766970654794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 127
+        width: 35
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9154f9d49288c0260800000000000000
+      internalID: 7065171626414785817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 127
+        width: 36
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a36da14936af43c30800000000000000
+      internalID: 4338367646658123322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 127
+        width: 34
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 062a60c2e690f3c60800000000000000
+      internalID: 7799963448418673248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 127
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fad176c6945d6d4d0800000000000000
+      internalID: -3110063981324722769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 127
+        width: 35
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfd05c62e91dc0b10800000000000000
+      internalID: 1949163215930068476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 95
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bf6df71aeed7d090800000000000000
+      internalID: -8009688315248939088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 95
+        width: 29
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b5a6b3a5862f38e0800000000000000
+      internalID: -1711606977958337097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 95
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b64821afe0b9db450800000000000000
+      internalID: 6106207158411625579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 95
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f90c0141c4208aa60800000000000000
+      internalID: 7685395289885163679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 44
+        width: 25
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e90901b6f651e0170800000000000000
+      internalID: 8146472344241606814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 63
+        width: 29
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa21c1ebddd7671d0800000000000000
+      internalID: -3353354481200000342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 63
+        width: 34
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 365ff731f83c2f3b0800000000000000
+      internalID: -5480102777281579677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 63
+        width: 44
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53de100cf09fc5a90800000000000000
+      internalID: -7323705047970091723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 63
+        width: 45
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14848f1460bdde740800000000000000
+      internalID: 5183039566096386113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 44
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51aef13f38a3f2a30800000000000000
+      internalID: 4192634116499302933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 44
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbe4d3070a746bba0800000000000000
+      internalID: -6073588293059129665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 11
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a00901c2c6baa040800000000000000
+      internalID: 4659737712046702756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 13
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 697a0f4405143bfc0800000000000000
+      internalID: -3480366274017450090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 13
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b250112504f35c40800000000000000
+      internalID: 5500007872816239287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 11
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c27ec718dca4fa520800000000000000
+      internalID: 2715471346828896044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 11
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f5dbf5c8691d23c0800000000000000
+      internalID: -4382818924572715531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 13
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 687d1c8113f015130800000000000000
+      internalID: 3553638284515202950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 13
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55d1700c1e6774390800000000000000
+      internalID: -7834162314826277547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenfolk Priest Sprite Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 11
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f34a6fb1d4b50150800000000000000
+      internalID: 5838271304908293104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Ravenfolk Priest Sprite Sheet_0: -5222193375122700906
+      Ravenfolk Priest Sprite Sheet_1: 28845331436501440
+      Ravenfolk Priest Sprite Sheet_10: 187509627269259691
+      Ravenfolk Priest Sprite Sheet_11: -5120276763020463551
+      Ravenfolk Priest Sprite Sheet_12: -2903737540125859223
+      Ravenfolk Priest Sprite Sheet_13: 453532914548270075
+      Ravenfolk Priest Sprite Sheet_14: 4072048500887387265
+      Ravenfolk Priest Sprite Sheet_15: -5853363687192592546
+      Ravenfolk Priest Sprite Sheet_16: 6129145605039464909
+      Ravenfolk Priest Sprite Sheet_17: 3836240423489475742
+      Ravenfolk Priest Sprite Sheet_18: 5922042766970654794
+      Ravenfolk Priest Sprite Sheet_19: 7065171626414785817
+      Ravenfolk Priest Sprite Sheet_2: -3923741618160391303
+      Ravenfolk Priest Sprite Sheet_20: 4338367646658123322
+      Ravenfolk Priest Sprite Sheet_21: 7799963448418673248
+      Ravenfolk Priest Sprite Sheet_22: -3110063981324722769
+      Ravenfolk Priest Sprite Sheet_23: 1949163215930068476
+      Ravenfolk Priest Sprite Sheet_24: -8009688315248939088
+      Ravenfolk Priest Sprite Sheet_25: -1711606977958337097
+      Ravenfolk Priest Sprite Sheet_26: 6106207158411625579
+      Ravenfolk Priest Sprite Sheet_27: 7685395289885163679
+      Ravenfolk Priest Sprite Sheet_28: 8146472344241606814
+      Ravenfolk Priest Sprite Sheet_29: -3353354481200000342
+      Ravenfolk Priest Sprite Sheet_3: -8700705904755860669
+      Ravenfolk Priest Sprite Sheet_30: -5480102777281579677
+      Ravenfolk Priest Sprite Sheet_31: -7323705047970091723
+      Ravenfolk Priest Sprite Sheet_32: 5183039566096386113
+      Ravenfolk Priest Sprite Sheet_33: 4192634116499302933
+      Ravenfolk Priest Sprite Sheet_34: -6073588293059129665
+      Ravenfolk Priest Sprite Sheet_35: 4659737712046702756
+      Ravenfolk Priest Sprite Sheet_36: -3480366274017450090
+      Ravenfolk Priest Sprite Sheet_37: 5500007872816239287
+      Ravenfolk Priest Sprite Sheet_38: 2715471346828896044
+      Ravenfolk Priest Sprite Sheet_39: -4382818924572715531
+      Ravenfolk Priest Sprite Sheet_4: -7836199687900740518
+      Ravenfolk Priest Sprite Sheet_40: 3553638284515202950
+      Ravenfolk Priest Sprite Sheet_41: -7834162314826277547
+      Ravenfolk Priest Sprite Sheet_42: 5838271304908293104
+      Ravenfolk Priest Sprite Sheet_5: 7951929792115458034
+      Ravenfolk Priest Sprite Sheet_6: 4900105816828938963
+      Ravenfolk Priest Sprite Sheet_7: 6945535774511884255
+      Ravenfolk Priest Sprite Sheet_8: 3719025127821174059
+      Ravenfolk Priest Sprite Sheet_9: 5811455200980587287
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
