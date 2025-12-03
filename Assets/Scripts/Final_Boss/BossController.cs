@@ -1,164 +1,191 @@
 using UnityEngine;
 
-public class EnemyAI : MonoBehaviour
+public class BossController : MonoBehaviour
 {
-    private enum State { Idle, Chasing, Attacking, Hit, Dead }
-    private State currentState = State.Idle;
+    [Header("Components")]
+    public Rigidbody2D rb;
+    public Animator animator;
+    public SpriteRenderer sr;
+    public Transform player;
 
-    [Header("Setup")]
+    [Header("Stats")]
+    public float maxHealth = 80f;
+    public float health = 80f;
     public float moveSpeed = 2f;
-    public float attackRange = 1.2f;
-    public float attackCooldown = 2f;
+
+    [Header("Ranges")]
+    public float chaseRange = 6f;
+    public float attack1Range = 3f;     // Laser range
+    public float attack2Range = 2f;     // AOE range
+
+    [Header("Cooldowns")]
+    public float attack1Cooldown = 2f;
+    public float attack2Cooldown = 5f;
+    private float attack1Timer = 0f;
+    private float attack2Timer = 0f;
+
+    [Header("Damage")]
+    public float laserDamage = 5f;
+    public float aoeDamage = 12f;
     public LayerMask playerLayer;
 
-    [Header("Animation")]
-    private Animator anim;
-    private Rigidbody2D rb;
+    [Header("Attack Spawns")]
+    public Transform laserPoint;
+    public Transform aoePoint;
+    public GameObject laserPrefab;
+    public GameObject aoePrefab;
 
-    private Transform player;
-    private float lastAttackTime = 0f;
-    private bool isFacingRight = true;
-    private float originalScaleX;
+    private Vector2 moveDir;
+    private bool isDead = false;
 
-    [Header("Health")]
-    public int health = 30;
-
-    void Awake()
+    void Reset()
     {
-        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        animator = GetComponent<Animator>();
+        sr = GetComponent<SpriteRenderer>();
+    }
 
-        originalScaleX = Mathf.Abs(transform.localScale.x);
+    void Start()
+    {
+        if (player == null)
+            player = GameObject.FindWithTag("Player").transform;
+
+        health = maxHealth;
     }
 
     void Update()
     {
-        if (currentState == State.Dead) return;
+        if (isDead) return;
 
-        float distance = Vector2.Distance(transform.position, player.position);
+        if (attack1Timer > 0) attack1Timer -= Time.deltaTime;
+        if (attack2Timer > 0) attack2Timer -= Time.deltaTime;
 
-        // Chase
-        if (distance > attackRange)
+        float dist = Vector2.Distance(transform.position, player.position);
+
+        // AOE Attack (highest priority)
+        if (dist <= attack2Range && attack2Timer <= 0)
         {
-            if (currentState != State.Hit)
-                currentState = State.Chasing;
+            DoAOEAttack();
+            return;
         }
-        // Attack
+
+        // Laser Attack
+        if (dist <= attack1Range && attack1Timer <= 0)
+        {
+            DoLaserAttack();
+            return;
+        }
+
+        // Chase if in range
+        if (dist <= chaseRange)
+            MoveTowardPlayer();
         else
-        {
-            if (Time.time - lastAttackTime >= attackCooldown)
-            {
-                currentState = State.Attacking;
-                rb.linearVelocity = Vector2.zero; 
-                ChooseAttack();
-            }
-        }
-
-        HandleState();
-        FlipSprite();
+            StopMoving();
     }
 
-    void HandleState()
+    private void MoveTowardPlayer()
     {
-        switch (currentState)
-        {
-            case State.Idle:
-                rb.linearVelocity = Vector2.zero;
-                anim.SetBool("isWalking", false);
-                break;
+        moveDir = (player.position - transform.position).normalized;
 
-            case State.Chasing:
-                ChasePlayer();
-                break;
+        // Flip sprite for right-facing-only animations
+        sr.flipX = moveDir.x < 0;
 
-            case State.Attacking:
-                rb.linearVelocity = Vector2.zero;
-                anim.SetBool("isWalking", false);
-                break;
-
-            case State.Hit:
-                rb.linearVelocity = Vector2.zero;
-                break;
-
-            case State.Dead:
-                rb.linearVelocity = Vector2.zero;
-                break;
-        }
+        animator.SetBool("IsWalking", true);
     }
 
-    void ChasePlayer()
+    private void StopMoving()
     {
-        Vector2 dir = (player.position - transform.position).normalized;
-        rb.linearVelocity = dir * moveSpeed;
-        anim.SetBool("isWalking", true);
+        moveDir = Vector2.zero;
+        animator.SetBool("IsWalking", false);
     }
 
-    void ChooseAttack()
+    void FixedUpdate()
     {
-        lastAttackTime = Time.time;
-
-        int attackPick = Random.Range(1, 3);
-
-        if (attackPick == 1)
-            anim.SetTrigger("Attack1");
-        else
-            anim.SetTrigger("Attack2");
+        if (!isDead)
+            rb.MovePosition(rb.position + moveDir * moveSpeed * Time.fixedDeltaTime);
     }
 
-    // Called from ANIMATION EVENT
-    public void ANIM_EVENT_DealDamage()
+    // ----------------------------
+    //         ATTACK 1 (LASER)
+    // ----------------------------
+    private void DoLaserAttack()
     {
-        Collider2D hit = Physics2D.OverlapCircle(transform.position, attackRange, playerLayer);
+        attack1Timer = attack1Cooldown;
+        animator.SetTrigger("Attack1");  // Animation event will call SpawnLaser()
+        StopMoving();
+    }
+
+    public void SpawnLaser() // <-- MUST be inside class!
+    {
+        Instantiate(laserPrefab, laserPoint.position, Quaternion.identity);
+
+        // Damage player if close
+        Collider2D hit = Physics2D.OverlapCircle(laserPoint.position, 0.75f, playerLayer);
         if (hit != null)
         {
-            PlayerHealth playerHP = hit.GetComponent<PlayerHealth>();
-            if (playerHP != null)
-                playerHP.TakeDamage(10);
+            PlayerHealth hp = hit.GetComponent<PlayerHealth>();
+            if (hp != null)
+                hp.TakeDamage(laserDamage);
         }
     }
 
-    void FlipSprite()
+    // ----------------------------
+    //         ATTACK 2 (AOE)
+    // ----------------------------
+    private void DoAOEAttack()
     {
-        if (player == null) return;
+        attack2Timer = attack2Cooldown;
+        animator.SetTrigger("Attack2");  // Animation event will call SpawnAOE()
+        StopMoving();
+    }
 
-        bool shouldFaceRight = player.position.x > transform.position.x;
+    public void SpawnAOE() // <-- MUST be inside class!
+    {
+        Instantiate(aoePrefab, aoePoint.position, Quaternion.identity);
 
-        if (shouldFaceRight != isFacingRight)
+        Collider2D hit = Physics2D.OverlapCircle(aoePoint.position, 1f, playerLayer);
+        if (hit != null)
         {
-            isFacingRight = shouldFaceRight;
-            transform.localScale = new Vector3(
-                isFacingRight ? originalScaleX : -originalScaleX,
-                transform.localScale.y,
-                transform.localScale.z
-            );
+            PlayerHealth hp = hit.GetComponent<PlayerHealth>();
+            if (hp != null)
+                hp.TakeDamage(aoeDamage);
         }
     }
 
-    public void TakeDamage(int dmg)
+    // ----------------------------
+    //            DAMAGE
+    // ----------------------------
+    public void TakeDamage(float dmg)
     {
-        if (currentState == State.Dead) return;
+        if (isDead) return;
 
         health -= dmg;
-
-        anim.SetTrigger("Hit");
-        currentState = State.Hit;
+        animator.SetTrigger("Hit");
 
         if (health <= 0)
             Die();
     }
 
-    void Die()
+    private void Die()
     {
-        currentState = State.Dead;
-        anim.SetTrigger("Death");
+        isDead = true;
+        animator.SetTrigger("Death");
         rb.linearVelocity = Vector2.zero;
-        Destroy(gameObject, 2f); // optional delay
+        Destroy(gameObject, 2f);
     }
 
-    // Called by Hit animation event to return to AI
-    public void ANIM_EVENT_HitFinished()
+    void OnDrawGizmosSelected()
     {
-        currentState = State.Idle;
+        if (laserPoint != null)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(laserPoint.position, 0.75f);
+        }
+
+        if (aoePoint != null)
+        {
+            Gizmos.color = Color.magenta;
+            Gizmos.DrawWireSphere(aoePoint.position, 1f);
+        }
     }
 }

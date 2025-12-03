@@ -15611,9 +15611,11 @@ GameObject:
   - component: {fileID: 2029887065}
   - component: {fileID: 2029887064}
   - component: {fileID: 2029887063}
-  m_Layer: 0
+  - component: {fileID: 2029887071}
+  - component: {fileID: 2029887070}
+  m_Layer: 6
   m_Name: Mage__0
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15674,8 +15676,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.16633403, y: -0.1047287}
-  m_Size: {x: 0.39929843, y: 0.7280426}
+  m_Offset: {x: -0.095239006, y: 0.34371695}
+  m_Size: {x: 0.43211144, y: 0.77179337}
   m_Direction: 0
 --- !u!114 &2029887065
 MonoBehaviour:
@@ -15689,13 +15691,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c608b7fa05b9bb47b14dab069f45f85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossController
-  moveSpeed: 3
-  attackRange: 1.5
-  attackCooldown: 1
+  rb: {fileID: 2029887066}
+  animator: {fileID: 2029887063}
+  sr: {fileID: 2029887067}
+  player: {fileID: 3784942565078506232, guid: e222a325bb5bd07448c0b02c4af2c51a, type: 3}
+  maxHealth: 80
+  health: 30
+  moveSpeed: 2
+  chaseRange: 6
+  attack1Range: 3
+  attack2Range: 2
+  attack1Cooldown: 2
+  attack2Cooldown: 5
+  laserDamage: 10
+  aoeDamage: 12
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
-  health: 30
+    m_Bits: 128
+  laserPoint: {fileID: 0}
+  aoePoint: {fileID: 0}
+  laserPrefab: {fileID: 0}
+  aoePrefab: {fileID: 0}
 --- !u!50 &2029887066
 Rigidbody2D:
   serializedVersion: 5
@@ -15704,7 +15720,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2029887062}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -15790,12 +15806,38 @@ Transform:
   m_GameObject: {fileID: 2029887062}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.6, y: 33.15, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalPosition: {x: 2.3, y: 28.6, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2029887070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029887062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 107988aac5b9a7248a31ef6b64eb7663, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Laser
+  lifeTime: 0.3
+--- !u!114 &2029887071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029887062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 208de7cb6ec8add449f245b449a5e578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AOE
+  lifeTime: 0.6
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
