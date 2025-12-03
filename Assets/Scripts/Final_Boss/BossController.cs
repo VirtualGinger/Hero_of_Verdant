@@ -1,99 +1,164 @@
 using UnityEngine;
 
-public class BossController : MonoBehaviour
+public class EnemyAI : MonoBehaviour
 {
-    [Header("Settings")]
-    public float chaseRange = 6f;
-    public float attackRange = 1.5f;
-    public float moveSpeed = 3f;
-    public float attackCooldown = 1f;
+    private enum State { Idle, Chasing, Attacking, Hit, Dead }
+    private State currentState = State.Idle;
 
-    [Header("Components")]
-    public Rigidbody2D rb;
-    public Animator animator;
-    public Transform player;
+    [Header("Setup")]
+    public float moveSpeed = 2f;
+    public float attackRange = 1.2f;
+    public float attackCooldown = 2f;
+    public LayerMask playerLayer;
 
-    private bool isChasing = false;
-    private bool isAttacking = false;
-    private float attackTimer = 0f;
+    [Header("Animation")]
+    private Animator anim;
+    private Rigidbody2D rb;
 
-    private Vector2 movement;
+    private Transform player;
+    private float lastAttackTime = 0f;
+    private bool isFacingRight = true;
+    private float originalScaleX;
 
-    void Start()
+    [Header("Health")]
+    public int health = 30;
+
+    void Awake()
     {
-        if (player == null)
-            player = GameObject.FindGameObjectWithTag("Player").transform;
+        anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+        player = GameObject.FindGameObjectWithTag("Player").transform;
 
-        if (rb == null)
-            rb = GetComponent<Rigidbody2D>();
-
-        if (animator == null)
-            animator = GetComponent<Animator>();
+        originalScaleX = Mathf.Abs(transform.localScale.x);
     }
 
     void Update()
     {
-        attackTimer -= Time.deltaTime;
+        if (currentState == State.Dead) return;
 
         float distance = Vector2.Distance(transform.position, player.position);
 
-        // Player enters chase range
-        if (distance <= chaseRange)
-            isChasing = true;
-
-        // If not yet chasing, stay still
-        if (!isChasing)
+        // Chase
+        if (distance > attackRange)
         {
-            animator.SetBool("isMoving", false);
-            return;
+            if (currentState != State.Hit)
+                currentState = State.Chasing;
         }
-
-        // Determine left/right facing
-        if (player.position.x < transform.position.x)
-            transform.localScale = new Vector3(-1, 1, 1); // face left
+        // Attack
         else
-            transform.localScale = new Vector3(1, 1, 1); // face right
-
-        // If within attack distance
-        if (distance <= attackRange)
         {
-            movement = Vector2.zero;
-            animator.SetBool("isMoving", false);
-
-            // Attack only when cooldown is ready
-            if (attackTimer <= 0f)
+            if (Time.time - lastAttackTime >= attackCooldown)
             {
-                isAttacking = true;
-                animator.SetTrigger("attack");
-                attackTimer = attackCooldown;
+                currentState = State.Attacking;
+                rb.linearVelocity = Vector2.zero; 
+                ChooseAttack();
             }
-
-            return; // do not move while attacking
         }
 
-        // Chase player (not attacking)
-        isAttacking = false;
-        Vector2 direction = (player.position - transform.position).normalized;
-        movement = direction;
-
-        animator.SetBool("isMoving", true);
+        HandleState();
+        FlipSprite();
     }
 
-    void FixedUpdate()
+    void HandleState()
     {
-        if (isChasing && !isAttacking)
+        switch (currentState)
         {
-            rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+            case State.Idle:
+                rb.linearVelocity = Vector2.zero;
+                anim.SetBool("isWalking", false);
+                break;
+
+            case State.Chasing:
+                ChasePlayer();
+                break;
+
+            case State.Attacking:
+                rb.linearVelocity = Vector2.zero;
+                anim.SetBool("isWalking", false);
+                break;
+
+            case State.Hit:
+                rb.linearVelocity = Vector2.zero;
+                break;
+
+            case State.Dead:
+                rb.linearVelocity = Vector2.zero;
+                break;
         }
     }
 
-    // Optional: visualize ranges
-    void OnDrawGizmosSelected()
+    void ChasePlayer()
     {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, chaseRange);
+        Vector2 dir = (player.position - transform.position).normalized;
+        rb.linearVelocity = dir * moveSpeed;
+        anim.SetBool("isWalking", true);
+    }
 
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, attackRange);
+    void ChooseAttack()
+    {
+        lastAttackTime = Time.time;
+
+        int attackPick = Random.Range(1, 3);
+
+        if (attackPick == 1)
+            anim.SetTrigger("Attack1");
+        else
+            anim.SetTrigger("Attack2");
+    }
+
+    // Called from ANIMATION EVENT
+    public void ANIM_EVENT_DealDamage()
+    {
+        Collider2D hit = Physics2D.OverlapCircle(transform.position, attackRange, playerLayer);
+        if (hit != null)
+        {
+            PlayerHealth playerHP = hit.GetComponent<PlayerHealth>();
+            if (playerHP != null)
+                playerHP.TakeDamage(10);
+        }
+    }
+
+    void FlipSprite()
+    {
+        if (player == null) return;
+
+        bool shouldFaceRight = player.position.x > transform.position.x;
+
+        if (shouldFaceRight != isFacingRight)
+        {
+            isFacingRight = shouldFaceRight;
+            transform.localScale = new Vector3(
+                isFacingRight ? originalScaleX : -originalScaleX,
+                transform.localScale.y,
+                transform.localScale.z
+            );
+        }
+    }
+
+    public void TakeDamage(int dmg)
+    {
+        if (currentState == State.Dead) return;
+
+        health -= dmg;
+
+        anim.SetTrigger("Hit");
+        currentState = State.Hit;
+
+        if (health <= 0)
+            Die();
+    }
+
+    void Die()
+    {
+        currentState = State.Dead;
+        anim.SetTrigger("Death");
+        rb.linearVelocity = Vector2.zero;
+        Destroy(gameObject, 2f); // optional delay
+    }
+
+    // Called by Hit animation event to return to AI
+    public void ANIM_EVENT_HitFinished()
+    {
+        currentState = State.Idle;
     }
 }

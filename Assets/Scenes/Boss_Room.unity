@@ -15689,13 +15689,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c608b7fa05b9bb47b14dab069f45f85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossController
-  chaseRange: 6
-  attackRange: 1.5
   moveSpeed: 3
+  attackRange: 1.5
   attackCooldown: 1
-  rb: {fileID: 2029887066}
-  animator: {fileID: 2029887063}
-  player: {fileID: 3784942565078506232, guid: e222a325bb5bd07448c0b02c4af2c51a, type: 3}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  health: 30
 --- !u!50 &2029887066
 Rigidbody2D:
   serializedVersion: 5
@@ -15790,7 +15790,7 @@ Transform:
   m_GameObject: {fileID: 2029887062}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.02, y: 30.32, z: 0}
+  m_LocalPosition: {x: 0.6, y: 33.15, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
