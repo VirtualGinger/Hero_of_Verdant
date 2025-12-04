@@ -1,191 +1,165 @@
 using UnityEngine;
+using System.Collections;
 
 public class BossController : MonoBehaviour
 {
-    [Header("Components")]
-    public Rigidbody2D rb;
-    public Animator animator;
-    public SpriteRenderer sr;
-    public Transform player;
-
-    [Header("Stats")]
-    public float maxHealth = 80f;
-    public float health = 80f;
+    [Header("Movement & Detection")]
     public float moveSpeed = 2f;
+    public float chaseRange = 5f;
+    public float attackRange = 3f;
+    public float verticalTolerance = 0.5f;
+    
 
-    [Header("Ranges")]
-    public float chaseRange = 6f;
-    public float attack1Range = 3f;     // Laser range
-    public float attack2Range = 2f;     // AOE range
+    private Transform player;
+    private float distanceToPlayer;
+    private bool inRange;
+    private bool attackCooling;
+    private float attackTimer;
+    public float attackCooldown = 2f;
 
-    [Header("Cooldowns")]
-    public float attack1Cooldown = 2f;
-    public float attack2Cooldown = 5f;
-    private float attack1Timer = 0f;
-    private float attack2Timer = 0f;
+    [Header("Health")]
+    public int maxHealth = 10;
+    private int currentHealth;
 
-    [Header("Damage")]
-    public float laserDamage = 5f;
-    public float aoeDamage = 12f;
-    public LayerMask playerLayer;
+    [Header("Animation")]
+    private Animator animator;
+    private SpriteRenderer sprite;
 
-    [Header("Attack Spawns")]
-    public Transform laserPoint;
-    public Transform aoePoint;
-    public GameObject laserPrefab;
-    public GameObject aoePrefab;
+    [Header("Laser Settings")]
+    public GameObject laser;              // laser child object
+    public Transform laserSpawnPoint;     // where the beam starts
+    public float laserDuration = 0.4f;    // no longer used
 
-    private Vector2 moveDir;
-    private bool isDead = false;
-
-    void Reset()
-    {
-        rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
-        sr = GetComponent<SpriteRenderer>();
-    }
+    private bool isFacingRight = true;
 
     void Start()
     {
-        if (player == null)
-            player = GameObject.FindWithTag("Player").transform;
+        currentHealth = maxHealth;
+        animator = GetComponent<Animator>();
+        sprite = GetComponent<SpriteRenderer>();
+        player = GameObject.FindGameObjectWithTag("Player")?.transform;
 
-        health = maxHealth;
+        // ❌ Removed: laser.SetActive(false);
+        attackTimer = attackCooldown;
     }
 
     void Update()
     {
-        if (isDead) return;
+        if (currentHealth <= 0) return;
+        if (player == null) return;
 
-        if (attack1Timer > 0) attack1Timer -= Time.deltaTime;
-        if (attack2Timer > 0) attack2Timer -= Time.deltaTime;
+        distanceToPlayer = Vector2.Distance(transform.position, player.position);
+        inRange = distanceToPlayer <= chaseRange;
 
-        float dist = Vector2.Distance(transform.position, player.position);
-
-        // AOE Attack (highest priority)
-        if (dist <= attack2Range && attack2Timer <= 0)
+        if (inRange)
         {
-            DoAOEAttack();
-            return;
-        }
+            FacePlayer();
 
-        // Laser Attack
-        if (dist <= attack1Range && attack1Timer <= 0)
-        {
-            DoLaserAttack();
-            return;
+            if (distanceToPlayer > attackRange)
+            {
+                MoveTowardPlayer();
+                StopAttack(); // DOES NOT disable laser now
+            }
+            else if (!attackCooling)
+            {
+                Attack();
+            }
         }
-
-        // Chase if in range
-        if (dist <= chaseRange)
-            MoveTowardPlayer();
         else
-            StopMoving();
-    }
-
-    private void MoveTowardPlayer()
-    {
-        moveDir = (player.position - transform.position).normalized;
-
-        // Flip sprite for right-facing-only animations
-        sr.flipX = moveDir.x < 0;
-
-        animator.SetBool("IsWalking", true);
-    }
-
-    private void StopMoving()
-    {
-        moveDir = Vector2.zero;
-        animator.SetBool("IsWalking", false);
-    }
-
-    void FixedUpdate()
-    {
-        if (!isDead)
-            rb.MovePosition(rb.position + moveDir * moveSpeed * Time.fixedDeltaTime);
-    }
-
-    // ----------------------------
-    //         ATTACK 1 (LASER)
-    // ----------------------------
-    private void DoLaserAttack()
-    {
-        attack1Timer = attack1Cooldown;
-        animator.SetTrigger("Attack1");  // Animation event will call SpawnLaser()
-        StopMoving();
-    }
-
-    public void SpawnLaser() // <-- MUST be inside class!
-    {
-        Instantiate(laserPrefab, laserPoint.position, Quaternion.identity);
-
-        // Damage player if close
-        Collider2D hit = Physics2D.OverlapCircle(laserPoint.position, 0.75f, playerLayer);
-        if (hit != null)
         {
-            PlayerHealth hp = hit.GetComponent<PlayerHealth>();
-            if (hp != null)
-                hp.TakeDamage(laserDamage);
+            Idle();
+        }
+
+        if (attackCooling)
+            Cooldown();
+    }
+
+    void MoveTowardPlayer()
+    {
+        animator.SetBool("isMoving", true);
+
+        float yDiff = Mathf.Abs(player.position.y - transform.position.y);
+
+        Vector2 targetPos = (yDiff > verticalTolerance) ?
+                            new Vector2(transform.position.x, player.position.y) :
+                            new Vector2(player.position.x, transform.position.y);
+
+        transform.position = Vector2.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);
+    }
+
+    void Idle()
+    {
+        animator.SetBool("isMoving", false);
+        StopAttack();
+    }
+
+    void Attack()
+    {
+        animator.SetBool("isMoving", false);
+        animator.SetTrigger("Attack1");
+
+        // ❌ Removed: laser.SetActive(true)
+        // ❌ Removed: manually playing LaserAnimation
+        // ❌ Removed: DisableLaserAfterTime
+
+        attackCooling = true;
+        attackTimer = attackCooldown;
+    }
+
+    // ❌ Completely removed DisableLaserAfterTime coroutine
+
+    void Cooldown()
+    {
+        attackTimer -= Time.deltaTime;
+        if (attackTimer <= 0)
+            attackCooling = false;
+    }
+
+    void StopAttack()
+    {
+        attackCooling = false;
+        animator.ResetTrigger("Attack1");
+        animator.SetBool("isMoving", false);
+
+        // ❌ Removed: laser.SetActive(false)
+
+        attackTimer = attackCooldown;
+    }
+
+    void FacePlayer()
+    {
+        if (player == null) return;
+
+        bool shouldFaceRight = player.position.x > transform.position.x;
+
+        if (shouldFaceRight != isFacingRight)
+        {
+            isFacingRight = shouldFaceRight;
+
+            sprite.flipX = !isFacingRight;
+
+            if (laserSpawnPoint != null)
+            {
+                Vector3 scale = laserSpawnPoint.localScale;
+                scale.x = isFacingRight ? Mathf.Abs(scale.x) : -Mathf.Abs(scale.x);
+                laserSpawnPoint.localScale = scale;
+            }
         }
     }
 
-    // ----------------------------
-    //         ATTACK 2 (AOE)
-    // ----------------------------
-    private void DoAOEAttack()
+    public void TakeDamage(int damage)
     {
-        attack2Timer = attack2Cooldown;
-        animator.SetTrigger("Attack2");  // Animation event will call SpawnAOE()
-        StopMoving();
-    }
+        currentHealth -= damage;
+        animator.SetTrigger("isHit");
 
-    public void SpawnAOE() // <-- MUST be inside class!
-    {
-        Instantiate(aoePrefab, aoePoint.position, Quaternion.identity);
-
-        Collider2D hit = Physics2D.OverlapCircle(aoePoint.position, 1f, playerLayer);
-        if (hit != null)
-        {
-            PlayerHealth hp = hit.GetComponent<PlayerHealth>();
-            if (hp != null)
-                hp.TakeDamage(aoeDamage);
-        }
-    }
-
-    // ----------------------------
-    //            DAMAGE
-    // ----------------------------
-    public void TakeDamage(float dmg)
-    {
-        if (isDead) return;
-
-        health -= dmg;
-        animator.SetTrigger("Hit");
-
-        if (health <= 0)
+        if (currentHealth <= 0)
             Die();
     }
 
-    private void Die()
+    void Die()
     {
-        isDead = true;
-        animator.SetTrigger("Death");
-        rb.linearVelocity = Vector2.zero;
-        Destroy(gameObject, 2f);
-    }
-
-    void OnDrawGizmosSelected()
-    {
-        if (laserPoint != null)
-        {
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(laserPoint.position, 0.75f);
-        }
-
-        if (aoePoint != null)
-        {
-            Gizmos.color = Color.magenta;
-            Gizmos.DrawWireSphere(aoePoint.position, 1f);
-        }
+        animator.SetBool("isDead", true);
+        StopAttack();
+        Destroy(gameObject, 1f);
     }
 }
