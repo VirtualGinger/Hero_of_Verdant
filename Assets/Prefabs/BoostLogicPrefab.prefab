@@ -44,5 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e065e3c11a4f89e43a97037dacebddaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DashBoostBehavior
-  speedBoostAmount: 5
-  boostDuration: 2
+  speedBoostAmount: 3
+  boostDuration: 0.5
