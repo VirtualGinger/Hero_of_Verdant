@@ -214,15 +214,7 @@ private void TryAttack()
             transform.position = spawn.transform.position;
         }
 
-        // 2. CHECK SCENE NAME BEFORE RESETTING HEALTH
-        // If the scene is "Dungeon_Two", we skip the health reset logic to preserve current health.
-        if (scene.name == "Dungeon_Two")
-        {
-            Debug.Log($"Loaded into {scene.name}. Player health will NOT be reset.");
-            return; 
-        }
-
-        // --- ORIGINAL HEALTH RESET LOGIC (Only runs if scene is NOT Dungeon_Two) ---
+    
         PlayerHealth playerHealth = GetComponent<PlayerHealth>();
         if (playerHealth != null)
         {
