@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Laser : MonoBehaviour
 {
-    public int damage = 1;            // damage per hit
+    public float damage = 1f;            // damage per hit
     public float tickRate = 0.1f;     // how often damage applies while player stays inside
 
     private Collider2D hitbox;
@@ -49,8 +49,16 @@ public class Laser : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
+        // --- ADD THIS LINE FOR DEBUGGING ---
+        Debug.Log("Laser entered/staying in collision with: " + collision.gameObject.name);
+        // ------------------------------------
+
         if (collision.CompareTag("Player") && Time.time >= nextDamageTime)
         {
+            // --- ADD THIS LINE TO CHECK TAG/TICK RATE ---
+            Debug.Log("Player TAG detected. Applying damage now.");
+            // ------------------------------------
+
             PlayerHealth hp = collision.GetComponent<PlayerHealth>();
             if (hp != null)
             {
