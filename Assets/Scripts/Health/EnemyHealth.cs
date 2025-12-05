@@ -7,6 +7,7 @@ public class EnemyHealth : MonoBehaviour
 
     private Animator enemyAnimator;
     private CapsuleCollider2D enemyCollider;
+
     void Start()
     {
         enemyAnimator = GetComponent<Animator>();
@@ -24,7 +25,7 @@ public class EnemyHealth : MonoBehaviour
     {
         if (health <= 0) return;
 
-            health += amount;
+        health += amount;
 
         if (health > currentHealth)
             health = currentHealth;
@@ -40,7 +41,7 @@ public class EnemyHealth : MonoBehaviour
 
         if (health <= 0)
         {
-            Debug.Log("This enemey should be dead");
+            Debug.Log("This enemy should be dead");
             if (enemyAnimator.GetBool("isDead") == false)
             {
                 enemyAnimator.SetBool("isDead", true);
@@ -51,6 +52,15 @@ public class EnemyHealth : MonoBehaviour
                 }
 
                 Debug.Log("Enemy Dead");
+
+                // Check for EnemyHealthDragon and call scene transition
+                EnemyHealthDragon dragonHandler = GetComponent<EnemyHealthDragon>();
+                if (dragonHandler != null)
+                {
+                    dragonHandler.HandleDragonDeath(); // call into dragon script
+                }
+
+                // Schedule destruction after animation
                 Destroy(gameObject, 1.5f);
             }
         }
