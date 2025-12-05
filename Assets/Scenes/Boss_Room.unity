@@ -132,9 +132,11 @@ GameObject:
   - component: {fileID: 137905037}
   - component: {fileID: 137905036}
   - component: {fileID: 137905035}
-  m_Layer: 0
+  - component: {fileID: 137905040}
+  - component: {fileID: 137905041}
+  m_Layer: 6
   m_Name: Raven
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -292,12 +294,48 @@ Transform:
   m_GameObject: {fileID: 137905034}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30.11518, y: 30.19, z: 0}
+  m_LocalPosition: {x: -4.69, y: 41.36, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &137905040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137905034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd33a82099f99254b89cc9a50445ce8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Healer_Enemy
+  rayCast: {fileID: 137905039}
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  rayCastLength: 10
+  healDistance: 10
+  moveSpeed: 2
+  timer: 0
+  verticalTolerance: 0.5
+  useDiagonalMovement: 0
+--- !u!114 &137905041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137905034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 981ea1d0ba08ee844a1ccc6774980a16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+  health: 20
+  currentHealth: 0
 --- !u!1 &144311242
 GameObject:
   m_ObjectHideFlags: 0
@@ -3534,7 +3572,6 @@ MonoBehaviour:
   attackRange: 5
   verticalTolerance: 0.5
   attackCooldown: 2
-  maxHealth: 50
   laser: {fileID: 1711739511}
   laserSpawnPoint: {fileID: 1543206734}
   laserDuration: 0.4
@@ -3572,8 +3609,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 2, y: 2}
+  m_Offset: {x: 0.022025904, y: -0.15418148}
+  m_Size: {x: 0.42881617, y: 0.72249544}
   m_Direction: 0
 --- !u!114 &669512967
 MonoBehaviour:

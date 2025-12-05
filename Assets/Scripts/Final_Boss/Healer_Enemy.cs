@@ -21,7 +21,7 @@ public class Healer_Enemy : MonoBehaviour
     private float intTimer;
     private bool isFacingRight = true;
     private float originalScaleMagnitudeX;
-    private EnemyHealth _enemyHealth;   // THIS ENEMY'S health
+    private EnemyHealth _enemyHealth;
 
     void Awake()
     {
@@ -33,7 +33,6 @@ public class Healer_Enemy : MonoBehaviour
 
     void Update()
     {
-        // --- DEATH LOGIC START ---
         if (_enemyHealth.health <= 0)
         {
             _enemyHealth.health = 0;
@@ -41,9 +40,7 @@ public class Healer_Enemy : MonoBehaviour
             anim.SetBool("Attack", false);
             return;
         }
-        // --- DEATH LOGIC END ---
 
-        // Always look for a target
         FindClosestAlly();
 
         if (target != null)
@@ -90,7 +87,7 @@ public class Healer_Enemy : MonoBehaviour
 
         foreach (GameObject e in enemies)
         {
-            if (e == this.gameObject) continue; // don’t target itself
+            if (e == this.gameObject) continue;
 
             float d = Vector2.Distance(transform.position, e.transform.position);
             if (d < bestDist)
@@ -103,7 +100,6 @@ public class Healer_Enemy : MonoBehaviour
         target = bestTarget;
     }
 
-    // ----- MOVEMENT -----
     void Move()
     {
         anim.SetBool("canWalk", true);
@@ -134,22 +130,19 @@ public class Healer_Enemy : MonoBehaviour
         }
     }
 
-    // ----- HEAL INSTEAD OF ATTACK -----
     void Heal()
     {
         healMode = true;
         anim.SetBool("canWalk", false);
         anim.SetBool("Attack", true);
 
-        // Actually heal the other enemy
         EnemyHealth allyHP = target.GetComponent<EnemyHealth>();
         if (allyHP != null)
         {
-            allyHP.health += 1;   // small heal per frame — tune as needed
+            allyHP.health += 1;
         }
     }
 
-    // ----- COOLDOWN -----
     void Cooldown()
     {
         timer -= Time.deltaTime;
@@ -174,8 +167,6 @@ public class Healer_Enemy : MonoBehaviour
         anim.SetBool("Attack", false);
         timer = intTimer;
     }
-
-    // ----- FLIP -----
     void Flip(float targetX)
     {
         if (targetX > transform.position.x && !isFacingRight)
@@ -190,7 +181,6 @@ public class Healer_Enemy : MonoBehaviour
         }
     }
 
-    // ----- DEBUG -----
     void RaycastDebugger()
     {
         if (target == null) return;
@@ -210,7 +200,6 @@ public class Healer_Enemy : MonoBehaviour
 
     public void ResetWeaponHitbox()
     {
-        // Healer doesn’t need this but keeping it so nothing crashes
         Damage weaponDamage = GetComponentInChildren<Damage>();
 
         if (weaponDamage != null)

@@ -16,24 +16,6 @@ public class BossControllerMage : MonoBehaviour
     private float attackTimer;
     public float attackCooldown = 2f;
 
-    [Header("Health")]
-    public int maxHealth = 10;
-    private int currentHealth;
-
-    public float health
-    {
-        get { return currentHealth; }
-        set
-        {
-            int damageTaken = Mathf.CeilToInt(currentHealth - value);
-
-            if (damageTaken > 0)
-            {
-                TakeDamage(damageTaken);
-            }
-        }
-    }
-
     [Header("Animation")]
     private Animator animator;
     private SpriteRenderer sprite;
@@ -50,38 +32,25 @@ public class BossControllerMage : MonoBehaviour
 
     void Start()
     {
-        currentHealth = maxHealth;
         animator = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
         bossCollider = GetComponent<Collider2D>();
         player = GameObject.FindGameObjectWithTag("Player")?.transform;
 
         if (laser != null)
-        {
             laserComponent = laser.GetComponent<Laser>();
-        }
 
         attackTimer = attackCooldown;
     }
 
     void Update()
     {
-     
-        if(currentHealth <= 0)
-        {
-            animator.SetBool("isDead", true);
-            Destroy(gameObject);
-        }
-        if (currentHealth <= 0)
-        {
-            if (animator != null && animator.GetBool("isDead") == false)
-            {
-                Die();
-            }
+        // If the enemy is dead, do not run AI movement
+        if (animator != null && animator.GetBool("isDead"))
             return;
-        }
 
-        if (player == null) return;
+        if (player == null)
+            return;
 
         distanceToPlayer = Vector2.Distance(transform.position, player.position);
         inRange = distanceToPlayer <= chaseRange;
@@ -112,10 +81,13 @@ public class BossControllerMage : MonoBehaviour
     void MoveTowardPlayer()
     {
         animator.SetBool("isMoving", true);
+
         float yDiff = Mathf.Abs(player.position.y - transform.position.y);
+
         Vector2 targetPos = (yDiff > verticalTolerance) ?
-                            new Vector2(transform.position.x, player.position.y) :
-                            new Vector2(player.position.x, transform.position.y);
+            new Vector2(transform.position.x, player.position.y) :
+            new Vector2(player.position.x, transform.position.y);
+
         transform.position = Vector2.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);
     }
 
@@ -131,9 +103,7 @@ public class BossControllerMage : MonoBehaviour
         animator.SetTrigger("Attack1");
 
         if (laserComponent != null && player != null)
-        {
             laserComponent.Activate(player.position);
-        }
 
         attackCooling = true;
         attackTimer = attackCooldown;
@@ -152,9 +122,7 @@ public class BossControllerMage : MonoBehaviour
         animator.ResetTrigger("Attack1");
 
         if (laserComponent != null)
-        {
             laserComponent.Deactivate();
-        }
 
         attackTimer = attackCooldown;
     }
@@ -162,67 +130,20 @@ public class BossControllerMage : MonoBehaviour
     void FacePlayer()
     {
         if (player == null) return;
+
         bool shouldFaceRight = player.position.x > transform.position.x;
+
         if (shouldFaceRight != isFacingRight)
         {
             isFacingRight = shouldFaceRight;
             sprite.flipX = !isFacingRight;
+
             if (laserSpawnPoint != null)
             {
                 Vector3 scale = laserSpawnPoint.localScale;
                 scale.x = isFacingRight ? Mathf.Abs(scale.x) : -Mathf.Abs(scale.x);
                 laserSpawnPoint.localScale = scale;
             }
-        }
-    }
-
-    public void TakeDamage(int damage)
-    {
-        if (currentHealth <= 0) return;
-
-        currentHealth -= damage;
-
-        if (currentHealth > 0 && animator != null)
-        {
-            animator.SetTrigger("isHit");
-        }
-
-        if (currentHealth <= 0)
-            Die();
-    }
-
-    void Die()
-    {
-        if (animator != null && animator.GetBool("isDead") == false)
-        {
-            // 1. Stop all combat/movement related functions
-            StopAttack();
-
-            // 2. Trigger the death animation
-            animator.SetBool("isDead", true);
-
-            // 3. Disable the main collider.
-            if (bossCollider != null)
-            {
-                bossCollider.enabled = false;
-            }
-            else
-            {
-                // Correct way to handle potential null result when assigning a value type property
-                Collider2D tempCollider = GetComponent<Collider2D>();
-                if (tempCollider != null)
-                {
-                    tempCollider.enabled = false;
-                }
-            }
-
-            // 4. Schedule destruction of the object after the animation duration (1 second)
-            Destroy(gameObject, 1f);
-
-            // Explicitly disable this MonoBehaviour instance to stop Update()
-            //this.enabled = false;
-
-            Debug.Log("Boss Dead - Animation Triggered and Destruction Scheduled.");
         }
     }
 }

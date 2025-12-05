@@ -24,6 +24,16 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
+    public void Heal(float amount)
+    {
+        if (health <= 0) return;
+
+            health += amount;
+
+        if (health > currentHealth)
+            health = currentHealth;
+    }
+
     // Update is called once per frame
     void Update()
     {
