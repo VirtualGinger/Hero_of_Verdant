@@ -146,4 +146,10 @@ public class BossControllerMage : MonoBehaviour
             }
         }
     }
+
+    void Destory()
+    {
+        Debug.Log("Boss Mage Dead Destorying");
+        Destroy(gameObject);
+    }
 }

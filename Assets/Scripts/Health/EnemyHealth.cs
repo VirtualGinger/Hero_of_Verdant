@@ -45,11 +45,11 @@ public class EnemyHealth : MonoBehaviour
 
         if (health <= 0)
         {
-            
+            Debug.Log("This enemey should be dead");
             if (enemyAnimator.GetBool("isDead") == false)
             {
                 enemyAnimator.SetBool("isDead", true);
-
+                Debug.Log("Setting isDead to true");
                 // 3. Disable the collider when isDead is set to true
                 if (enemyCollider != null)
                 {
@@ -57,6 +57,7 @@ public class EnemyHealth : MonoBehaviour
                 }
 
                 Debug.Log("Enemy Dead");
+                Destroy(gameObject, 1.5f);
             }
         }
     }
