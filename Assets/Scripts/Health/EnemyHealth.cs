@@ -5,15 +5,11 @@ public class EnemyHealth : MonoBehaviour
     public float health;
     public float currentHealth;
 
-    // 1. Add reference for the Collider2D
     private Animator enemyAnimator;
-    private CapsuleCollider2D enemyCollider; // Reference to the collider
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private CapsuleCollider2D enemyCollider;
     void Start()
     {
         enemyAnimator = GetComponent<Animator>();
-        // 2. Get the collider component reference
         enemyCollider = GetComponent<CapsuleCollider2D>();
 
         currentHealth = health;
@@ -34,7 +30,6 @@ public class EnemyHealth : MonoBehaviour
             health = currentHealth;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (health < currentHealth)
@@ -50,7 +45,6 @@ public class EnemyHealth : MonoBehaviour
             {
                 enemyAnimator.SetBool("isDead", true);
                 Debug.Log("Setting isDead to true");
-                // 3. Disable the collider when isDead is set to true
                 if (enemyCollider != null)
                 {
                     enemyCollider.enabled = false;

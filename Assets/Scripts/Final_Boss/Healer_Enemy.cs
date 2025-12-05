@@ -11,6 +11,8 @@ public class Healer_Enemy : MonoBehaviour
     public float verticalTolerance = 0.5f;
     public bool useDiagonalMovement = false;
 
+    public float maxHealed = 60;
+
     private RaycastHit2D hit;
     private GameObject target;
     private Animator anim;
@@ -77,7 +79,6 @@ public class Healer_Enemy : MonoBehaviour
         }
     }
 
-    // ----- FIND CLOSEST OTHER ENEMY -----
     void FindClosestAlly()
     {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
@@ -139,6 +140,12 @@ public class Healer_Enemy : MonoBehaviour
         EnemyHealth allyHP = target.GetComponent<EnemyHealth>();
         if (allyHP != null)
         {
+            if (allyHP.health >= maxHealed)
+            {
+                StopHeal();
+                return;
+            }
+
             allyHP.health += 1;
         }
     }
