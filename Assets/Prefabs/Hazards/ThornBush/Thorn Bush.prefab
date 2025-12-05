@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4616813218781231874}
   - component: {fileID: 289683876397882311}
   - component: {fileID: 3792104736810348247}
-  - component: {fileID: 130534021262899037}
+  - component: {fileID: 5202175246026762746}
   m_Layer: 0
   m_Name: Thorn Bush
   m_TagString: Untagged
@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 11.78, y: -0.86, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 3}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -4467035636349938940, guid: 409f102395378b342afdd722c5e52fd4, type: 3}
+  m_Sprite: {fileID: 8946562834696454780, guid: 142537bc677f8db4bbc63913b9b63868, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -126,19 +126,19 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.14848995, y: 0.07696056}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.66, y: 0.6}
+    oldSize: {x: 11.84, y: 11.84}
     newSize: {x: 0.66, y: 0.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.66, y: 0.6}
+  m_Size: {x: 10.886034, y: 10.606028}
   m_EdgeRadius: 0
---- !u!114 &130534021262899037
+--- !u!114 &5202175246026762746
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -147,8 +147,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1803923938697006264}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1df0149f7fd0d1742a9b096c51e9b2ec, type: 3}
+  m_Script: {fileID: 11500000, guid: 5243d2d83a7591c4fb06967532ae35e0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Hazard
+  m_EditorClassIdentifier: Assembly-CSharp::MovingHazard
   damageAmount: 1
-  knockbackForce: 15
+  speed: 3
+  distance: 4
+  moveVertically: 0
+  rotationSpeed: 200
