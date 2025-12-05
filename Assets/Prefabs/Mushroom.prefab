@@ -81,7 +81,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d602990a9ffc52749ad72d68b248d697, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyDamage
-  damage: 15
+  damage: 5
   hasHit: 0
   startDamageTime: 0.5
   endDamageTime: 0.6
