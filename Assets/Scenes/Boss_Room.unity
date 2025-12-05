@@ -2575,6 +2575,84 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10057eadf3e788d4db80c92978bd7aaa, type: 3}
+--- !u!1 &407410651
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 407410652}
+  - component: {fileID: 407410653}
+  m_Layer: 6
+  m_Name: hitbox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &407410652
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407410651}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.161, y: -0.035, z: 0}
+  m_LocalScale: {x: 0.15204753, y: 0.15204753, z: 0.15204753}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1643951997}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &407410653
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407410651}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1001 &475083514
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16639,7 +16717,7 @@ GameObject:
   - component: {fileID: 1643951996}
   - component: {fileID: 1643951994}
   - component: {fileID: 1643951993}
-  - component: {fileID: 1643952000}
+  - component: {fileID: 1643952003}
   - component: {fileID: 1643951999}
   - component: {fileID: 1643951998}
   - component: {fileID: 1643952001}
@@ -16768,11 +16846,12 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.31, y: 41.12, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalScale: {x: 10.088, y: 10.088, z: 10.088}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 835890911}
   - {fileID: 1526940501}
+  - {fileID: 407410652}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1643951998
@@ -16801,30 +16880,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddf4655a7636167429a646625e70c5ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
-  damage: 10
+  damage: 4
   hasHit: 0
---- !u!114 &1643952000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1643951992}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fd2a51e09a532147ae9273ef0a72b9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Enemy_behavior
-  rayCast: {fileID: 835890911}
-  raycastMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  rayCastLength: 6
-  attackDistance: 2
-  moveSpeed: 2
-  timer: 0
-  verticalTolerance: 0.5
-  useDiagonalMovement: 0
 --- !u!70 &1643952001
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -16855,7 +16912,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -16874,18 +16931,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aa68a492e3773f49adcb53f15842b42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlyingEnemy
+  flySpeed: 3
+  minFlyTime: 2
+  maxFlyTime: 5
+  flyInterval: 5
+--- !u!114 &1643952003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643951992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b97b5a887661e8145a071a0aae21e3bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DragonBehavior
   rayCast: {fileID: 835890911}
   raycastMask:
     serializedVersion: 2
     m_Bits: 4294967295
   rayCastLength: 6
-  moveSpeed: 2
   attackDistance: 2
-  useDiagonalMovement: 0
+  moveSpeed: 2
+  timer: 0
   verticalTolerance: 0.5
-  Flying: 
-  flyCheckInterval: 5
-  maxFlyDuration: 10
+  useDiagonalMovement: 0
 --- !u!1 &1698259084
 GameObject:
   m_ObjectHideFlags: 0
